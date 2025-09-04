@@ -94,3 +94,65 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   .sidebar.collapsed .nav__section{display:block}
   .sidebar.collapsed .sidebar__footer{display:block}
 }
+
+/* ---------- Layout defaults ---------- */
+:root {
+  --sidebar-w: 280px; /* mobile width */
+  --sidebar-z: 1000;
+  --overlay-z: 999;
+}
+
+/* Desktop keeps your current layout; mobile becomes off-canvas */
+@media (max-width: 1024px) {
+  /* Sidebar: off-canvas by default */
+  #sidebar.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-w);
+    height: 100dvh;              /* better for iOS address bar */
+    transform: translateX(-100%);/* hidden by default */
+    transition: transform 200ms ease-in-out;
+    z-index: var(--sidebar-z);
+    background: #fff;            /* or your color */
+    box-shadow: 2px 0 10px rgba(0,0,0,.08);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+  #sidebar.sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Collapse state on mobile is usually ignored; keep it visual only if you like */
+  #sidebar.sidebar.collapsed { width: var(--sidebar-w); }
+
+  /* Mobile overlay */
+  [data-overlay] {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: var(--overlay-z);
+    transition: opacity 160ms ease-in-out;
+    opacity: 1;
+  }
+  [data-overlay][hidden] {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Prevent body from scrolling when menu is open */
+  body.menu-open {
+    overflow: hidden;
+    height: 100dvh;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+/* Optional: ensure the hamburger stays above content */
+.hamburger-mobile {
+  position: relative;
+  z-index: calc(var(--overlay-z) + 1);
+}
+

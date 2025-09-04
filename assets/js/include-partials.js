@@ -44,13 +44,32 @@
     function isMobileOpen() {
       return sidebar.classList.contains("open");
     }
-    function setMobileOpen(open) {
-      sidebar.classList.toggle("open", open);
-      overlay.hidden = !open;
-      const expanded = String(!!open);
-      if (externalHamburger) externalHamburger.setAttribute("aria-expanded", expanded);
-      if (closeBtn) closeBtn.setAttribute("aria-expanded", expanded);
+function setMobileOpen(open) {
+  sidebar.classList.toggle("open", open);
+  overlay.hidden = !open;
+  const expanded = String(!!open);
+  if (externalHamburger) externalHamburger.setAttribute("aria-expanded", expanded);
+  if (closeBtn) closeBtn.setAttribute("aria-expanded", expanded);
+  document.body.classList.toggle("menu-open", open); // lock/unlock scroll
+}
+
+window.addEventListener("resize", () => {
+  const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+  if (isMobile !== lastIsMobile) {
+    lastIsMobile = isMobile;
+    if (!isMobile) {
+      // leaving mobile -> ensure menu is closed and overlay is hidden
+      setMobileOpen(false);
     }
+  }
+});
+
+// (Optional) Close on Escape for accessibility
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && sidebar.classList.contains("open")) {
+    setMobileOpen(false);
+  }
+});
 
     function isCollapsed() {
       return sidebar.classList.contains("collapsed");
