@@ -18,7 +18,17 @@ body{margin:0; color:var(--text); background:var(--bg); font: 16px/1.6 Inter, ui
 mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-radius:.3em}
 .pill{display:inline-flex; align-items:center; gap:6px; font-weight:700; font-size:12px; padding:6px 10px; background:var(--primary-50); color:var(--primary-800); border:1px solid var(--primary-200); border-radius:999px}
 /* Sidebar */
-.sidebar{width:280px; flex:0 0 280px; background:#fff; border-right:1px solid var(--border); padding:18px; display:flex; flex-direction:column; gap:12px; transition:width .2s ease}
+.sidebar{width:280px; flex:0 0 280px; background:#fff; border-right:1px solid var(--border); padding:18px; display:flex; flex-direction:column; gap:12px; transition:width .2s ease; overflow-y: auto;overflow-x: hidden;}
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--primary-200);
+  border-radius: 3px;
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-400);
+}
 .sidebar__header{display:flex; align-items:center; justify-content:space-between; gap:10px}
 .brand{display:inline-flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px; text-decoration:none; color:inherit}
 .logo{width:28px; height:28px; border-radius:8px; box-shadow:0 2px 8px rgba(200,16,46,.35)}
@@ -32,7 +42,7 @@ mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-ra
 .nav__link:hover{background:var(--primary-50)}
 .nav__link.active{background:var(--primary-100); color:var(--primary-800); box-shadow:inset 0 0 0 1px var(--primary-200)}
 .nav .icon{width:20px; display:inline-block; text-align:center}
-.sidebar.collapsed{width:120px; flex-basis:72px}
+.sidebar.collapsed{width:120px; flex-basis:120px}
 .sidebar.collapsed .label{display:none !important}
 .sidebar.collapsed .nav__section{display:none}
 .sidebar.collapsed .nav__link{justify-content:center; padding:0px 0px}
