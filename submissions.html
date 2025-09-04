@@ -15,51 +15,7 @@
   <div class="banner banner-top" aria-hidden="true"></div>
 
   <div class="app-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Primary">
-      <div class="sidebar__header">
-        <a class="brand" href="index.html">
-          <img class="logo" src="assets/img/logo.svg" alt=""/>
-          <span class="label">FLINS‑ISKE 2026</span>
-        </a>
-        <button class="sidebar__toggle" aria-label="Collapse sidebar" title="Collapse sidebar (Ctrl+\)">
-          
-<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-  <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
-        </button>
-        <button class="sidebar__close" aria-label="Close menu" aria-controls="sidebar" aria-expanded="true" title="Close menu">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="6" y1="18" x2="18" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </button>
-      </div>
-      <nav class="nav" aria-label="Sidebar">
-        <div class="nav__section">Pages</div>
-        <a class="nav__link" href="index.html"><span class="label">Home</span></a>
-        <a class="nav__link" href="history.html"><span class="label">History</span></a>
-        <a class="nav__link" href="committees.html"><span class="label">Chairs & Committees</span></a>
-        <a class="nav__link" href="cfp.html"><span class="label">Call for Papers</span></a>
-        <a class="nav__link" href="dates.html"><span class="label">Important Dates</span></a>
-        <a class="nav__link" href="submissions.html"><span class="label">Paper Submission</span></a>
-        <a class="nav__link" href="keynote.html"><span class="label">Keynote Speakers</span></a>
-        <a class="nav__link" href="special-sessions.html"><span class="label">Special Sessions</span></a>
-        <a class="nav__link" href="tutorial.html"><span class="label">Tutorials</span></a>
-        <a class="nav__link" href="program.html"><span class="label">Conference Program</span></a>
-        <a class="nav__link" href="proceeding.html"><span class="label">Proceedings</span></a>
-        <a class="nav__link" href="organiser.html"><span class="label">Organisers and Sponsors</span></a>
-        <a class="nav__link" href="venue.html"><span class="label">Conference Venue</span></a>
-        <a class="nav__link" href="accommodation.html"><span class="label">Accommodation</span></a>
-        <a class="nav__link" href="travel.html"><span class="label">Travel Information</span></a>
-        <a class="nav__link" href="sydney.html"><span class="label">About Sydney</span></a>
-        <a class="nav__link" href="social.html"><span class="label">Social Events</span></a>
-        <a class="nav__link" href="contact.html"><span class="label">Contact</span></a>
-      </nav>
-
-    </aside>
+    <aside class="sidebar" id="sidebar" data-include="partials/sidebar.html"></aside>
 
     <div class="content-area">
       <header class="topbar">
@@ -93,20 +49,31 @@
       </main>
       <footer class="site-footer">
         <div class="container footer-grid">
+            <div class="grid two">
           <div>
-            <a class="brand" href="index.html">
-              <img class="logo" src="assets/img/logo.svg" alt=""/>
-              <span class="label">FLINS-ISKE 2026</span>
-            </a>
-            <p class="credits">The 17th FLINS Conference & the 21st ISKE Conference: Machine Learning and Knowledge Engineering for Decision Making • July 15-19, 2026 • Sydney, Australia</p>
-          </div>
-          <div>
-            <h5>Quick Links</h5>
-            <p><a class="link-accent" href="submissions.html">Submit via OpenReview</a><br>
-            <a class="link-accent" href="cfp.html">Call for Papers</a><br>
-            <a class="link-accent" href="dates.html">Important Dates</a></p>
-          </div>
-        </div>
+          <h3>Organised by: </h3>
+      <p><img style="height:80px; width:auto;"src="./assets/img/uts.jpg"/></p>
+  </div>
+  <div>
+    <h3>Co-Sponsered by: </h3>
+
+    <div class="grid four">
+  <div>
+      <p><img style="height:100px; width:auto;" src="./assets/img/madrid.png"/></p>
+    </div>
+    <div>
+      <p><img style="height:80px; width:auto;"src="./assets/img/jaen.png"/></p>
+    </div>
+    <div>
+      <p><img style="height:60px; width:auto;"src="./assets/img/lille.png"/></p>
+    </div>
+    <div>
+      <p><img style="height:60px; width:auto;"src="./assets/img/hagen.svg"/></p>
+    </div>
+  </div>
+    </div>
+  </div>
+  </div>
         <div class="banner banner-bottom" aria-hidden="true"></div>
       </footer>
     </div>
@@ -114,5 +81,6 @@
 
   <div class="overlay" data-overlay hidden></div>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/include-partials.js"></script>
 </body>
 </html>

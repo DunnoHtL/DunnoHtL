@@ -15,7 +15,10 @@
   <div class="banner banner-top" aria-hidden="true"></div>
 
   <div class="app-shell">
-    <aside class="sidebar" id="sidebar" aria-label="Primary">
+    <aside class="sidebar" id="sidebar" data-include="partials/sidebar.html"></aside>
+
+    <!-- <aside class="sidebar" id="sidebar" aria-label="Primary">
+      
       <div class="sidebar__header">
         <a class="brand" href="index.html">
           <img class="logo" src="assets/img/logo.png" alt=""/>
@@ -59,7 +62,7 @@
         <a class="nav__link" href="contact.html"><span class="label">Contact</span></a>
       </nav>
 
-    </aside>
+    </aside> -->
 
     <div class="content-area">
       <header class="topbar">
@@ -126,30 +129,42 @@
     </table>
   </div>
 </section>
-
       </main>
       <footer class="site-footer">
         <div class="container footer-grid">
+            <div class="grid two">
           <div>
-            <a class="brand" href="index.html">
-              <img class="logo" src="assets/img/logo.svg" alt=""/>
-              <span class="label">FLINS‑ISKE 2026</span>
-            </a>
-            <p class="credits">The 17th FLINS Conference & the 21st ISKE Conference: Machine Learning and Knowledge Engineering for Decision Making • July 15–19, 2026 • Sydney, Australia</p>
-          </div>
-          <div>
-            <h5>Quick Links</h5>
-            <p><a class="link-accent" href="https://openreview.net/group?id=flins.cc/FLINS-ISKE/2026/Conference">Submit via OpenReview</a><br>
-            <a class="link-accent" href="cfp.html">Call for Papers</a><br>
-            <a class="link-accent" href="dates.html">Important Dates</a></p>
-          </div>
-        </div>
+          <h3>Organised by: </h3>
+      <p><img style="height:80px; width:auto;"src="./assets/img/uts.jpg"/></p>
+  </div>
+  <div>
+    <h3>Co-Sponsered by: </h3>
+
+    <div class="grid four">
+  <div>
+      <p><img style="height:100px; width:auto;" src="./assets/img/madrid.png"/></p>
+    </div>
+    <div>
+      <p><img style="height:80px; width:auto;"src="./assets/img/jaen.png"/></p>
+    </div>
+    <div>
+      <p><img style="height:60px; width:auto;"src="./assets/img/lille.png"/></p>
+    </div>
+    <div>
+      <p><img style="height:60px; width:auto;"src="./assets/img/hagen.svg"/></p>
+    </div>
+  </div>
+    </div>
+  </div>
+  </div>
         <div class="banner banner-bottom" aria-hidden="true"></div>
       </footer>
     </div>
   </div>
 
+
   <div class="overlay" data-overlay hidden></div>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/include-partials.js"></script>
 </body>
 </html>
