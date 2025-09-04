@@ -72,7 +72,7 @@ kbd{background:#111; color:#fff; padding:.2em .45em; border-radius:6px}
 .btn-ghost{background:#fff; color:var(--primary-700); border-color:var(--primary-200)}
 .btn-ghost:hover{background:var(--primary-50)}
 .grid.two{display:grid; grid-template-columns:1fr; gap:16px}
-.grid.four{display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:6px}
+.grid.five{display:grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr; gap:6px}
 
 @media (min-width: 900px){ .grid.two{grid-template-columns:1fr 1fr} }
 .table-wrap{overflow:auto; border:1px solid var(--border); border-radius:14px; box-shadow:var(--shadow); background:#fff}
