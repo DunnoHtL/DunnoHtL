@@ -96,6 +96,17 @@ document.addEventListener("keydown", (e) => {
     if (desktopToggle && !desktopToggle.dataset.wired) {
       desktopToggle.dataset.wired = "1";
       desktopToggle.addEventListener("click", () => setCollapsed(!isCollapsed()));
+
+        // desktopToggle.addEventListener("click", () => {
+        // if (window.innerWidth <= MOBILE_BREAKPOINT) {
+        //     // MOBILE: close the drawer
+        //     setMobileOpen(false);
+        // } else {
+        //     // DESKTOP: collapse/expand
+        //     setCollapsed(!isCollapsed());
+        // }
+        // });
+
       desktopToggle.setAttribute("aria-label", "Collapse sidebar");
     }
     if (closeBtn && !closeBtn.dataset.wired) {
