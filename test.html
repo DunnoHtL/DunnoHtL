@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conference Banner Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      background: url("./assets/img/Sydney.jpg") no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .banner::after {
+      /* dark overlay for readability */
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .banner-content {
+      position: relative;
+      text-align: center;
+      z-index: 1;
+    }
+    .banner-content h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .banner-content p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #e63946;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+    .btn:hover {
+      background: #d62828;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="banner-content">
+      <h1>International AI Conference 2026</h1>
+      <p>Sydney, Australia · July 12-15, 2026</p>
+      <a href="#register" class="btn">Register Now</a>
+    </div>
+  </div>
+
+</body>
+</html>
