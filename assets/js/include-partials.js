@@ -1,4 +1,6 @@
 // assets/js/include-partials.js
+const MOBILE_BREAKPOINT = 980;
+let lastIsMobile = window.innerWidth <= MOBILE_BREAKPOINT;
 (function () {
   const LS_COLLAPSED_KEY = "sidebar:collapsed";
 

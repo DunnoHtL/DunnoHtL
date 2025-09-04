@@ -18,7 +18,7 @@ body{margin:0; color:var(--text); background:var(--bg); font: 16px/1.6 Inter, ui
 mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-radius:.3em}
 .pill{display:inline-flex; align-items:center; gap:6px; font-weight:700; font-size:12px; padding:6px 10px; background:var(--primary-50); color:var(--primary-800); border:1px solid var(--primary-200); border-radius:999px}
 /* Sidebar */
-.sidebar{width:280px; flex:0 0 280px; background:#fff; border-right:1px solid var(--border); padding:18px; display:flex; flex-direction:column; gap:12px; transition:width .2s ease; overflow-y: auto;overflow-x: hidden;}
+.sidebar{width:280px; flex:0 0 280px; background:#fff; border-right:1px solid var(--border); padding:18px; display:flex; flex-direction:column; gap:12px; transition:width .2s ease; overflow-y: auto;overflow-x: hidden;  position: sticky; top: 0; height: calc(100dvh - 20px);  /* 10px top + 10px bottom banners */}
 .sidebar::-webkit-scrollbar {
   width: 6px;
 }
@@ -45,7 +45,7 @@ mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-ra
 .sidebar.collapsed{width:120px; flex-basis:120px}
 .sidebar.collapsed .label{display:none !important}
 .sidebar.collapsed .nav__section{display:none}
-.sidebar.collapsed .nav__link{justify-content:center; padding:0px 0px}
+.sidebar.collapsed .nav__link{justify-content:center; padding: 0px 0px;}
 .sidebar.collapsed .sidebar__footer{display:none}
 /* Content Area */
 .content-area{flex:1; display:flex; flex-direction:column; min-width:0; background:linear-gradient(180deg, #fff, #fff 55%, var(--primary-50) 100%)}
@@ -84,16 +84,7 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
 .footer-grid{display:grid; grid-template-columns:1fr; gap:20px}
 .credits{color:var(--muted); font-size:14px}
 @media (min-width:760px){ .footer-grid{grid-template-columns: 2fr 1fr} }
-@media (max-width: 980px){
-  .sidebar{position:fixed; inset:10px auto 10px 10px; width:82%; max-width:360px; height:auto; border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow); transform:translateX(-120%); transition:transform .25s ease, opacity .25s ease; opacity:0; z-index:40; }
-  .sidebar.open{transform:none; opacity:1}
-  .sidebar__close{display:inline-flex}
-  .hamburger-mobile{display:inline-flex}
-  .sidebar.collapsed{width:82%; flex-basis:unset}
-  .sidebar.collapsed .label{display:inline}
-  .sidebar.collapsed .nav__section{display:block}
-  .sidebar.collapsed .sidebar__footer{display:block}
-}
+
 
 /* ---------- Layout defaults ---------- */
 :root {
@@ -102,52 +93,40 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   --overlay-z: 999;
 }
 
-/* Desktop keeps your current layout; mobile becomes off-canvas */
-@media (max-width: 1024px) {
-  /* Sidebar: off-canvas by default */
-  #sidebar.sidebar {
+@media (max-width: 980px){
+  .sidebar{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: var(--sidebar-w);
-    height: 100dvh;              /* better for iOS address bar */
-    transform: translateX(-100%);/* hidden by default */
-    transition: transform 200ms ease-in-out;
-    z-index: var(--sidebar-z);
-    background: #fff;            /* or your color */
-    box-shadow: 2px 0 10px rgba(0,0,0,.08);
+    inset: 10px auto 10px 10px;
+    width: 82%;
+    max-width: 360px;
+    height: 100dvh;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    transform: translateX(-120%);
+    transition: transform .25s ease, opacity .25s ease;
+    opacity: 0;
+    z-index: 40;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
   }
-  #sidebar.sidebar.open {
-    transform: translateX(0);
-  }
+  .sidebar.open{ transform:none; opacity:1 }
+  .sidebar__close{ display:inline-flex }
+  .hamburger-mobile{ display:inline-flex }
 
-  /* Collapse state on mobile is usually ignored; keep it visual only if you like */
-  #sidebar.sidebar.collapsed { width: var(--sidebar-w); }
+  /* keep collapsed rules visual-only on mobile if you like */
+  .sidebar.collapsed{ width:82%; flex-basis:unset }
+  .sidebar.collapsed .label{ display:inline }
+  .sidebar.collapsed .nav__section{ display:block }
+  .sidebar.collapsed .sidebar__footer{ display:block }
 
-  /* Mobile overlay */
-  [data-overlay] {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.35);
-    z-index: var(--overlay-z);
-    transition: opacity 160ms ease-in-out;
-    opacity: 1;
+  /* Overlay + lock body when menu open */
+  [data-overlay]{
+    position: fixed; inset: 0; background: rgba(0,0,0,.35);
+    z-index: 39; transition: opacity 160ms ease-in-out; opacity: 1;
   }
-  [data-overlay][hidden] {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  /* Prevent body from scrolling when menu is open */
-  body.menu-open {
-    overflow: hidden;
-    height: 100dvh;
-    position: fixed;
-    width: 100%;
-  }
+  [data-overlay][hidden]{ opacity: 0; pointer-events: none }
+  body.menu-open{ overflow:hidden; height:100dvh; position:fixed; width:100% }
 }
 
 /* Optional: ensure the hamburger stays above content */
@@ -155,4 +134,3 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   position: relative;
   z-index: calc(var(--overlay-z) + 1);
 }
-
