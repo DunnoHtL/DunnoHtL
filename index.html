@@ -17,53 +17,6 @@
   <div class="app-shell">
     <aside class="sidebar" id="sidebar" data-include="partials/sidebar.html"></aside>
 
-    <!-- <aside class="sidebar" id="sidebar" aria-label="Primary">
-      
-      <div class="sidebar__header">
-        <a class="brand" href="index.html">
-          <img class="logo" src="assets/img/logo.png" alt=""/>
-          <span class="label">FLINS-ISKE 2026</span>
-        </a>
-        <button class="sidebar__toggle" aria-label="Collapse sidebar" title="Collapse sidebar (Ctrl+\)">
-          
-<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-  <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
-        </button>
-        <button class="sidebar__close" aria-label="Close menu" aria-controls="sidebar" aria-expanded="true" title="Close menu">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="6" y1="18" x2="18" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </button>
-      </div>
-    <nav class="nav" aria-label="Sidebar">
-        <div class="nav__section">Pages</div>
-        <a class="nav__link" href="index.html"><span class="label">Home</span></a>
-        <a class="nav__link" href="history.html"><span class="label">History</span></a>
-        <a class="nav__link" href="committees.html"><span class="label">Chairs & Committees</span></a>
-        <a class="nav__link" href="cfp.html"><span class="label">Call for Papers</span></a>
-        <a class="nav__link" href="dates.html"><span class="label">Important Dates</span></a>
-        <a class="nav__link" href="submissions.html"><span class="label">Paper Submission</span></a>
-        <a class="nav__link" href="keynote.html"><span class="label">Keynote Speakers</span></a>
-        <a class="nav__link" href="special-sessions.html"><span class="label">Special Sessions</span></a>
-        <a class="nav__link" href="tutorial.html"><span class="label">Tutorials</span></a>
-        <a class="nav__link" href="program.html"><span class="label">Conference Program</span></a>
-        <a class="nav__link" href="proceeding.html"><span class="label">Proceedings</span></a>
-        <a class="nav__link" href="organiser.html"><span class="label">Organisers and Sponsors</span></a>
-        <a class="nav__link" href="venue.html"><span class="label">Conference Venue</span></a>
-        <a class="nav__link" href="accommodation.html"><span class="label">Accommodation</span></a>
-        <a class="nav__link" href="travel.html"><span class="label">Travel Information</span></a>
-        <a class="nav__link" href="sydney.html"><span class="label">About Sydney</span></a>
-        <a class="nav__link" href="social.html"><span class="label">Social Events</span></a>
-        <a class="nav__link" href="contact.html"><span class="label">Contact</span></a>
-      </nav>
-
-    </aside> -->
-
     <div class="content-area">
       <header class="topbar">
         <button class="hamburger-mobile" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false" title="Open menu">
@@ -86,12 +39,70 @@
     <p>The 17th FLINS Conference & the 21st ISKE Conference: Machine Learning and Knowledge Engineering for Decision Making</p>
     <p class="muted">July 15-19, 2026 • Sydney, Australia</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://openreview.net/group?id=flins.cc/FLINS-ISKE/2026/Conference">Submit via OpenReview</a>
-      <a class="btn btn-ghost" href="./assets/files/FLINS-ISKE_A4.pdf">Call for Papers</a>
+      <a class="btn btn-primary" href="https://openreview.net/group?id=flins.cc/FLINS-ISKE/2026/Conference" target="_blank">Submit via OpenReview</a>
+      <a class="btn btn-ghost" href="cfp.html">Call for Papers</a>
     </div>
   </div>
 </section>
-<img style="width:1050px; height:auto;" src="./assets/img/sydney.png">
+
+<!-- Slideshow: drop this anywhere inside <main class="content"> or a section -->
+<section class="slideshow container" aria-label="Conference Highlights" data-autoplay="6500">
+  <header class="slideshow__header">
+    <!-- <span class="badge">Highlights</span> -->
+    <!-- <h2 class="slideshow__title">Sydney & Venue</h2> -->
+  </header>
+
+  <div class="slideshow__viewport" tabindex="0" role="group" aria-roledescription="carousel" aria-live="off">
+    <div class="slideshow__track">
+      <!-- Slide 1 -->
+      <figure class="slide is-active" aria-label="Slide 1 of 4" role="group">
+        <img src="assets/img/sydskyline.gif" alt="Sydney Harbour and Opera House" />
+        <figcaption class="muted">Sydney Harbour</figcaption>
+      </figure>
+
+      <!-- Slide 2 -->
+      <figure class="slide" aria-label="Slide 2 of 4" role="group">
+        <img src="assets/img/bondi.avif" alt="Sydney Bondi Beach" />
+        <figcaption class="muted">Sydney Bondi Beach</figcaption>
+      </figure>
+
+      <!-- Slide 3 -->
+      <figure class="slide" aria-label="Slide 3 of 4" role="group">
+        <img src="assets/img/utsb2.jpg" alt="UTS Campus" />
+        <figcaption class="muted">UTS Campus Building 2</figcaption>
+      </figure>
+
+      <!-- Slide 4 (example sponsor collage; replace as needed) -->
+      <figure class="slide" aria-label="Slide 4 of 4" role="group">
+        <img src="assets/img/utsb11.jpg" alt="UTS Campus b11" />
+        <figcaption class="muted">UTS Campus Building 11</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="slideshow__controls">
+    <button class="slideshow__btn btn btn-ghost" data-dir="-1" aria-label="Previous slide" title="Previous">
+      <!-- left chevron -->
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="slideshow__dots" role="tablist" aria-label="Slides"></div>
+
+    <button class="slideshow__btn btn btn-ghost" data-dir="1" aria-label="Next slide" title="Next">
+      <!-- right chevron -->
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <button class="slideshow__toggle btn btn-ghost" aria-label="Pause autoplay" title="Pause / Play">
+      <!-- play/pause icon swaps in JS -->
+      <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M7 5h3v14H7zM14 5h3v14h-3z" fill="currentColor"/></svg>
+      <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" hidden><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- <img style="width:1050px; height:auto;" src="./assets/img/sydney.png"> -->
 <!-- <div class="container">
   <img src="./assets/img/Sydney.webp">
   <div class="text-overlay-line1">FLINS-ISKE 2026</div>
@@ -103,14 +114,10 @@
 <!-- <img style="width:1050px; height:auto;" src="./assets/img/Sydney.webp"> -->
 <section>
   <h2>Welcome</h2>
-  <p>The joint FLINS-ISKE 2026 conference will be held in Sydney - a vibrant city blending Indigenous heritage, modern innovation, and iconic harbourside landmarks. An ideal venue for a world‑class gathering.</p>
-<p>FLINS, an acronym introduced in 1994 and originally for Fuzzy Logic and Intelligent Technologies in Nuclear Science, is now extended into a well-established international research forum to advance the foundations and applications of computational intelligence for applied research in general and for complex engineering and decision support systems.</p>
-
-<p>The principal mission of FLINS is bridging the gap between machine intelligence and real complex systems via joint research between universities and international research institutions, encouraging interdisciplinary research and bringing multidiscipline researchers together.</p>
-
-<p>The joint FLINS-ISKE 2026 conference will be held in Sydney, Australia. As one of the largest cities in the Southern Hemisphere, Sydney seamlessly blends its rich Indigenous heritage with modern innovation and iconic landmarks. From the historic Rocks district to its sun-kissed beaches, Sydney offers a captivating mix of tradition and contemporary vibrancy, making it an ideal venue for this prestigious event.</p>
-
-<p>All accepted papers for FLINS-ISKE 2026 will be published as a proceeding by <mark><strong>World Scientific</strong></mark>, indexed in EI Compendex and Scopus. Selected papers will be invited for publication in SCI-indexed journals following a rigorous peer-review process.</p>
+<p>FLINS, an acronym introduced in 1994 and originally for Fuzzy Logic and Intelligent Technologies in Nuclear Science, is now extended into a well-established international research forum to advance the foundations and applications of computational intelligence for applied research in general and for complex engineering and decision support systems. The principal mission of FLINS is bridging the gap between machine intelligence and real complex systems via joint research between universities and international research institutions, encouraging interdisciplinary research and bringing multidiscipline researchers together.</p>
+<p>ISKE, the International Conference on Intelligent Systems and Knowledge Engineering, aims to provide a platform for technical and scientific professionals from academia, research and industries in the fields of intelligent systems and knowledge engineering to exchange knowledge and distribute the emerging state-of-the-art technologies.</p>
+<p>The joint FLINS-ISKE 2026 conference will be held in <mark><strong>Sydney, Australia</strong></mark>. As one of the largest cities in the Southern Hemisphere, Sydney seamlessly blends its rich Indigenous heritage with modern innovation and iconic landmarks. From the historic Rocks district to its sun-kissed beaches, Sydney offers a captivating mix of tradition and contemporary vibrancy, making it an ideal venue for this prestigious event.</p>
+<p>All accepted papers for FLINS-ISKE 2026 conference will be published as a proceeding by <mark><strong>World Scientific</strong></mark>, indexed in <mark><strong>EI Compendex and Scopus</strong></mark>. Selected papers will be invited for publication in SCI-indexed journals following a rigorous peer-review process.</p>
 </section>
 
 <section>
@@ -123,7 +130,7 @@
         <tr><td>Special Session Acceptance Notification</td><td>December 15, 2025</td></tr>
         <tr><td>Full Paper Submission Deadline</td><td>January 15, 2026</td></tr>
         <tr><td>Full Paper Acceptance Notification</td><td>March 1, 2026</td></tr>
-        <tr><td>Camera-ready Paper Submission Deadline</td><td>April 1, 2026</td></tr>
+        <tr><td>Camera-ready Paper Submission Deadline</td><td>March 15, 2026</td></tr>
         <tr><td>Conference Dates</td><td>July 15-19, 2026</td></tr>
       </tbody>
     </table>
@@ -167,7 +174,8 @@
 
 
   <div class="overlay" data-overlay hidden></div>
-  <!-- <script src="assets/js/main.js"></script> -->
   <script src="assets/js/include-partials.js"></script>
+  <script defer src="assets/js/slideshow.js"></script>
+
 </body>
 </html>
