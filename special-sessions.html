@@ -45,43 +45,308 @@
   </ul>
 </section>
 
-      </main>
-      <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="grid two">
-          <div>
-          <h3>Organised by: </h3>
-      <p><img style="height:80px; width:auto;"src="./assets/img/uts.jpg"/></p>
-  </div>
-  <div>
-    <h3>Co-Sponsered by: </h3>
+<h3>Please send the required information to <span class="badge"><a href="mailto:flins.iske@gmail.com"  target="_blank">flins.iske@gmail.com</a></span> to submit your proposal.</h3>
 
-    <div class="grid five">
-  <div>
-      <p><img style="height:80px; width:auto;" src="./assets/img/madrid.png"/></p>
+
+<!-- 
+<section class="form-card" aria-labelledby="ss-form-title">
+  <header class="form-card__header">
+    <span class="pill pill--primary">Special Session</span>
+    <h2 id="ss-form-title" class="form-card__title">Submit a Special Session Proposal</h2>
+    <p class="form-card__subtitle">
+      Your proposal downloads as <code>.json</code> and a confirmation email draft opens automatically.
+    </p>
+  </header>
+  
+
+  <form id="ss-form" class="elegant-form" novalidate  action="" method="POST">
+    <div id="ss-confirm" class="alert alert--success" hidden>
+  <strong>✓ Submission received.</strong>
+  <span class="alert__text">We’ve packaged your proposal and opened a confirmation email draft for you.</span>
+</div>
+    <div class="grid two gap-lg">
+      <div class="field">
+        <label class="ss-label" for="ss-title">Session Title <span class="req">*</span></label>
+        <input class="input" id="ss-title" name="title" type="text" required
+               placeholder="e.g., Trustworthy AI in Health" />
+        <p class="hint">Concise, descriptive, and unique.</p>
+      </div>
+
+      <div class="field">
+        <label class="ss-label" for="ss-contact-email">Your Email <span class="req">*</span></label>
+        <input class="input" id="ss-contact-email" name="contactEmail" type="email" required
+               placeholder="you@example.com" />
+        <p class="hint">We’ll use this to send your confirmation.</p>
+      </div>
     </div>
-    <div>
-      <p><img style="height:60px; width:auto;"src="./assets/img/jaen.png"/></p>
+
+    <div class="field">
+      <label class="ss-label" for="ss-scope">Scope &amp; Motivation (≥50 words) <span class="req">*</span></label>
+      <textarea class="input textarea" id="ss-scope" name="scope" rows="6" required
+                placeholder="What problem does the session address? Why now?"></textarea>
+      <div class="meta-row">
+        <span class="counter" data-for="ss-scope">0 words</span>
+      </div>
     </div>
-    <div>
-      <p><img style="height:60px; width:auto;"src="./assets/img/lille.png"/></p>
+
+    <fieldset class="repeater">
+      <legend class="repeater__legend">Organisers</legend>
+
+      <div id="organisers" class="repeater__list">
+        <div class="repeater__item" data-item>
+          <div class="grid two gap-md">
+            <div class="field">
+              <label class="ss-label">Organiser Name <span class="req">*</span></label>
+              <input class="input" type="text" name="organiserName" required placeholder="Full name" />
+            </div>
+            <div class="field">
+              <label class="ss-label">Organiser Email <span class="req">*</span></label>
+              <input class="input" type="email" name="organiserEmail" required placeholder="name@org.edu" />
+            </div>
+          </div>
+          <button type="button" class="btn btn-ghost repeater__remove" data-remove aria-label="Remove organiser">Remove</button>
+        </div>
+      </div>
+
+      <div class="repeater__actions">
+        <button type="button" id="add-organiser" class="btn btn-ghost">+ Add organiser</button>
+        <span class="badge" id="org-count">1 organiser</span>
+      </div>
+    </fieldset>
+
+    <div class="field">
+      <label class="ss-label" for="ss-bios">Biographies (≥50 words each) <span class="req">*</span></label>
+      <textarea class="input textarea" id="ss-bios" name="bios" rows="6" required
+                placeholder="Short professional bios for each organiser..."></textarea>
+      <div class="meta-row">
+        <span class="counter" data-for="ss-bios">0 words</span>
+      </div>
     </div>
-    <div>
-      <p><img style="height:50px; width:auto;"src="./assets/img/hagen.svg"/></p>
-    </div>
-    <div>
-      <p><img style="height:60px; width:auto;"src="./assets/img/ulster.png"/></p>
-    </div>
+
+    <label class="check">
+      <input type="checkbox" id="ss-consent" required />
+      <span>I confirm the information provided is accurate.</span>
+    </label>
+
+    <footer class="form-actions">
+      <button type="submit" class="btn btn-primary" id="submit-btn">
+        <span class="btn__spinner" aria-hidden="true"></span>
+        <span>Submit Proposal</span>
+      </button>
+      <button type="reset" class="btn btn-ghost">Reset</button>
+      <span id="ss-status" role="status" aria-live="polite" class="muted"></span>
+    </footer>
+  </form>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-hidden="true">
+    <span class="toast__icon" aria-hidden="true">✓</span>
+    <span class="toast__text">Submission packaged. Email draft opened.</span>
   </div>
-    </div>
-  </div>
-  </div>
-        <div class="banner banner-bottom" aria-hidden="true"></div>
-      </footer>
+</section> -->
+
+
+
+
+      </main>
+<div data-include="partials/footer.html"></div>
+
     </div>
   </div>
 
   <div class="overlay" data-overlay hidden></div>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+
+  const form = $('#ss-form');
+  const statusEl = $('#ss-status');
+  const addBtn = $('#add-organiser');
+  const orgList = $('#organisers');
+  const orgCount = $('#org-count');
+  const toast = $('#toast');
+  const submitBtn = $('#submit-btn');
+  const confirmBar = $('#ss-confirm');
+
+  // --- utilities
+  const wordCount = t => (t || '').trim().split(/\s+/).filter(Boolean).length;
+  const ensureMinWords = (t, n) => wordCount(t) >= n;
+  const sanitizeFilename = s =>
+    (s || '').toLowerCase().replace(/[^a-z0-9\-_\s]/g, '').trim().replace(/\s+/g, '-').slice(0, 80) || 'special-session';
+
+  const setLoading = (on) => submitBtn.classList.toggle('is-loading', !!on);
+
+  const showToast = (msg = 'Done') => {
+    if (!toast) return;
+    $('.toast__text', toast).textContent = msg;
+    toast.setAttribute('aria-hidden', 'false');
+    toast.classList.add('is-visible');
+    setTimeout(() => {
+      toast.classList.remove('is-visible');
+      toast.setAttribute('aria-hidden', 'true');
+    }, 2600);
+  };
+
+  const showConfirm = (msg) => {
+    if (!confirmBar) return;
+    confirmBar.hidden = false;
+    if ($('.alert__text', confirmBar) && msg) {
+      $('.alert__text', confirmBar).textContent = msg;
+    }
+    // hide after a few seconds (optional)
+    setTimeout(() => { confirmBar.hidden = true; }, 6000);
+  };
+
+  const updateOrgCount = () => {
+    const n = $$('.repeater__item', orgList).length;
+    orgCount.textContent = n + (n === 1 ? ' organiser' : ' organisers');
+  };
+
+  const addOrganiserRow = () => {
+    const base = $('.repeater__item', orgList);
+    const tpl = base.cloneNode(true);
+    $$('input', tpl).forEach(inp => inp.value = '');
+    orgList.appendChild(tpl);
+    updateOrgCount();
+  };
+
+  // organiser repeater handlers
+  addBtn?.addEventListener('click', addOrganiserRow);
+
+  orgList.addEventListener('click', (e) => {
+    if (e.target.matches('[data-remove]')) {
+      const items = $$('.repeater__item', orgList);
+      if (items.length > 1) {
+        e.target.closest('[data-item]').remove();
+        updateOrgCount();
+      } else {
+        e.target.blur();
+      }
+    }
+  });
+
+  // counters
+  const counters = $$('.counter');
+  const updateCounter = (id) => {
+    const el = document.getElementById(id);
+    const c = counters.find(x => x.dataset.for === id);
+    if (el && c) c.textContent = `${wordCount(el.value)} words`;
+  };
+  ['ss-scope','ss-bios'].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener('input', () => updateCounter(id));
+    updateCounter(id);
+  });
+
+  // validation
+  const invalidate = (el, msg) => {
+    el.classList.add('is-invalid');
+    statusEl.textContent = msg || 'Please check the highlighted fields.';
+    el.focus({ preventScroll: false });
+  };
+
+  // SUCCESS RESET (single place)
+  const fullReset = () => {
+    // native reset clears values
+    form.reset();
+
+    // remove invalid markers & refresh counters/placeholders
+    $$('.input, .textarea').forEach(i => i.classList.remove('is-invalid'));
+    updateCounter('ss-scope');
+    updateCounter('ss-bios');
+
+    // collapse organisers to exactly one empty row
+    const items = $$('.repeater__item', orgList);
+    items.slice(1).forEach(x => x.remove());
+    $$('input[name="organiserName"], input[name="organiserEmail"]', orgList).forEach(inp => inp.value = '');
+    updateOrgCount();
+
+    // clear status line
+    statusEl.textContent = '';
+  };
+
+  // submit handler
+   // submit handler (REPLACED)
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    statusEl.textContent = '';
+    setLoading(true);
+
+    // native HTML5 validity check
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      setLoading(false);
+      return;
+    }
+
+    const scope = $('#ss-scope').value;
+    const bios  = $('#ss-bios').value;
+    if (!ensureMinWords(scope, 50)) { setLoading(false); return invalidate($('#ss-scope'), 'Scope & Motivation should be at least ~50 words.'); }
+    if (!ensureMinWords(bios, 50))  { setLoading(false); return invalidate($('#ss-bios'),  'Please provide organiser bios (~50–100 words each).'); }
+
+    // collect structured data for local JSON download
+    const data = {
+      title: $('#ss-title').value.trim(),
+      contactEmail: $('#ss-contact-email').value.trim(),
+      scope, bios,
+      organisers: [],
+      submittedAt: new Date().toISOString()
+    };
+    $$('.repeater__item', orgList).forEach(row => {
+      const name  = row.querySelector('input[name="organiserName"]')?.value?.trim();
+      const email = row.querySelector('input[name="organiserEmail"]')?.value?.trim();
+      if (name && email) data.organisers.push({ name, email });
+    });
+
+    // 1) local JSON download (unchanged)
+    const fname = `special-session_${sanitizeFilename(data.title)}_${new Date().toISOString().slice(0,19).replace(/[:T]/g,'-')}.json`;
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href = url; a.download = fname; document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+
+    // 2) send to Apps Script (this triggers two emails: to you + confirmation to the user)
+    try {
+      // Build URL-encoded payload from the form so repeated organiser fields are preserved.
+      const fd = new FormData(form);
+      fd.append('submittedAt', data.submittedAt);
+      // Also pass the “flattened” text fields explicitly to be safe.
+      fd.set('title', data.title);
+      fd.set('contactEmail', data.contactEmail);
+      fd.set('scope', data.scope);
+      fd.set('bios', data.bios);
+
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new URLSearchParams(fd) // no custom headers -> no CORS preflight
+      });
+
+      if (!res.ok) throw new Error('Server error');
+
+      // success UI + full reset
+      showToast('Submission successful. Confirmation email sent.');
+      showConfirm('Submission successful. We emailed a confirmation to you.');
+      fullReset();
+      setLoading(false);
+    } catch (err) {
+      setLoading(false);
+      statusEl.textContent = 'Sorry—email service failed. Please try again in a moment.';
+    }
+  });
+
+  // manual reset keeps one organiser and clears styles
+  form.addEventListener('reset', () => {
+    setTimeout(() => fullReset(), 0);
+  });
+
+  updateOrgCount();
+})();
+</script>
+
   <script src="assets/js/include-partials.js"></script>
+
+
 </body>
 </html>
