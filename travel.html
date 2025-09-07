@@ -33,10 +33,157 @@
 
       <main id="main" class="content">
 
-<section>
-  <h2>To be annouced soon.</h2>
-  <!-- <p>Sydney seamlessly blends rich Indigenous heritage with modern innovation and iconic landmarks, from the historic Rocks district to sun‑kissed beaches — a captivating setting for FLINS‑ISKE 2026.</p> -->
+<section class="container">
+  <h2>General Information</h2>
+
+  <div class="toggle-table" id="travelTabs">
+    <!-- Tabs -->
+    <div class="toggle-table__tabs" role="tablist" aria-label="Travel information tabs">
+      <button role="tab" id="tab-venue" aria-controls="panel-venue" aria-selected="true">
+        Venue &amp; Transport
+      </button>
+      <button role="tab" id="tab-sydney" aria-controls="panel-sydney" aria-selected="false">
+        About Sydney
+      </button>
+      <button role="tab" id="tab-visa" aria-controls="panel-visa" aria-selected="false">
+        Visa Information
+      </button>
+    </div>
+
+    <!-- Panel: Venue & Transport -->
+    <div class="toggle-table__panel is-active" id="panel-venue" role="tabpanel" tabindex="0" aria-labelledby="tab-venue">
+      <div class="table-wrap">
+        <table class="table-compact kvs">
+          <thead><tr><th>Item</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Conference Venue</td>
+              <td>
+                University of Technology Sydney (UTS)<br>
+                <span class="muted">City Campus, Ultimo, NSW 2007, Australia</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Primary Buildings</td>
+              <td>
+                UTS Building 2 &amp; Building 11 <span class="inline-badge">Main Sessions</span><br>
+                <span class="muted">Exact room allocations will be announced in the Program.</span>
+              </td>
+            </tr>
+            <tr>
+              <td>From Sydney Airport (SYD)</td>
+              <td>
+                <strong>Airport Train (T8)</strong> to <em>Central Station</em> (~15 min), then 8–12 min walk to UTS.<br>
+                <strong>Taxi/Rideshare</strong> ~20–35 min depending on traffic.
+              </td>
+            </tr>
+            <tr>
+              <td>Public Transport</td>
+              <td>
+                <strong>Opal</strong> card/contactless payments accepted across train, light rail, bus, and ferry.<br>
+                Nearest stops: <em>Central Station</em> (Train) · <em>Haymarket/Chinatown</em> (Light Rail).
+              </td>
+            </tr>
+            <tr>
+              <td>Parking</td>
+              <td>
+                Limited on-street and commercial parking in Ultimo/Haymarket. Public transport is recommended.
+              </td>
+            </tr>
+            <tr>
+              <td>Accessibility</td>
+              <td>
+                Step-free access and lifts available in UTS buildings; please indicate requirements during registration.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Tip: Allow extra time during weekday peaks (07:00–09:30 and 16:30–18:30).</p>
+    </div>
+
+    <!-- Panel: About Sydney -->
+    <div class="toggle-table__panel" id="panel-sydney" role="tabpanel" tabindex="0" aria-labelledby="tab-sydney">
+      <div class="table-wrap">
+        <table class="table-compact kvs">
+          <thead><tr><th>Topic</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Climate (July)</td>
+              <td>Cool and mild. Typical highs ~16-18 °C, lows ~8–10 °C. Showers possible-bring a light jacket.</td>
+            </tr>
+            <tr>
+              <td>Time Zone</td>
+              <td>Australian Eastern Standard Time (AEST), UTC+10.</td>
+            </tr>
+            <tr>
+              <td>Power</td>
+              <td>Type I power plugs (230 V, 50 Hz). Bring an adapter if required.</td>
+            </tr>
+            <tr>
+              <td>Mobile &amp; Internet</td>
+              <td>Prepaid eSIM/SIM widely available (Telstra, Optus, Vodafone). Free Wi-Fi on campus for attendees.</td>
+            </tr>
+            <tr>
+              <td>Safety</td>
+              <td>Generally safe; observe usual city precautions. In an emergency, dial <strong>000</strong>.</td>
+            </tr>
+            <tr>
+              <td>Attractions</td>
+              <td>Sydney Opera House, Harbour Bridge, The Rocks, Darling Harbour, Bondi &amp; Manly Beaches, Royal Botanic Garden.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">More local tips will be shared closer to the conference dates.</p>
+    </div>
+
+    <!-- Panel: Visa Information -->
+    <div class="toggle-table__panel" id="panel-visa" role="tabpanel" tabindex="0" aria-labelledby="tab-visa">
+      <div class="table-wrap">
+        <table class="table-compact kvs">
+          <thead><tr><th>Item</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Entry &amp; Visa</td>
+              <td>
+                Delegates are responsible for checking Australian entry requirements applicable to their nationality and circumstances.
+              </td>
+            </tr>
+            <tr>
+              <td>Common Visa Options</td>
+              <td>
+                Visitor/Tourist streams (e.g., eVisitor / Visitor visa). Processing times vary; apply early.
+              </td>
+            </tr>
+            <tr>
+              <td>Invitation Letters</td>
+              <td>
+                Invitation letters can be issued upon confirmed registration and accepted paper (if applicable).
+              </td>
+            </tr>
+            <tr>
+              <td>Travel Insurance</td>
+              <td>Strongly recommended (medical, trip changes, personal items).</td>
+            </tr>
+            <tr>
+              <td>Passport Validity</td>
+              <td>Ensure passport validity covers your stay and onward travel requirements.</td>
+            </tr>
+            <tr>
+              <td>Notes</td>
+              <td>Requirements can change - always consult official government guidance before travel.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        External resources will be linked from official sites (e.g., Australian Government).
+      </p>
+    </div>
+  </div>
 </section>
+
 
       </main>
 <div data-include="partials/footer.html"></div>
@@ -46,5 +193,44 @@
 
   <div class="overlay" data-overlay hidden></div>
   <script src="assets/js/include-partials.js"></script>
+<script>
+  (function () {
+    const root = document.getElementById('travelTabs');
+    if (!root) return;
+
+    const tabs = Array.from(root.querySelectorAll('[role="tab"]'));
+    const panels = Array.from(root.querySelectorAll('[role="tabpanel"]'));
+
+    function activateTab(tab) {
+      tabs.forEach(t => t.setAttribute('aria-selected', String(t === tab)));
+      panels.forEach(p => p.classList.toggle('is-active', p.id === tab.getAttribute('aria-controls')));
+      const activePanel = root.querySelector('#' + tab.getAttribute('aria-controls'));
+      if (activePanel) activePanel.focus({ preventScroll: false });
+    }
+
+    // Click support
+    tabs.forEach(tab => tab.addEventListener('click', () => activateTab(tab)));
+
+    // Keyboard support (ArrowLeft/ArrowRight/Home/End)
+    root.addEventListener('keydown', (e) => {
+      const current = document.activeElement;
+      const i = tabs.indexOf(current);
+      if (i === -1) return;
+
+      let nextIndex = null;
+      if (e.key === 'ArrowRight') nextIndex = (i + 1) % tabs.length;
+      if (e.key === 'ArrowLeft')  nextIndex = (i - 1 + tabs.length) % tabs.length;
+      if (e.key === 'Home')       nextIndex = 0;
+      if (e.key === 'End')        nextIndex = tabs.length - 1;
+
+      if (nextIndex !== null) {
+        e.preventDefault();
+        tabs[nextIndex].focus();
+        activateTab(tabs[nextIndex]);
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>
