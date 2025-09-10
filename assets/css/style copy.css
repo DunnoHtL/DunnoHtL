@@ -62,6 +62,7 @@ mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-ra
 .hamburger-mobile{display:none; border:1px solid var(--border); background:#fff; padding:8px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,.04); cursor:pointer}
 .hamburger-mobile:hover{background:var(--primary-50)}
 .content{padding:28px 24px; max-width:1100px; width:100%; margin:0 auto}
+.overlay{position:fixed; inset:0; background:rgba(0,0,0,.3); backdrop-filter:saturate(120%) blur(1px); display:block}
 [hidden]{display:none !important}
 .hero-card{padding:10px 0}
 .hero-card__content{background:#fff; border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow); padding:26px}
@@ -141,6 +142,15 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   .hamburger-mobile{ display:inline-flex }
 
   /* Overlay (scrim) under the drawer */
+  [data-overlay]{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    z-index:99;                 /* just below the sidebar */
+    transition:opacity 160ms ease-in-out;
+    opacity:1;
+  }
+  [data-overlay][hidden]{ opacity:0; pointer-events:none }
   body.menu-open{ overflow:hidden; height:100dvh; position:fixed; width:100% }
 
   /* Mobile: only show the ✕ close button when the drawer is open */
@@ -148,6 +158,7 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   .sidebar__close{ display:none }
   .sidebar.open .sidebar__close{ display:inline-flex }
 }
+
 
 /* ===============================
    Slideshow Component
@@ -343,9 +354,9 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
 /* ===============================
    Toggle Table (Tabs) Component
    =============================== */
-.toggle-table {
-  background:#fff; border:1px solid var(--border); border-radius:16px;
-  box-shadow: var(--shadow);
+.toggle-table { 
+  background:#fff; border:1px solid var(--border); border-radius:16px; 
+  box-shadow: var(--shadow); 
 }
 
 .toggle-table__tabs {
@@ -354,11 +365,11 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   background:linear-gradient(180deg,#fff,#fff 60%,var(--primary-50));
 }
 .toggle-table__tabs [role="tab"]{
-  appearance:none; border:1px solid var(--border); background:#fff;
+  appearance:none; border:1px solid var(--border); background:#fff; 
   padding:10px 14px; border-radius:12px; font-weight:700; cursor:pointer;
 }
 .toggle-table__tabs [role="tab"][aria-selected="true"]{
-  background:var(--primary-100); color:var(--primary-800);
+  background:var(--primary-100); color:var(--primary-800); 
   box-shadow: inset 0 0 0 1px var(--primary-200);
 }
 
@@ -416,43 +427,4 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
 }
 .close-icon::after {
   transform: rotate(-45deg);
-}
-
-/* ==========================================================================
-   Overlay & Mobile Drawer — Unified, Clean Rules
-   Ensures the scrim never shows without the drawer and fixes stacking order.
-   ========================================================================== */
-[data-overlay] {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: saturate(120%) blur(1px);
-  z-index: 900; /* below the sidebar */
-  transition: opacity 160ms ease-in-out;
-  opacity: 1;
-}
-[data-overlay][hidden] {
-  opacity: 0;
-  pointer-events: none;
-  display: none !important;
-}
-
-@media (max-width: 980px) {
-  /* Sidebar drawer sits above overlay on mobile */
-  .sidebar {
-    z-index: 1000; /* ensure above overlay */
-    /* The following properties are commonly expected for a drawer;
-       keep them if they're already defined elsewhere */
-    will-change: transform;
-  }
-
-  /* Show the hamburger trigger on mobile if you use such a class */
-  .hamburger-mobile {
-    display: inline-flex;
-  }
-
-  /* Only show the ✕ close control when open (optional classes) */
-  .sidebar__toggle { display: none; }
-  .sidebar__close { display: none; }
-  .sidebar.open .sidebar__close { display: inline-flex; }
 }
