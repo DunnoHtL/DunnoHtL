@@ -62,6 +62,11 @@ window.addEventListener("resize", () => {
     if (!isMobile) {
       // leaving mobile -> ensure menu is closed and overlay is hidden
       setMobileOpen(false);
+    } else {
+      // entering mobile: if body says menu-open but the drawer isn't open, sync it
+      if (document.body.classList.contains("menu-open") && !sidebar.classList.contains("open")) {
+        setMobileOpen(true);
+      }
     }
   }
 });

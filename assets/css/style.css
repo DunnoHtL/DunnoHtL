@@ -102,25 +102,63 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   .sidebar{
     position:fixed;
     inset:10px auto 10px 10px;
-    width:82%; max-width:360px;
-    height:100dvh;
+    width:82%;
+    max-width:360px;
+
+    /* Use the available height minus the insets */
+    height:calc(100dvh - 20px);
+
     border:1px solid var(--border);
     border-radius:16px;
     box-shadow:var(--shadow);
-    transform:translateX(-120%);
-    transition:transform .25s ease, opacity .25s ease;
-    opacity:0; z-index:40;
-    -webkit-overflow-scrolling:touch;
+
+    /* Keep the drawer fully off-screen when closed */
+    transform:translate3d(-120%,0,0);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+
+    /* Smooth, reliable animation + paint hint */
+    transition:transform .25s ease, opacity .25s ease, visibility .25s;
+    will-change: transform;
+
+    /* Ensure it always stacks ABOVE the overlay */
+    z-index:100;
   }
-  .sidebar.open{ transform:none; opacity:1 }
+
+  .sidebar.open{
+    transform:translate3d(0,0,0);
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+  }
+
+  /* If desktop state persisted as 'collapsed', neutralise it on mobile */
+  .sidebar.collapsed{
+    width:82%;
+    flex-basis:auto;
+  }
+
   .hamburger-mobile{ display:inline-flex }
+
+  /* Overlay (scrim) under the drawer */
   [data-overlay]{
-    position:fixed; inset:0; background:rgba(0,0,0,.35);
-    z-index:39; transition:opacity 160ms ease-in-out; opacity:1;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    z-index:99;                 /* just below the sidebar */
+    transition:opacity 160ms ease-in-out;
+    opacity:1;
   }
   [data-overlay][hidden]{ opacity:0; pointer-events:none }
   body.menu-open{ overflow:hidden; height:100dvh; position:fixed; width:100% }
+
+  /* Mobile: only show the ✕ close button when the drawer is open */
+  .sidebar__toggle{ display:none }
+  .sidebar__close{ display:none }
+  .sidebar.open .sidebar__close{ display:inline-flex }
 }
+
 
 /* ===============================
    Slideshow Component
