@@ -4,6 +4,35 @@ let lastIsMobile = window.innerWidth <= MOBILE_BREAKPOINT;
 (function () {
   const LS_COLLAPSED_KEY = "sidebar:collapsed";
 
+  // Fallback: if the user clicks the mobile hamburger before the
+  // sidebar partial has been injected/wired, provide a minimal handler
+  // to toggle the real `#sidebar` so the overlay doesn't show alone.
+  document.addEventListener('click', (e) => {
+    const hb = e.target.closest('.hamburger-mobile');
+    if (!hb) return;
+    const sidebarEl = document.getElementById('sidebar');
+    if (!sidebarEl) return;
+    // If sidebar was already wired, let the normal initSidebar handlers run
+    if (sidebarEl.dataset.wired === '1') return;
+
+    // Ensure overlay exists
+    let overlay = document.querySelector('[data-overlay]');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.setAttribute('data-overlay', '');
+      overlay.hidden = true;
+      document.body.appendChild(overlay);
+    }
+
+    const willOpen = !sidebarEl.classList.contains('open');
+    sidebarEl.classList.toggle('open', willOpen);
+    overlay.hidden = !willOpen;
+    document.body.classList.toggle('menu-open', willOpen);
+    hb.setAttribute('aria-expanded', String(!!willOpen));
+    const closeBtn = sidebarEl.querySelector('.sidebar__close');
+    if (closeBtn) closeBtn.setAttribute('aria-expanded', String(!!willOpen));
+  });
+
   async function injectPartials() {
     const hosts = document.querySelectorAll("[data-include]");
     await Promise.all(
@@ -15,7 +44,12 @@ let lastIsMobile = window.innerWidth <= MOBILE_BREAKPOINT;
           return;
         }
         host.innerHTML = await res.text();
-        initSidebar(host.closest("#sidebar") || host);
+        // Only initialise the real sidebar element. Some pages include
+        // other partials (footer, datetable) and we must not wire the
+        // mobile hamburger to those hosts — otherwise the hamburger may
+        // toggle an unrelated element and leave the real sidebar hidden.
+        const sidebarEl = host.closest("#sidebar");
+        if (sidebarEl) initSidebar(sidebarEl);
       })
     );
   }
@@ -31,6 +65,18 @@ let lastIsMobile = window.innerWidth <= MOBILE_BREAKPOINT;
       overlay.setAttribute("data-overlay", "");
       overlay.hidden = true;
       document.body.appendChild(overlay);
+    }
+
+    // If the aside already has .open (for example the user clicked the
+    // hamburger before the partial finished injecting), ensure the
+    // overlay and aria attributes are synced to reflect the open state.
+    if (sidebar.classList.contains('open')) {
+      // Ensure overlay is visible and body locked
+      overlay.hidden = false;
+      document.body.classList.add('menu-open');
+      if (externalHamburger) externalHamburger.setAttribute('aria-expanded', 'true');
+      const closeBtnExisting = sidebar.querySelector('.sidebar__close');
+      if (closeBtnExisting) closeBtnExisting.setAttribute('aria-expanded', 'true');
     }
 
     // -------- Buttons --------
@@ -62,7 +108,16 @@ window.addEventListener("resize", () => {
     if (!isMobile) {
       // leaving mobile -> ensure menu is closed and overlay is hidden
       setMobileOpen(false);
+      // restore persisted desktop collapsed state (if any)
+      try {
+        const saved = localStorage.getItem(LS_COLLAPSED_KEY);
+        if (saved === "1") setCollapsed(true, true);
+        else setCollapsed(false, true);
+      } catch (_) {}
     } else {
+      // entering mobile: temporarily clear collapsed appearance
+      // (do not overwrite the persisted preference)
+      setCollapsed(false, false);
       // entering mobile: if body says menu-open but the drawer isn't open, sync it
       if (document.body.classList.contains("menu-open") && !sidebar.classList.contains("open")) {
         setMobileOpen(true);
@@ -81,20 +136,30 @@ document.addEventListener("keydown", (e) => {
     function isCollapsed() {
       return sidebar.classList.contains("collapsed");
     }
-    function setCollapsed(collapsed) {
+    // setCollapsed(collapsed, persist = true)
+    // When `persist` is false the visual state is changed without writing
+    // the preference to localStorage. This is used to temporarily neutralise
+    // the desktop 'collapsed' mode while on narrow (mobile) screens.
+    function setCollapsed(collapsed, persist = true) {
       sidebar.classList.toggle("collapsed", collapsed);
       document.body.classList.toggle("sidebar-collapsed", collapsed);
       if (desktopToggle) desktopToggle.setAttribute("aria-pressed", String(!!collapsed));
-      // persist across pages
-      try {
-        localStorage.setItem(LS_COLLAPSED_KEY, collapsed ? "1" : "0");
-      } catch (_) {}
+      if (persist) {
+        try {
+          localStorage.setItem(LS_COLLAPSED_KEY, collapsed ? "1" : "0");
+        } catch (_) {}
+      }
     }
 
-    // Restore persisted collapsed state
+    // Restore persisted collapsed state. If we're on mobile, neutralise
+    // the collapsed visual state without overwriting the saved preference.
     try {
       const saved = localStorage.getItem(LS_COLLAPSED_KEY);
       if (saved === "1") setCollapsed(true);
+      if (window.innerWidth <= MOBILE_BREAKPOINT) {
+        // Temporarily clear collapsed mode on mobile (do NOT persist)
+        setCollapsed(false, false);
+      }
     } catch (_) {}
 
     // Wire up buttons (avoid duplicate listeners by marking them)
