@@ -456,3 +456,30 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   .sidebar__close { display: none; }
   .sidebar.open .sidebar__close { display: inline-flex; }
 }
+
+/* ===== Mobile refinements (phones) ===== */
+@media (max-width: 560px) {
+  /* Reduce horizontal padding to make better use of narrow screens */
+  .container{ padding:0 12px }
+  .content{ padding:18px 12px }
+
+  /* Tighter typography for small screens */
+  h1{ font-size:28px }
+  h2{ font-size:20px }
+
+  /* Topbar tweaks: keep title readable and prevent overflow */
+  .topbar{ padding:0 12px }
+  .topbar__title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:16px }
+
+  /* Ensure touch targets meet a minimum tappable size */
+  .hamburger-mobile, .sidebar__toggle, .sidebar__close, .btn { min-width:44px; min-height:44px; padding:10px }
+
+  /* Make images responsive inside content */
+  img{ max-width:100%; height:auto; display:block }
+
+  /* Slightly reduce slideshow max height on very small screens */
+  .slideshow__viewport{ max-height:60svh }
+
+  /* Prevent the collapsed-desktop appearance from clipping content on tiny screens */
+  .sidebar.collapsed{ width:82%; flex-basis:auto }
+}
