@@ -46,6 +46,78 @@
   </p>
 </section>
 
+
+    <h3>Compliance with the European Accessibility Act (EAA)</h3>
+
+<p>
+Please be advised that all publications submitted after May 2025 must comply with the requirements of the 
+<strong>European Accessibility Act (EAA)</strong>. The EAA aims to ensure that all digital content is 
+accessible to individuals with disabilities (e.g., those with vision issues or who rely on screen readers).
+The critical requirement for your submission at this stage is the mandatory provision of 
+<strong>Alternative Text ("Alt Text")</strong> for all images. Failure to provide Alt Text will result in 
+your paper being excluded from the final proceedings.
+</p>
+
+<h4>Understanding and Creating Alt Text</h4>
+
+<p>
+Alt Text is a concise description of an image read by screen readers or other assistive technologies, 
+conveying the image's purpose and context to the user. It should go beyond simply describing the visual; 
+it must offer context on how the image connects to the surrounding content.
+</p>
+
+<h4>Key Requirements</h4>
+<ul>
+  <li>Provide Alt Text for all images, diagrams, and figures.</li>
+  <li>Alt Text must be descriptive and clearly explain the content and purpose of the image.</li>
+  <ul>
+    <li>
+      <strong>Example:</strong> For an image of a pie chart, the Alt Text should be: 
+      “A pie chart showing 60% of respondents preferred Option A and 40% preferred Option B.”
+    </li>
+  </ul>
+  <li>
+    <strong>Conciseness is Crucial:</strong> While there is no strict character limit, it is strongly 
+    recommended to keep Alt Text between 125 and 150 characters. Many screen readers pause after 125 characters, 
+    requiring the user to manually press 'Enter' to continue. Keeping it concise ensures better accessibility.
+  </li>
+  <li>For complex images, include a detailed description in the main body text or as part of the caption.</li>
+</ul>
+
+<h4>LaTeX Implementation Example</h4>
+
+<p>
+The following LaTeX example demonstrates how to add Alt Text using the 
+<code>\pdftooltip</code> command from the <code>pdfcomment</code> package:
+</p>
+
+<details>
+  <summary><strong>Click to expand LaTeX code example</strong></summary>
+  <pre>
+\documentclass{ws-procs9x6}      
+\usepackage{pdfcomment}
+
+\begin{document}
+
+…
+
+\begin{figure}
+\begin{center}
+\pdftooltip{\includegraphics[width=4.5in]{procs-fig1}}{Alter text text text text test}
+\end{center}
+\caption{The bifurcating response curves of system
+$\alpha=0.5, \beta=1.8; \delta=0.2, \gamma=0$: (a)
+$\mu=-1.3$; and (b) $\mu=0.3$.}
+\label{aba:fig1}
+\end{figure}
+
+…
+
+\end{document}
+  </pre>
+</details>
+
+
       </main>
 <div data-include="partials/footer.html"></div>
 
