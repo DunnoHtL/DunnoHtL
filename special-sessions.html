@@ -33,6 +33,612 @@
 
       <main id="main" class="content">
 
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#0f172a;
+    --muted:#475569;
+    --soft:#f1f5f9;
+    --border:rgba(15,23,42,.12);
+    --shadow:0 10px 28px rgba(2,6,23,.10);
+    --radius:16px;
+    --pill:#eef2ff;
+  }
+
+  .ss-wrap{max-width:1100px;margin:0 auto;padding:8px 16px 28px;}
+  .ss-grid{display:grid;gap:14px;}
+
+  details.ss-card{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:var(--bg);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+
+  /* Title should NOT be bold */
+  details.ss-card > summary{
+    cursor:pointer;
+    padding:16px 18px;
+    font-weight:600; /* was 850 */
+    font-size:1.06rem;
+    line-height:1.25;
+    color:var(--ink);
+    list-style:none;
+    user-select:none;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:12px;
+  }
+  details.ss-card > summary::-webkit-details-marker{display:none;}
+
+  details.ss-card > summary::after{
+    content:"▾";
+    color:rgba(15,23,42,.55);
+    font-weight:800;
+    line-height:1;
+    margin-top:2px;
+    transform:rotate(0deg);
+    transition:transform .15s ease;
+  }
+  details.ss-card[open] > summary::after{transform:rotate(180deg);}
+
+  .ss-body{
+    border-top:1px solid rgba(15,23,42,.10);
+    padding:14px 18px 18px;
+    color:var(--ink);
+    font-size:.96rem;
+    line-height:1.70;
+  }
+
+  .ss-label{
+    display:inline-flex;
+    align-items:center;
+    padding:6px 10px;
+    border-radius:999px;
+    background:var(--pill);
+    color:var(--ink);
+    font-size:.80rem;
+    font-weight:800;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    border:1px solid rgba(15,23,42,.06);
+    margin:10px 0 8px;
+  }
+  .ss-label:first-child{margin-top:0;}
+
+  .ss-org{
+    list-style:disc;
+    padding-left:20px;
+    margin:0;
+  }
+  .ss-org li{margin:6px 0;}
+
+  .ss-list{
+    list-style:disc;
+    padding-left:20px;
+    margin:0;
+  }
+  .ss-list li{margin:6px 0;}
+
+  .ss-text{margin:0;}
+  .ss-text + .ss-text{margin-top:10px;}
+
+  @media (max-width:640px){
+    details.ss-card > summary{padding:14px}
+    .ss-body{padding:12px 14px 14px}
+  }
+</style>
+
+<h2>Accepted Special Sessions</h2>
+
+<section class="ss-wrap">
+  <div class="ss-grid">
+
+    <!-- 1 -->
+    <details class="ss-card">
+      <summary>AI for Agriculture - Innovations and Applications</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Guanjin Wang - School of IT, Murdoch University, Australia</li>
+          <li>Junyu Xuan - AAII, University of Technology Sydney, Australia</li>
+          <li>Wenyong Li - National Engineering Research Center for Information Technology in Agriculture, China</li>
+          <li>Ferdous Sohel - Murdoch University, Australia</li>
+        </ul>
+
+        <div class="ss-label">Abstract</div>
+        <p class="ss-text">Artificial Intelligence is transforming agriculture, enabling smarter, more efficient, and sustainable farming. This special session will showcase advances in AI methods and applications for crop, livestock, and resource management, while addressing challenges of adoption, trust, scalability, and ethical deployment.</p>
+
+        <div class="ss-label">Objectives</div>
+        <ul class="ss-list">
+          <li>Present novel AI approaches to key agricultural challenges.</li>
+          <li>Highlight trustworthy, explainable and sustainable AI for agriculture.</li>
+          <li>Share case studies and industry applications demonstrating real-world impact.</li>
+          <li>Encourage cross-disciplinary collaboration among AI researchers, agricultural scientists, industry, and policymakers.</li>
+        </ul>
+
+        <div class="ss-label">Topics of Interest</div>
+        <p class="ss-text">We invite contributions (theoretical, empirical or applied) in topics including, but not limited to:</p>
+        <ul class="ss-list">
+          <li>Precision agriculture, computer vision for crop monitoring</li>
+          <li>Predictive analytics for yield, climate adaptation, and soil health</li>
+          <li>Genotype-to-phenotype prediction and AI-driven plant/animal breeding applications</li>
+          <li>Pest, disease, and weed detection using AI</li>
+          <li>Smart irrigation and resource management</li>
+          <li>AI for livestock health and welfare monitoring</li>
+          <li>Robotics and automation in farming</li>
+          <li>Climate-informed AI for agricultural resilience</li>
+          <li>Statistical AI methods for time series, extremes, and spatial analysis in agriculture</li>
+          <li>LLMs, VLMs, and multimodal AI for agricultural knowledge integration, extension services, and decision-making</li>
+          <li>Data-driven sustainable agriculture and food security</li>
+          <li>AI-enabled agri-food supply chain optimization</li>
+          <li>Explainable, trustworthy, and ethical AI in agriculture</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 2 -->
+    <details class="ss-card">
+      <summary>Responsible AI for Social Good</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Qian Liu - University of Auckland, New Zealand</li>
+          <li>Junyi Chen - University of Auckland, New Zealand</li>
+          <li>Hang Yu - Shanghai University, China</li>
+          <li>Yi Zhang - AAII, University of Technology Sydney, Australia</li>
+        </ul>
+
+        <div class="ss-label">Abstract</div>
+        <p class="ss-text">Artificial intelligence holds immense promise to advance human well-being, equity, and sustainability-yet realizing this promise requires methods and deployments that prioritize social impact, safety, and accountability alongside technical excellence.</p>
+        <p class="ss-text">This Special Session invites research that translates advances in learning, reasoning, sensing, and interaction into measurable benefit for social communities. We particularly welcome work that goes beyond benchmark accuracy to foreground responsible data practices, transparency and accountability, human-centered and participatory design, and rigorous real-world evaluation. Topics of interest include, but are not limited to:</p>
+
+        <div class="ss-label">Topics of Interest</div>
+        <ul class="ss-list">
+          <li>Advanced AI methods for social computing (e.g., graph neural networks, agent-based simulation, social network analysis)</li>
+          <li>Fairness and equity (e.g., bias mitigation, equitable resource allocation)</li>
+          <li>Transparency and interpretability (e.g., accountability in high-stakes decisions)</li>
+          <li>Affective computing (e.g., well-being, empathy-aware agents, mental-health support)</li>
+          <li>Responsible foundation and multimodal models for societal impact</li>
+          <li>Causal reasoning and policy analysis (e.g., causal inference, counterfactuals, evaluation)</li>
+          <li>Inclusive language technologies (e.g., low-resource, multilingual, culturally adaptive NLP for public services)</li>
+          <li>Crisis informatics (e.g., disaster prediction, early warning, response, recovery)</li>
+          <li>AI for climate and environment (e.g., adaptation, mitigation, biodiversity monitoring, sustainable agriculture)</li>
+          <li>Information integrity and safety (e.g., misinformation, content quality, ecosystem health)</li>
+          <li>Human-AI collaboration and decision support (e.g., trust, calibration, mixed-initiative systems)</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 3 -->
+    <details class="ss-card">
+      <summary>AI for Health</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Kairui Guo - AAII, University of Technology Sydney, Australia</li>
+          <li>Hua Lin - 23Strands, Australia</li>
+          <li>Mark Grosser - 23Strands, Australia</li>
+          <li>Jie Lu - AAII, University of Technology Sydney, Australia</li>
+        </ul>
+
+        <div class="ss-label">Abstract</div>
+        <p class="ss-text">AI is transforming the healthcare landscape, offering unprecedented opportunities to improve disease detection and prediction, diagnosis, treatment, and patient outcomes. Research on AI for health is a new direction of AI applications because it enables the development of intelligent systems that can analyse vast and complex medical data, such as genomic information, images, and electronic health records, at a scale and speed far beyond human capacity. Through advanced machine learning algorithms, AI can support early disease detection, personalised medicine, and predictive analytics, helping clinicians make faster and more accurate decisions. Moreover, AI research can significantly enhance healthcare accessibility and efficiency. By automating routine tasks, optimising resource allocation, and supporting telemedicine, AI can alleviate the burden on healthcare professionals and extend quality care to underserved populations.</p>
+        <p class="ss-text">Ultimately, advancing AI research for health is not only a technological imperative but also a societal one in our quality of life. It holds the potential to revolutionise disease prevention, diagnosis, and treatment, improving outcomes, reducing costs, and enabling a more proactive, data-driven, and patient-centred healthcare system for the future.</p>
+        <p class="ss-text">Keywords: AI, machine learning, health, healthcare.</p>
+
+        <div class="ss-label">Topics</div>
+        <p class="ss-text">The main topics of this special session include, but are not limited to, the following:</p>
+        <ul class="ss-list">
+          <li>Health data feature selection and extraction</li>
+          <li>Health data knowledge representation and graph</li>
+          <li>Health data classification and clustering</li>
+          <li>Transfer learning applications in health</li>
+          <li>Concept drift detection models in health</li>
+          <li>Recommender systems to personalised health</li>
+          <li>Neural networks and deep learning for modelling complex health problems</li>
+          <li>Machine learning-based decision support in health</li>
+          <li>Human-centred healthcare systems</li>
+          <li>Intelligent healthcare management systems</li>
+          <li>Medical image process</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 4 -->
+    <details class="ss-card">
+      <summary>Spatial Intelligence: Representation, Reasoning and Decision-Making</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Zhedong Zheng - University of Macau, Macao SAR, China</li>
+          <li>Shengqiong Wu - National University of Singapore, Singapore</li>
+          <li>Hao Fei - National University of Singapore, Singapore</li>
+          <li>Yaxiong Wang - Hefei University of Technology, China</li>
+          <li>Ping Liu - University of Nevada, Reno, USA</li>
+          <li>Yadan Luo - University of Queensland, Australia</li>
+        </ul>
+
+        <div class="ss-label">Abstract</div>
+        <p class="ss-text">The creation of agents that can intelligently operate in the physical world is a grand challenge in AI. While current systems excel at spatial perception, they often lack the deeper cognitive abilities to truly understand and reason about their surroundings. This bottleneck limits their autonomy, adaptability, and ability to collaborate with humans in complex, dynamic environments.</p>
+        <p class="ss-text">This Special Session focuses on the core cognitive pipeline that underpins true spatial intelligence: Representation → Reasoning → Decision-Making. We aim to move beyond pattern recognition to explore how abstract spatial knowledge can be structured, how logical and causal inferences can be drawn from it, and how these inferences can guide robust and explainable actions. Topics of interest include, but are not limited to:</p>
+
+        <div class="ss-label">Topics of Interest</div>
+        <p class="ss-text">1.Spatial Representation:</p>
+        <ul class="ss-list">
+          <li>Neuro-symbolic and hybrid representations for spatial knowledge.</li>
+          <li>Semantic, topological, and hierarchical mapping of complex environments.</li>
+          <li>Spatial knowledge graphs and their construction from multi-modal data.</li>
+          <li>Representations that afford causal and physical reasoning.</li>
+          <li>Implicit and explicit representations for dynamic scenes.</li>
+        </ul>
+
+        <p class="ss-text" style="margin-top:10px;">2.Spatial Reasoning:</p>
+        <ul class="ss-list">
+          <li>Spatial commonsense reasoning (e.g., object permanence, affordances, functional relationships).</li>
+          <li>Qualitative, quantitative, and logical formalisms for spatial inference.</li>
+          <li>Predictive reasoning about the consequences of actions and events.</li>
+          <li>Integrating Large Language Models (LLMs) for high-level spatial planning and reasoning.</li>
+          <li>Causal inference in physical and spatial contexts.</li>
+        </ul>
+
+        <p class="ss-text" style="margin-top:10px;">3.Spatial Decision-Making and Applications:</p>
+        <ul class="ss-list">
+          <li>Long-horizon task and motion planning grounded in spatial understanding.</li>
+          <li>Explainable and verifiable decision-making for autonomous agents.</li>
+          <li>Human-robot interaction and collaboration in shared physical spaces.</li>
+          <li>Spatial Question Answering (SQA) and instruction following.</li>
+          <li>Cognitively-inspired models for navigation and spatial problem-solving</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 5 -->
+    <details class="ss-card">
+      <summary>Integrating Data and Knowledge for Trustworthy AI (DK-TAI)</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Jun Liu - Ulster University, United Kingdom</li>
+          <li>Chris Nugent - Ulster University, United Kingdom</li>
+          <li>Kare Synnes - Luleå University of Technology, Sweden</li>
+          <li>Liming Chen - Dalian University of Technology, China</li>
+          <li>Rosa M. Rodríguez Domínguez - University of Jaén, Spain</li>
+        </ul>
+
+        <div class="ss-label">Scope and Motivation</div>
+        <p class="ss-text">Trustworthy AI depends on more than model accuracy. It requires robustness, fairness, explainability, compliance, and verifiable alignment with human values and domain constraints. Data-driven learning often struggles with reliability and transparency in real-world, safety-critical settings, while knowledge-based systems can lack adaptability and coverage.</p>
+        <p class="ss-text">This special session will bring together researchers and practitioners working at the intersection of data-centric machine learning (e.g., foundation models, self-supervision, data governance) and knowledge-centric AI (e.g., logic, ontologies, knowledge graphs, causal models, constraints) to explore hybrid methods that deliver measurable trust properties across a range of application domains.</p>
+        <p class="ss-text">We invite contributions that (i) integrate symbolic knowledge with data-driven models; (ii) quantify and guarantee trust attributes; and (iii) deploy these methods responsibly in domains such as healthcare, finance, science, climate, law, manufacturing, and public services.</p>
+
+        <div class="ss-label">Topics of Interest</div>
+        <ul class="ss-list">
+          <li>Architectures that combine learning with reasoning (neuro-symbolic, retrieval-augmented, KGs + LLMs, constraint-aware learning)</li>
+          <li>Data governance for trust: data quality, lineage, labelling, curation, and documentation (datasheets, model cards, fact sheets)</li>
+          <li>Formal methods and verification for ML systems; certifiable robustness and safety envelopes</li>
+          <li>Causal discovery/inference and counterfactual reasoning for fairness, robustness, and interpretability</li>
+          <li>Ontology/knowledge graph construction, alignment, and grounding for AI systems</li>
+          <li>Program synthesis, domain-specific languages (DSLs), and rule learning for interpretable policies and controllers</li>
+          <li>Human-in-the-loop and participatory approaches to encode domain knowledge and norms</li>
+          <li>Methods to detect and mitigate bias, toxicity, hallucinations, and distribution shift using knowledge constraints</li>
+          <li>Trust metrics and benchmarks that reflect real-world reliability, calibration, and uncertainty quantification</li>
+          <li>Privacy-preserving and secure learning (federated, differential privacy, homomorphic encryption) with domain knowledge</li>
+          <li>Governance, auditing, and compliance tooling; policy-to-constraint translation; red-teaming with knowledge assets</li>
+          <li>Impact against complying with regulatory frameworks or governing bodies, for example the EU AI Act, US Executive Order on AI and China’s AI Labelling rules</li>
+          <li>Case studies and deployments in regulated or safety-critical sectors; lessons learned and negative results</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 6 -->
+    <details class="ss-card">
+      <summary>Evolving Deep and Transfer Learning Models for Computer Vision and Medical Imaging</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Li Zhang - Royal Holloway, University of London, United Kingdom</li>
+          <li>Chee Peng Lim - Swinburne University of Technology, Australia</li>
+          <li>Houshyar Asadi - Deakin University, Australia</li>
+          <li>Yonghong Yu - Nanjing University of Posts and Telecommunications, China</li>
+          <li>Haoqian Huang - Hohai University, China</li>
+        </ul>
+
+        <div class="ss-label">Scope and Motivation</div>
+        <p class="ss-text">Automated diagnostic imaging problems are challenging owing to data scarcity, poor data quality (e.g. low contrast, occlusions, and distractors), complex characteristics of the diagnostic problems and subtle and delicate distinctiveness between benign and tumour scenarios. Deep learning and transfer learning show superior capabilities of tackling computer vision and automated medical diagnostic problems. Examples include the proposal and adoption of a variety of deep architectures for image synthesis (e.g. auto-encoders, Generative Adversarial Networks and ChatGPT-4o), segmentation (e.g. SegFormer and OneFormer), detection (e.g. YOLOv12), and classification (e.g. SqueezeNet, I3D, R3D, vision and Swin transformers). Moreover, the transfer learning process based on pre-trained models is able to overcome barriers related to data scarcity by transferring learned features to a new task. It enables the networks to not only embed rich features learned from a wide range of non-medical images during pre-training, but also acquire new feature representations from the learning process of a new domain.</p>
+        <p class="ss-text">However, the design of new and effective deep learning models and identification of the optimal hyper-parameters of the resulting as well as transfer learning models require profound domain knowledge, which may not always be available to researchers. In parallel, evolutionary algorithms show powerful search capabilities of solving single-, multi-, and many-objective optimization problems. In this regard, the superior search capabilities of evolutionary computing algorithms allow them to tackle such optimization problems, e.g. to devise evolving deep neural networks that fit the tasks at hand, as well as to identify optimal hyper-parameters of the transfer learning process.</p>
+        <p class="ss-text">This special session aims to stimulate studies pertaining to not only complex deep learning-based computer vision and medical imaging systems but also optimal topology and hyper-parameter identification for such deep networks through evolutionary computing and related paradigms.</p>
+        <p class="ss-text">Potential topics include, but are not limited to, the following:</p>
+
+        <div class="ss-label">Topics</div>
+        <ul class="ss-list">
+          <li>Image segmentation &amp; visual saliency detection</li>
+          <li>Object detection and recognition</li>
+          <li>Image classification and automated medical diagnosis (using X-rays, CT scan, MRI, ultrasound, microscopic and dermoscopic images)</li>
+          <li>Hybrid clustering models</li>
+          <li>Evolutionary algorithms and soft computing techniques (e.g. Genetic Algorithm and Evolutionary Programming)</li>
+          <li>Signal and image processing</li>
+          <li>Facial expression recognition</li>
+          <li>Human action recognition</li>
+          <li>Image/video captioning</li>
+          <li>Visual question generation and answering</li>
+          <li>Image reconstruction and synthesis</li>
+          <li>Feature extraction and selection</li>
+          <li>Visual perception and learning</li>
+          <li>Health monitoring and surveillance</li>
+          <li>Machine learning, deep learning, and transfer learning for computer vision and medical imaging</li>
+          <li>Evolving deep architecture generation for computer vision, medical imaging and signal processing problems</li>
+          <li>Optimal hyper-parameter identification for deep learning, transfer learning, and other classification and regression models</li>
+          <li>Optimal topology generation for machine learning and ensemble learning models</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 7 -->
+    <details class="ss-card">
+      <summary>Smart Hybrid Intelligence for Enhanced Learning-Driven Defense (SHIELD)</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Grzegorz Kołaczek - Wrocław University of Science and Technology, Poland</li>
+          <li>Udayanto Dwi Atmojo - Aalto University, Finland</li>
+          <li>Miguel Couceiro - University of Lisbon, Portugal</li>
+          <li>Georg Macher - Graz University of Technology, Austria</li>
+          <li>Hilal Hudan Nuha - Telkom University, Indonesia</li>
+          <li>Parman Sukarno - Telkom University, Indonesia</li>
+          <li>Vera Suryani - Telkom University, Indonesia</li>
+        </ul>
+
+        <div class="ss-label">Scope and Motivation</div>
+        <p class="ss-text">This special session explores the critical intersection of artificial intelligence(AI), machine learning (ML) and cybersecurity. It addresses the growing need for intelligent defence mechanisms against increasingly sophisticated cyber threats. The session will focus on advanced computational intelligencetechniques, including deep learning architectures, hybrid ML-fuzzy approaches, knowledge-based reasoning and large language models (LLMs), for modelling emergent threats, enhancing intrusion and anomaly detection in uncertain situations, automating vulnerability discovery and improving security-oriented decision-making processes. By integrating soft computing with cutting-edge AI methods, the session aims to develop robust, adaptive and transparent solutions to protect modern digital systems.</p>
+      </div>
+    </details>
+
+    <!-- 8 -->
+    <details class="ss-card">
+      <summary>Machine Learning in Computer Vision for Practical Decision Making</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Zulfiqar Habib - COMSATS University Islamabad, Lahore Campus, Pakistan</li>
+          <li>Usama Ejaz Bajwa - COMSATS University Islamabad, Lahore Campus, Pakistan</li>
+          <li>Aksam Iftikhar - COMSATS University Islamabad, Lahore Campus, Pakistan</li>
+          <li>Allah Bux Sargano - University of Bergen, Norway</li>
+        </ul>
+
+        <div class="ss-label">Scope and Motivation</div>
+        <p class="ss-text">This session focuses on how modern Machine Learning methods improve Computer Vision tasks such as detection, tracking, recognition, segmentation and 3D understanding. The aim is to bring together researchers working on real-life problems where visual data plays a key role in decision making. The session will encourage works that solve practical issues in health, security, agriculture, transport and industry through efficient ML-based vision systems. It will provide a good platform for sharing new ideas, lightweight solutions and explainable models suitable for real-world deployment.</p>
+      </div>
+    </details>
+
+    <!-- 9 -->
+    <details class="ss-card">
+      <summary>Artificial Intelligence for Sustainable Agriculture</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Honglei Xu - Curtin University, Australia</li>
+          <li>Chengdao Li - Murdoch University, Australia</li>
+        </ul>
+
+        <div class="ss-label">Scope and Motivation</div>
+        <p class="ss-text">Brief description of scope and motivation (50-100 words): This special session aims to bring together researchers and practitioners working at the intersection of artificial intelligence (AI), data analytics, and modern agriculture. It focuses on emerging AI methods that enhance efficiency, sustainability, and resilience in agriculture. Its scope covers AI applications for precision farming, crop and soil monitoring, yield forecasting, water and nutrient optimization, disease and pest detection, autonomous machinery, crop gene engineering, smart logistics, etc. It will explore advances in applications of AI and data analytics to enhance productivity, reduce environmental impact, and strengthen resilience across agricultural value chains.</p>
+      </div>
+    </details>
+
+    <!-- 10 -->
+    <details class="ss-card">
+      <summary>Data Stream Mining under Concept Drift: Algorithms, Benchmarks, and Applications</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Yinan Guo - China University of Mining and Technology (Beijing), China</li>
+          <li>Shengxiang Yang - De Montfort University, United Kingdom</li>
+          <li>Wenbin Pei - Dalian University of Technology, China</li>
+          <li>Botao Jiao - China University of Petroleum (East China), China</li>
+        </ul>
+
+        <div class="ss-label">Scope</div>
+        <p class="ss-text">Scope: With the rapid deployment of sensing, IoT, and industrial monitoring systems, massive data are generated continuously in a streaming fashion, known as data streams. In many realworld scenarios, such as industrial process monitoring, finance, smart city sensing, and cybersecurity, the underlying data distribution in data streams evolves over time due to environmental changes, system aging, user behavior shifts, or external disturbances. This phenomenon, known as concept drift, poses significant challenges to traditional learning models that assume a stationary distribution. Data stream mining under concept drift has therefore become an essential research topic. Recent advances include drift detection, incremental ensemble learning, label-scarce data stream learning, class-evolving streams learning, and multistream learning. This Special Session aims to bring together researchers and practitioners to share recent developments in algorithms, evaluation methodologies, benchmark design, and real-world applications for concept drift data stream mining. We welcome contributions from machine learning, data mining, computational intelligence, deep learning, and real-time decision-making communities.</p>
+        <p class="ss-text">We invite submissions on all topics of data stream mining, including but not limited to:</p>
+
+        <div class="ss-label">Topics</div>
+        <ul class="ss-list">
+          <li>Concept drift detection, understanding, and adaptive mechanisms</li>
+          <li>Adaptive online classification and regression models</li>
+          <li>Online semi-supervised and label-scarce learning under drift</li>
+          <li>Class-evolving and open-set data stream learning</li>
+          <li>Ensemble and incremental learning for streaming data</li>
+          <li>Active learning for streaming data with concept drift</li>
+          <li>Imbalanced and rare-event data stream learning</li>
+          <li>Multistream classification and asynchronous drift learning</li>
+          <li>Adaptive learning for trapezoidal data stream with concept drift</li>
+          <li>Synthetic drift generators and real-world drift construction</li>
+          <li>Real-world applications of data stream mining</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 11 -->
+    <details class="ss-card">
+      <summary>Learning for Graphs</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Ming Li - Zhejiang Normal University, China</li>
+          <li>Feilong Cao - Zhejiang Normal University, China</li>
+          <li>Feng Xia - RMIT University, Australia</li>
+          <li>Pietro Liò - University of Cambridge, United Kingdom</li>
+        </ul>
+
+        <div class="ss-label">Scope and Motivation</div>
+        <p class="ss-text">Brief description of scope and motivation: This special session focuses on learning methods for graph-structured data, including theoretical foundations, model design, and practical applications. With the rapid growth of graph neural networks, graph/hypergraph learning, and graph foundation models, there is a strong need to better understand their capabilities, limitations, and deployment in real-world systems. The session aims to bring together researchers working on theory, algorithms, and applications of learning for graphs, fostering dialogue between methodological advances and domain-driven problems.</p>
+      </div>
+    </details>
+
+    <!-- 12 -->
+    <details class="ss-card">
+      <summary>Building Reliable Agents by Fusing LLMs with Knowledge Graphs</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Xinzhi Wang - Shanghai University, China</li>
+          <li>Weinan Zhang - Shanghai Jiao Tong University, China</li>
+        </ul>
+
+        <div class="ss-label">Abstract</div>
+        <p class="ss-text">Building reliable LLM-derived agents requires combining the generative and reasoning strengths of large language models with mechanisms that enhance accuracy, safety, and control. As current LLMs and agents continue to face reliability limitations, this session examines how integrating LLMs with structured, verifiable knowledge graphs can address these gaps. We highlight hybrid architectures that unite flexible language generation with grounded, factual, and maintainable knowledge sources. By leveraging these complementary strengths, the session focuses on enabling transparent, dependable agents capable of robust multi-step reasoning while reducing dependence on brittle, parametric memory alone.</p>
+      </div>
+    </details>
+
+    <!-- 13 -->
+    <details class="ss-card">
+      <summary>Artificial Intelligence for Optimization and Decision Making</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Zhen Zhang - Dalian University of Technology, China</li>
+          <li>Lijun Sun - Dalian University of Technology, China</li>
+          <li>Jiapeng Liu - Xi'an Jiaotong University, China</li>
+          <li>Yucheng Dong - Sichuan University, China</li>
+        </ul>
+
+        <div class="ss-label">Abstract</div>
+        <p class="ss-text">The rapid emergence and evolution of Artificial Intelligence (AI) have introduced transformative paradigms for automating and enhancing decision-making processes. This session features cutting-edge advances that integrate AI, data analytics, optimization, and decision science to reshape organizational decision making. We welcome research on intelligent and adaptive frameworks, including real-time optimization, human-AI collaborative decision processes, machine learning- and LLM-driven decision models, as well as AI-driven multi-criteria and group decision making. Contributions demonstrating both theoretical innovation and practical impact in domains such as operations, finance, and healthcare management are particularly encouraged, with the goal of shaping AI-enabled managerial decisions.</p>
+      </div>
+    </details>
+
+    <!-- 14 -->
+    <details class="ss-card">
+      <summary>Information Aggregation tools for Artificial Intelligence</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Javier Montero - Complutense University of Madrid, Spain</li>
+          <li>Daniel Gomez - Complutense University of Madrid, Spain</li>
+        </ul>
+
+        <div class="ss-label">Abstract</div>
+        <p class="ss-text">The technological revolution that comes with Artificial Intelligence is changing our world and the way we look at reality, supported by a massive access to recorded data.</p>
+        <p class="ss-text">But a previous stage to deal with such a massive recording is the availability of a wide and flexible family of aggregative tools, to properly describe information in such a way that not only explainable decisions can be reached, but also that improvements can be suggested in our learning system, and even detect possibilities for innovation. This situation might imply a revision of some classical statistical approaches that should be linked with alternative models for uncertainty besides Probability, similarly as the human brain does, capturing essential information (including emotions) by means of fuzzy concepts.</p>
+        <p class="ss-text">In this special session we pursue to explore the latest theoretical advances in the design of aggregation tools, and also their application in any field of knowledge that implies the management of information in any possible format (numerical, graphical, linguistic, visual, sound, etc.)</p>
+      </div>
+    </details>
+
+    <!-- 15 -->
+    <details class="ss-card">
+      <summary>Emerging Cross-Modal Data Science for Generative AI</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Jianxin Li - Edith Cowan University, Australia</li>
+          <li>Xiangjie Kong - Zhejiang University of Technology, China</li>
+          <li>Xiaoming Li - Zhejiang Yuexiu University, China</li>
+          <li>Yunliang Chen - China University of Geosciences, China</li>
+          <li>Zhihai Yang - Chang'an University, China</li>
+          <li>Jingxian Cheng - Chang'an University, China</li>
+          <li>Liang Qu - Edith Cowan University, Australia</li>
+        </ul>
+
+        <div class="ss-label">Abstract</div>
+        <p class="ss-text">This special session focuses on emerging cross-modal data science techniques that fuse text, vision, audio, sensor and graph data to power next-generation generative AI. We aim to bring together researchers and practitioners working on representation learning, alignment, reasoning and evaluation across modalities, including foundation models and domain-specific applications. The session will highlight novel algorithms, scalable systems and real-world case studies, as well as challenges in robustness, fairness, privacy and responsible deployment of cross-modal generative intelligence.</p>
+      </div>
+    </details>
+
+    <!-- 16 -->
+    <details class="ss-card">
+      <summary>Toward Trustworthy Machine Learning in the Wild: Theory, Algorithm and Application</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Bo Peng - University of Technology Sydney, Australia</li>
+          <li>Sean Su - Nanyang Technological University, Singapore</li>
+          <li>Zhen Fang - University of Technology Sydney, Australia</li>
+          <li>Sharon Yixuan Li - University of Wisconsin-Madison, USA</li>
+          <li>Ling Chen - University of Technology Sydney, Australia</li>
+        </ul>
+
+        <div class="ss-label">Motivation</div>
+        <p class="ss-text">Motivation: Deployed machine learning (ML) systems increasingly operate under dataset shift, partial observability, distributional drift, and adversarial pressure. In safety- and mission-critical contexts (healthcare, finance, autonomy, climate risk, scientific discovery), these systems must be reliable, robust, fair, private, and accountable-not just accurate on static benchmarks. Despite rapid advances, real-world deployments still face: Sensitiveness to out-of-distribution (OOD) inputs; Miscalibrated model uncertainty; Vulnerability to adversarial attack; Ethical and fairness bias</p>
+
+        <div class="ss-label">Objective</div>
+        <p class="ss-text">Objective: This special session brings together advances in theory (e.g., distributionally robust optimization, uncertainty quantification, calibration, guarantees under shift), algorithms (OOD detection, OOD generalization and robust learning), and applications (e.g., healthcare and autonomous systems) to connect principled risk bounds with scalable methods and field results, spotlighting evaluation protocols that reflect operational realities.</p>
+
+        <div class="ss-label">Novelty</div>
+        <p class="ss-text">Novelty: This special session on trustworthy machine learning (TML) is a unique endeavor that bridges the gap among theory, algorithm and application, which is significantly different from prior sessions with focus on structured domains, specific applications, or particular TML paradigms. In addition, our session addresses an urgent need in the era of foundation models (e.g., large language models). Foundation models, which have shown great abilities in solving many problems, are notorious for poor trustworthiness in real-world environments. For instance, foundation models tend to hallucinate something or generate misleading or unethical outputs that conflict with human values, putting critical decisions at risk. Our session seeks to tackle these pressing challenges by providing a significant collective contribution to this emerging field of study.</p>
+
+        <div class="ss-label">Topics of Interest</div>
+        <p class="ss-text">Topics of Interest (including but not limited to)</p>
+        <ul class="ss-list">
+          <li>Distribution shift: OOD detection, OOD generalization, Test-time adaptation</li>
+          <li>Uncertainty estimation and calibration: Bayesian deep learning and conformal prediction</li>
+          <li>Adversarial learning: robustness to adversarial manipulation of models and data</li>
+          <li>Ethic and fairness: fairness definition and assessment, bias identification and mitigation</li>
+          <li>Trustworthy foundation models: jailbreak and prompt-injection defenses, data poisoning and backdoors, hallucination detection/mitigation</li>
+          <li>Autonomous trustworthy machine learning: hyperparameter optimization and neural architecture search</li>
+          <li>Datasets and reproducibility: the benchmark dataset, platform or measure to evaluate the trustworthiness of machine learning models in real-world contexts</li>
+          <li>Applications: computer vision, natural language processing, biology, physics, chemistry</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 17 -->
+    <details class="ss-card">
+      <summary>Towards Responsible Intelligent Decision Support Systems</summary>
+      <div class="ss-body">
+        <div class="ss-label">Organisers</div>
+        <ul class="ss-org">
+          <li>Bapi Dutta - University of Jaén, Spain</li>
+          <li>Rosa M. Rodríguez - University of Jaén, Spain</li>
+          <li>Raciel Yera Toledo - University of Jaén, Spain</li>
+          <li>Luis Martínez - University of Jaén, Spain</li>
+        </ul>
+
+        <div class="ss-label">Scope and Motivation</div>
+        <p class="ss-text">Scope and motivation</p>
+        <p class="ss-text">Intelligent Decision Support Systems (IDSS) play a relevant role in contemporary decision-making, supporting human judgment across areas such as healthcare, finance, logistics, education, and public administration. With the growing incorporation of artificial intelligence, machine learning, and computational intelligence techniques, concerns related to fairness, transparency, and trust have become central research challenges. While conventional approaches tend to prioritize performance metrics like accuracy and efficiency, they often overlook essential issues such as ethical considerations, model interpretability, and uncertainty handling, which are essential for achieving responsible and equitable decision-making.</p>
+        <p class="ss-text">This special session seeks to create a multidisciplinary forum for discussing recent theoretical insights, methodological innovations, and real-world applications focused on improving fairness, transparency, and trustworthiness in intelligent decision support systems. In this context, fuzzy logic and other soft computing techniques provide valuable tools for modeling human-like reasoning and producing explainable decisions. The combination of fuzzy approaches with modern IDSS, artificial intelligence, machine learning, and data-driven techniques enables the development of hybrid solutions that strengthen interpretability, accountability, and ethical awareness in automated decision processes.</p>
+        <p class="ss-text">The session invites contributions in the following areas (but not limited to):</p>
+
+        <div class="ss-label">Topics of Interest</div>
+        <ul class="ss-list">
+          <li>Fairness-aware fuzzy modeling and inference mechanisms.</li>
+          <li>Fuzzy and hybrid approaches for explainable and trustworthy IDSS.</li>
+          <li>Bias detection and mitigation in fuzzy decision-making frameworks.</li>
+          <li>Multi-criteria and fuzzy-based methods for fair decision support.</li>
+          <li>Trust modeling and uncertainty quantification in human-machine collaboration.</li>
+          <li>Evaluation metrics for fairness, robustness, and interpretability in fuzzy systems.</li>
+          <li>Consensus reaching processes and conflict resolution models for fair group decision-making.</li>
+          <li>Linguistic, hesitant, and probabilistic fuzzy approaches for collective agreement and fairness analysis.</li>
+          <li>Explainable consensus models.</li>
+          <li>Explanation and fairness in recommendation systems.</li>
+          <li>Trust-aware aggregation operators and fairness-preserving fusion mechanisms in group decisions. Real-world applications demonstrating fairness and trust in IDSS.</li>
+        </ul>
+        <p class="ss-text" style="margin-top:10px;">This session seeks to advance both the theoretical and applied understanding of fairness, trustworthiness and transparency in decision support environments, across the synergy between fuzzy systems and responsible AI.</p>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<h2>Accepted Workshops</h2>
+
+<section class="ss-wrap">
+  <div class="ss-grid">
+
+    <details class="ss-card">
+      <summary>Joint Workshop of the 6th AI + Informetrics (AII) &amp; the 7th Extraction and Evaluation of Knowledge Entities from Scientific Documents (EEKE) - AII-EEKE 2026</summary>
+
+      <div class="ss-body">
+        Details of this workshop can be found <a class="btn btn-primary" target="_blank" rel="noopener" href="https://ai-informetrics.github.io/2026/">here</a>.
+        
+
+      </div>
+    </details>
+
+  </div>
+</section>
 <!-- <section>
   <h2>Call for Special Sessions</h2>
   <div class="hero-card">
@@ -52,14 +658,12 @@
 </div>
 </section> -->
 
-<h2>Accepted Special Sessions</h2>
 
-
-<div class="hero-card">
+<!-- <div class="hero-card">
   <div class="hero-card__content">
     <strong>AI for Agriculture - Innovations and Applications</strong><br/>
     Guanjin Wang - School of IT, Murdoch University, Australia<br/>
-    Junyu Xuan - AAII, University of Technology Sydney, Australia<br/>
+    Junyu Xuan - Australian Artificial Intelligence Institute, University of Technology Sydney, Australia<br/>
     Wenyong Li - National Engineering Research Center for Information Technology in Agriculture, China<br/>
     Ferdous Sohel - Murdoch University, Australia
   </div>
@@ -71,17 +675,17 @@
     Qian Liu - University of Auckland, New Zealand<br/>
     Junyi Chen - University of Auckland, New Zealand<br/>
     Hang Yu - Shanghai University, China<br/>
-    Yi Zhang - AAII, University of Technology Sydney, Australia
+    Yi Zhang - Australian Artificial Intelligence Institute, University of Technology Sydney, Australia
   </div>
 </div>
 
 <div class="hero-card">
   <div class="hero-card__content">
     <strong>AI for Health</strong><br/>
-    Kairui Guo - AAII, University of Technology Sydney, Australia<br/>
+    Kairui Guo - Australian Artificial Intelligence Institute, University of Technology Sydney, Australia<br/>
     Hua Lin - 23Strands, Australia<br/>
     Mark Grosser - 23Strands, Australia<br/>
-    Jie Lu - AAII, University of Technology Sydney, Australia
+    Jie Lu - Australian Artificial Intelligence Institute, University of Technology Sydney, Australia
   </div>
 </div>
 
@@ -231,7 +835,7 @@
     Luis Martínez - University of Jaén, Spain<br/>
     </p>
   </div>
-</div>
+</div> -->
 
       </main>
 <div data-include="partials/footer.html"></div>

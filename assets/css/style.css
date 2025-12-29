@@ -28,7 +28,7 @@ mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-ra
 
 /* Sidebar */
 .sidebar{
-  width:280px; flex:0 0 280px; background:#fff; border-right:1px solid var(--border); padding:18px;
+  width:320px; flex:0 0 320px; background:#fff; border-right:1px solid var(--border); padding:18px;
   display:flex; flex-direction:column; gap:12px; transition:width .2s ease;
   overflow-y:auto; overflow-x:hidden; position:sticky; top:0;
   height: calc(100dvh - 20px);  /* 10px top + 10px bottom banners */
