@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,7 +20,7 @@
     <div class="content-area">
       <header class="topbar">
         <button class="hamburger-mobile" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false" title="Open menu">
-          
+
 <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
   <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
   <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -32,6 +32,17 @@
       </header>
 
       <main id="main" class="content">
+
+<!-- Latest updates panel -->
+<div class="news-panel" aria-label="Latest updates">
+  <span class="news-panel__label">News!</span>
+  <ul class="news-panel__list" id="news-list">
+    <li><strong>Accommodation:</strong> Conference partner hotels and reservation links have been announced as updated. <a class="news-panel__hint" href="travel.html">Click to see more &rarr;</a></li>
+    <li><strong>Deadline Extended:</strong> Full Paper Submission Deadline extended to <mark>March 15, 2026</mark>. <a class="news-panel__hint" href="dates.html">Click to see more &rarr;</a></li>
+  </ul>
+  <button class="news-panel__more" id="news-more" hidden>See more &darr;</button>
+</div>
+
 <section class="hero-card">
   <div class="hero-card__content">
     <span class="badge">Joint Conference</span>
@@ -42,15 +53,10 @@
       <a class="btn btn-primary" href="https://openreview.net/group?id=flins.cc/FLINS-ISKE/2026/Conference" target="_blank">Submit via OpenReview</a>
       <a class="btn btn-ghost" href="cfp.html">Call for Papers</a>
     </div>
-    <p>All accepted papers for FLINS-ISKE 2026 conference will be published as a proceeding by <mark><strong>Springer Lecture Notes in Computer Science (LNCS)</strong></strong></mark>, both EI and Scopus-indexed.</p>
+    <p>All accepted papers for FLINS-ISKE 2026 conference will be published as a proceeding by <mark><strong>Springer Lecture Notes in Computer Science (LNCS)</strong></mark>, both EI and Scopus-indexed.</p>
 
   </div>
 </section>
-
-<!-- Deadline extension notice -->
-<div class="notice notice--warning" role="alert">
-  <strong>Deadline Extended:</strong> The Full Paper Submission Deadline has been extended to <strong>March 15, 2026</strong>. <a href="dates.html">See all important dates &rarr;</a>
-</div>
 
 <!-- Slideshow: drop this anywhere inside <main class="content"> or a section -->
 <section class="slideshow container" aria-label="Conference Highlights" data-autoplay="6500">
@@ -109,22 +115,12 @@
   </div>
 </section>
 
-<!-- <img style="width:1050px; height:auto;" src="./assets/img/sydney.png"> -->
-<!-- <div class="container">
-  <img src="./assets/img/Sydney.webp">
-  <div class="text-overlay-line1">FLINS-ISKE 2026</div>
-  <div class="text-overlay-line2">The 17th FLINS Conference & the 21st ISKE Conference: Machine Learning and Knowledge Engineering for Decision Making
-</div>
-
-</div> -->
-
-<!-- <img style="width:1050px; height:auto;" src="./assets/img/Sydney.webp"> -->
 <section>
   <h2>Welcome</h2>
 <p>FLINS, an acronym introduced in 1994 and originally for Fuzzy Logic and Intelligent Technologies in Nuclear Science, is now extended into a well-established international research forum to advance the foundations and applications of computational intelligence for applied research in general and for complex engineering and decision support systems. The principal mission of FLINS is bridging the gap between machine intelligence and real complex systems via joint research between universities and international research institutions, encouraging interdisciplinary research and bringing multidiscipline researchers together.</p>
 <p>ISKE, the International Conference on Intelligent Systems and Knowledge Engineering, aims to provide a platform for technical and scientific professionals from academia, research and industries in the fields of intelligent systems and knowledge engineering to exchange knowledge and distribute the emerging state-of-the-art technologies.</p>
 <p>The joint FLINS-ISKE 2026 conference will be held in <mark><strong>Sydney, Australia</strong></mark>. As one of the largest cities in the Southern Hemisphere, Sydney seamlessly blends its rich Indigenous heritage with modern innovation and iconic landmarks. From the historic Rocks district to its sun-kissed beaches, Sydney offers a captivating mix of tradition and contemporary vibrancy, making it an ideal venue for this prestigious event.</p>
-<p>All accepted papers for FLINS-ISKE 2026 conference will be published as a proceeding by <mark><strong>Springer Lecture Notes in Computer Science (LNCS)</strong></strong></mark>, both EI and Scopus-indexed. Selected papers will be invited for publication in SCI-indexed journals following a rigorous peer-review process.</p>
+<p>All accepted papers for FLINS-ISKE 2026 conference will be published as a proceeding by <mark><strong>Springer Lecture Notes in Computer Science (LNCS)</strong></mark>, both EI and Scopus-indexed. Selected papers will be invited for publication in SCI-indexed journals following a rigorous peer-review process.</p>
 </section>
 
 <div data-include="partials/datetable.html"></div>
@@ -138,6 +134,22 @@
   <div class="overlay" data-overlay hidden></div>
   <script src="assets/js/include-partials.js"></script>
   <script defer src="assets/js/slideshow.js"></script>
+<script>
+  (function () {
+    const LIMIT = 5;
+    const list = document.getElementById('news-list');
+    const btn  = document.getElementById('news-more');
+    if (!list || !btn) return;
+    const items = list.querySelectorAll('li');
+    if (items.length <= LIMIT) { btn.hidden = true; return; }
+    items.forEach(function (li, i) { if (i >= LIMIT) li.classList.add('news-hidden'); });
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      list.querySelectorAll('li.news-hidden').forEach(function (li) { li.classList.remove('news-hidden'); });
+      btn.hidden = true;
+    });
+  })();
+</script>
 
 </body>
 </html>
