@@ -68,7 +68,7 @@ mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-ra
 .date-new{color:#c05c00; background:#fff3e0; padding:.1em .35em; border-radius:.3em}
 /* News Panel */
 .news-panel{background:#fffbeb; border:1px solid #f59e0b; border-radius:12px; padding:16px 20px; margin-bottom:12px}
-.news-panel__label{font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.7px; color:#78350f; background:#fef3c7; border:1px solid #f59e0b; border-radius:999px; padding:3px 10px; display:inline-block; margin-bottom:12px}
+.news-panel__label{font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.7px; color:#78350f; background:#fef3c7; border:1px solid #f59e0b; border-radius:999px; padding:3px 10px; display:inline-block; margin-bottom:12px}
 .news-panel__list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px}
 .news-panel__list li{display:flex; align-items:baseline; gap:8px; font-size:14px; color:#78350f}
 .news-panel__list li::before{content:"•"; color:#d97706; font-weight:800; flex-shrink:0}
@@ -399,6 +399,19 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   padding:4px 8px; font-size:12px; font-weight:700;
   color:var(--primary-800); background:var(--primary-50);
   border:1px solid var(--primary-200); border-radius:999px;
+}
+
+/* Keynote / Speaker Figure Table */
+.table-figure{min-width:0 !important; border:none; box-shadow:none; background:transparent}
+.table-figure td{vertical-align:top; padding:16px 12px}
+.table-figure .figure-cell{width:220px; text-align:center}
+.table-figure .figure-cell img{max-width:200px; width:100%; height:auto; display:block; margin:0 auto; border-radius:8px}
+@media (max-width:640px){
+  .table-figure, .table-figure tbody, .table-figure tr, .table-figure td{display:block; width:100%}
+  .table-figure tr{border-bottom:1px solid var(--border); padding:12px 0}
+  .table-figure .figure-cell{text-align:center; padding-bottom:0}
+  .table-figure .figure-cell img{max-width:160px}
+  .table-figure td:last-child{padding-top:8px}
 }
 
 /* Hotel Cards */
