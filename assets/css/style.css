@@ -441,6 +441,15 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
 .hotel-card__policy > div ul{margin:0; padding-left:18px}
 .hotel-card__policy > div li{margin:2px 0}
 
+/* Program table */
+.program-table td:first-child{white-space:nowrap; color:var(--muted); font-size:13px}
+.program-table td:nth-child(2){white-space:nowrap; font-size:13px; color:var(--muted)}
+.program-day-row td{background:var(--primary-50); color:var(--primary-800); font-size:13px; padding:6px 12px; border-top:2px solid var(--primary-200)}
+.program-day-row td strong{font-size:14px}
+@media(max-width:640px){
+  .program-table td:first-child{display:none}
+}
+
 /* Mobile drawer controls */
 @media (max-width:980px){
   /* Hide the desktop collapse (three lines) inside the sidebar on mobile */
