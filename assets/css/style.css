@@ -447,7 +447,24 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
 .program-day-row td{background:var(--primary-50); color:var(--primary-800); font-size:13px; padding:6px 12px; border-top:2px solid var(--primary-200)}
 .program-day-row td strong{font-size:14px}
 @media(max-width:640px){
-  .program-table td:first-child{display:none}
+  /* Hide the redundant "Jul XX" date cell (day headers already show the date) */
+  .program-table tr:not(.program-day-row) td:first-child{display:none}
+  .program-table tr:not(.program-day-row) td:nth-child(2){white-space:normal}
+  /* Allow program table to shrink to fit the screen */
+  .program-table{min-width:0}
+}
+
+/* Global note / caption text */
+.note{font-size:13px; color:var(--muted); margin:8px 0 0}
+
+/* kvs (key-value) table: stack rows on narrow phones */
+@media(max-width:560px){
+  .kvs{min-width:0 !important}
+  .kvs thead{display:none}
+  .kvs tbody tr{display:block; padding:10px 0; border-bottom:1px solid var(--border)}
+  .kvs tbody tr:last-child{border-bottom:none}
+  .kvs td{display:block; padding:3px 12px; border:none}
+  .kvs td:first-child{font-weight:700; font-size:13px; color:var(--primary-700); padding-bottom:2px}
 }
 
 /* Mobile drawer controls */
