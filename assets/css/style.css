@@ -311,54 +311,38 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   .slideshow__viewport { max-height: 70svh }
 }
 
-/* ===== Footer layout ===== */
+/* ===== Footer logos ===== */
+/* auto-fill with 110px minimum: 5 logos → 3+2 (2 rows) on most phones,
+   1 row once the section is wide enough — logos never shrink below readable */
 .footer-logos {
-  display: flex !important;
-  flex-wrap: nowrap;            /* single line by default */
-  justify-content: center;
-  align-items: center;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 0.75rem 1rem;
   margin-top: 1rem;
+  align-items: center;
+  justify-items: center;
 }
-@media (max-width: 900px) { .footer-logos { flex-wrap: wrap } }
 
 .logo-tile {
-  flex: 0 1 auto;               /* allow to shrink */
-  min-width: 0;
+  width: 100%;
   display: flex; align-items: center; justify-content: center;
-  padding: 1px 11px;
+  padding: 6px 8px;
 }
 
-/* Shared image behavior (no distortion) */
 .footer-logo {
-  width: auto; height: auto; max-width: 100%;
-  object-fit: contain; display: block;
+  display: block;
+  width: auto; height: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
-/* Per-logo tuning */
-.logo-uts    { max-height: 60px; max-width: clamp(160px, 28vw, 540px) }
-.logo-madrid { max-height: 90px; max-width: 160px }
-.logo-jaen   { max-height: 80px; max-width: clamp(160px, 22vw, 360px) }
-.logo-lille  { max-height: 60px; max-width: clamp(170px, 22vw, 380px) }
-.logo-hagen  { max-height: 60px; max-width: clamp(140px, 20vw, 300px) }
-.logo-ulster { max-height: 60px }
-
-@media (max-width: 768px) {
-  .logo-uts     { max-height: 76px }
-  .logo-madrid  { max-height: 100px }
-  .logo-jaen    { max-height: 82px }
-  .logo-lille   { max-height: 88px }
-  .logo-hagen   { max-height: 80px }
-  .logo-ulster  { max-height: 86px }
-}
-@media (max-width: 480px) {
-  .logo-uts     { max-height: 68px }
-  .logo-madrid  { max-height: 92px }
-  .logo-jaen    { max-height: 74px }
-  .logo-lille   { max-height: 78px }
-  .logo-hagen   { max-height: 72px }
-  .logo-ulster  { max-height: 78px }
-}
+/* Per-logo max-height; width is governed by the grid cell (min 110px) */
+.logo-uts    { max-height: 58px }
+.logo-madrid { max-height: 80px }
+.logo-jaen   { max-height: 72px }
+.logo-lille  { max-height: 58px }
+.logo-hagen  { max-height: 58px }
+.logo-ulster { max-height: 58px }
 
 /* ===============================
    Toggle Table (Tabs) Component
