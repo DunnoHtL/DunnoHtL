@@ -399,6 +399,10 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
 }
 
 /* Hotel Cards */
+.btn-register{font-size:16px; padding:14px 28px; border-radius:14px; box-shadow:0 8px 24px rgba(200,16,46,.3); letter-spacing:.2px; margin-top:8px}
+.btn-register:hover{transform:translateY(-1px); box-shadow:0 12px 28px rgba(200,16,46,.38)}
+
+/* Hotel Cards */
 .hotel-cards{display:grid; grid-template-columns:1fr; gap:16px}
 @media (min-width:640px){.hotel-cards{grid-template-columns:1fr 1fr}}
 .hotel-card{background:#fff; border:1px solid var(--border); border-radius:12px; padding:18px 20px; display:flex; flex-direction:column; gap:10px; box-shadow:var(--shadow)}
