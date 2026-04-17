@@ -70,15 +70,21 @@ mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-ra
 .news-panel{background:#fffbeb; border:1px solid #f59e0b; border-radius:12px; padding:16px 20px; margin-bottom:12px}
 .news-panel__label{font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.7px; color:#78350f; background:#fef3c7; border:1px solid #f59e0b; border-radius:999px; padding:3px 10px; display:inline-block; margin-bottom:12px}
 .news-panel__list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px}
-.news-panel__list li{display:flex; align-items:baseline; gap:8px; font-size:14px; color:#78350f}
+.news-panel__list li{display:flex; align-items:baseline; gap:8px; font-size:14px; color:#78350f; flex-wrap:wrap}
 .news-panel__list li::before{content:"•"; color:#d97706; font-weight:800; flex-shrink:0}
 .news-panel__list a{color:#78350f; text-decoration:none; font-weight:600}
 .news-panel__list a:hover{text-decoration:underline; color:#92400e}
 .news-panel__list li.news-hidden{display:none}
 .news-panel__more{margin-top:12px; display:inline-block; background:none; border:none; color:#d97706; font-size:13px; font-weight:600; cursor:pointer; padding:0; text-decoration:underline}
 .news-panel__more:hover{color:#92400e}
-.news-panel__hint{font-weight:400; opacity:.7; white-space:nowrap; color:#78350f; text-decoration:none}
-.news-panel__hint:hover{opacity:1; text-decoration:underline; color:#92400e}
+.news-panel__hint{font-weight:600; color:#92400e; text-decoration:none; white-space:nowrap}
+.news-panel__hint:hover{text-decoration:underline}
+@media(max-width:560px){
+  .news-panel{padding:12px 14px; border-radius:10px}
+  .news-panel__list li{font-size:13px; flex-direction:column; gap:3px; padding-left:14px; position:relative}
+  .news-panel__list li::before{position:absolute; left:0; top:0}
+  .news-panel__hint{display:inline-block; margin-top:2px; font-size:12px; opacity:.85}
+}
 .notice{padding:14px 18px; border-radius:12px; font-size:15px; line-height:1.5; margin-bottom:4px}
 .notice--warning{background:#fffbeb; border:1px solid #f59e0b; color:#78350f}
 .notice--warning a{color:#92400e; font-weight:600}
