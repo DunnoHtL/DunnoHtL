@@ -602,3 +602,76 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
   /* Prevent the collapsed-desktop appearance from clipping content on tiny screens */
   .sidebar.collapsed{ width:82%; flex-basis:auto }
 }
+
+/* ==========================================================================
+   Comprehensive mobile refinements
+   ========================================================================== */
+
+/* 1. Word-wrap for long text in hotel cards and general content */
+.hotel-card__address, .hotel-card__rate-note, .hotel-card__book,
+.hotel-card__name, td, th { overflow-wrap:break-word; word-break:break-word }
+
+/* 2. Typography: intermediate step at tablet width */
+@media(max-width:760px){
+  h1{ font-size:30px }
+  h2{ font-size:22px }
+  h3{ font-size:18px }
+}
+
+/* 3. Registration fee table: hide approximate EUR/USD columns on mobile,
+      keep Category, Dates, AUD which are the essential columns */
+@media(max-width:640px){
+  .reg-table th:nth-child(4), .reg-table td:nth-child(4),
+  .reg-table th:nth-child(5), .reg-table td:nth-child(5){ display:none }
+  .reg-table{ min-width:0 }
+}
+
+/* 4. KVS (key-value) tables: stack label above value on small phones */
+@media(max-width:560px){
+  .kvs{ min-width:0 }
+  .kvs thead{ display:none }
+  .kvs tr{ display:flex; flex-direction:column; border-bottom:1px solid var(--border) }
+  .kvs td{ display:block; padding:4px 12px; border:none }
+  .kvs td:first-child{ font-weight:700; color:var(--text); padding-top:10px; font-size:13px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted) }
+  .kvs td:last-child{ padding-bottom:10px }
+}
+
+/* 5. Program table: allow time column to wrap on mobile */
+@media(max-width:640px){
+  .program-table td:nth-child(2){ white-space:normal }
+}
+
+/* 6. CTA rows: stack buttons vertically on very narrow screens */
+@media(max-width:480px){
+  .cta-row{ flex-direction:column; align-items:stretch }
+  .cta-row .btn{ width:100%; justify-content:center; text-align:center }
+}
+
+/* 7. Slideshow: larger touch targets on mobile */
+@media(max-width:640px){
+  .slideshow__btn, .slideshow__toggle{ padding:.75rem 1rem }
+}
+
+/* 8. Special sessions: tighter summary font on very small screens */
+@media(max-width:400px){
+  details.ss-card > summary{ font-size:.95rem; padding:12px }
+  .ss-body{ font-size:.9rem; padding:10px 12px 12px }
+}
+
+/* 9. Hero card and notice boxes: reduce padding on mobile */
+@media(max-width:560px){
+  .hero-card__content{ padding:16px }
+  .notice-box{ padding:10px 12px }
+  .ijcis-highlight{ padding:12px 14px }
+  .refund-policy__item{ padding:12px 14px }
+}
+
+/* 10. Tables inside table-wrap: ensure header row stays readable */
+@media(max-width:560px){
+  .table-compact th, .table-compact td{ padding:8px 10px; font-size:13px }
+}
+
+/* 11. Btn-register: full width on mobile for easy tapping */
+@media(max-width:560px){
+  .btn-register{ width:100%; justify-content:center }
+}
