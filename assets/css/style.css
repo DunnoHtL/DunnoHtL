@@ -70,40 +70,21 @@ mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-ra
 .news-panel{background:#fffbeb; border:1px solid #f59e0b; border-radius:12px; padding:16px 20px; margin-bottom:12px}
 .news-panel__label{font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.7px; color:#78350f; background:#fef3c7; border:1px solid #f59e0b; border-radius:999px; padding:3px 10px; display:inline-block; margin-bottom:12px}
 .news-panel__list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px}
-.news-panel__list li{display:flex; align-items:baseline; gap:8px; font-size:14px; color:#78350f}
-.news-panel__list li::before{content:"•"; color:#d97706; font-weight:800; flex-shrink:0}
+.news-panel__list li{display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#78350f; line-height:1.5}
+.news-panel__list li::before{content:"•"; color:#d97706; font-weight:800; flex-shrink:0; margin-top:2px}
 .news-panel__list a{color:#78350f; text-decoration:none; font-weight:600}
 .news-panel__list a:hover{text-decoration:underline; color:#92400e}
 .news-panel__list li.news-hidden{display:none}
 .news-panel__more{margin-top:12px; display:inline-block; background:none; border:none; color:#d97706; font-size:13px; font-weight:600; cursor:pointer; padding:0; text-decoration:underline}
 .news-panel__more:hover{color:#92400e}
 .news-panel__hint{font-weight:600; color:#92400e; text-decoration:none; white-space:nowrap}
-.news-panel__hint:hover{text-decoration:underline}
-
+.news-panel__hint:hover{text-decoration:underline; color:#78350f}
+.news-panel mark{background:#fde68a; color:#78350f; white-space:nowrap}
 @media(max-width:640px){
-  .news-panel{padding:12px; border-radius:10px; margin-bottom:10px}
-  .news-panel__label{margin-bottom:10px}
-  .news-panel__list{gap:0}
-  .news-panel__list li{
-    display:block;
-    font-size:13px;
-    padding:9px 10px 9px 12px;
-    border-left:3px solid #f59e0b;
-    background:#fff;
-    border-radius:0 6px 6px 0;
-    margin-bottom:6px;
-    line-height:1.45;
-    color:#78350f;
-  }
-  .news-panel__list li:last-child{margin-bottom:0}
-  .news-panel__list li::before{display:none}
-  .news-panel__hint{
-    display:inline-block;
-    margin-top:4px;
-    font-size:12px;
-    color:#b45309;
-    white-space:normal;
-  }
+  .news-panel{padding:12px 14px; border-radius:10px}
+  .news-panel__list{gap:6px}
+  .news-panel__list li{font-size:13px; flex-wrap:wrap}
+  .news-panel__hint{white-space:normal}
 }
 .notice{padding:14px 18px; border-radius:12px; font-size:15px; line-height:1.5; margin-bottom:4px}
 .notice--warning{background:#fffbeb; border:1px solid #f59e0b; color:#78350f}
@@ -425,6 +406,38 @@ thead th{background:linear-gradient(180deg,#fff, #fff 60%, var(--primary-50)); p
 }
 
 /* Hotel Cards */
+/* Registration reminder modal */
+.reg-modal{position:fixed; inset:0; z-index:2000; display:flex; align-items:center; justify-content:center; padding:16px}
+.reg-modal[hidden]{display:none}
+.reg-modal__backdrop{position:absolute; inset:0; background:rgba(0,0,0,.45); backdrop-filter:blur(2px)}
+.reg-modal__box{position:relative; background:#fff; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.2); max-width:420px; width:100%; overflow:hidden; animation:modal-in .2s ease}
+@keyframes modal-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.reg-modal__header{display:flex; align-items:center; gap:10px; padding:18px 20px 12px; border-bottom:1px solid var(--border)}
+.reg-modal__icon{font-size:22px; flex-shrink:0}
+.reg-modal__title{margin:0; font-size:16px; font-weight:700; flex:1}
+.reg-modal__close{background:none; border:none; cursor:pointer; font-size:22px; color:var(--muted); line-height:1; padding:0 4px; flex-shrink:0}
+.reg-modal__close:hover{color:var(--text)}
+.reg-modal__body{padding:16px 20px; font-size:14px; line-height:1.65; color:var(--text)}
+.reg-modal__body p{margin:0 0 8px}
+.reg-modal__body p:last-child{margin:0}
+.reg-modal__body mark{background:var(--primary-100); color:var(--primary-800); white-space:nowrap}
+.reg-modal__note{font-size:13px; color:var(--muted)}
+.reg-modal__footer{display:flex; gap:10px; padding:12px 20px 18px; flex-wrap:wrap}
+.reg-modal__footer .btn{flex:1; justify-content:center}
+@media(max-width:480px){.reg-modal__footer{flex-direction:column}}
+
+/* Deadline alert banner */
+.deadline-alert{display:flex; align-items:center; gap:14px; flex-wrap:wrap; background:#fff7ed; border:1.5px solid #f97316; border-left:5px solid #ea580c; border-radius:12px; padding:14px 18px; margin-bottom:14px}
+.deadline-alert__icon{font-size:22px; flex-shrink:0; line-height:1}
+.deadline-alert__body{flex:1; min-width:0; display:flex; flex-direction:column; gap:3px; font-size:14px; color:#7c2d12}
+.deadline-alert__body strong{font-size:15px; color:#9a3412}
+.deadline-alert__body mark{background:#fed7aa; color:#7c2d12; padding:.1em .3em; border-radius:.3em}
+.deadline-alert__btn{flex-shrink:0; white-space:nowrap}
+@media(max-width:560px){
+  .deadline-alert{flex-direction:column; align-items:flex-start; gap:10px; padding:12px 14px}
+  .deadline-alert__btn{width:100%; justify-content:center}
+}
+
 /* IJCIS Special Issue highlight box */
 .ijcis-highlight{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; background:linear-gradient(135deg, var(--primary-50) 0%, #fff5f6 100%); border:1px solid var(--primary-200); border-left:4px solid var(--primary-600); border-radius:12px; padding:16px 20px; margin:16px 0}
 .ijcis-highlight__body{flex:1; min-width:0}
