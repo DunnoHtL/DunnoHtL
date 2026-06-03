@@ -37,6 +37,7 @@
 <div class="news-panel" aria-label="Latest updates">
   <span class="news-panel__label">News!</span>
   <ul class="news-panel__list" id="news-list">
+    <li><strong>Accommodation:</strong> Book now to enjoy the conference special hotel rate. <a class="news-panel__hint" href="travel.html">Book Now &rarr;</a></li>
     <li><strong>Early Bird Deadline:</strong> Early bird registration deadline is <mark>May 31, 2026</mark>. <a class="news-panel__hint" href="registration.html">Register Now &rarr;</a></li>
     <li class="news-hidden"><strong>Author Registration Deadline:</strong> Authors must register by <mark>1 May 2026</mark> to be included in the proceedings. <a class="news-panel__hint" href="registration.html">Register Now &rarr;</a></li>
     <li class="news-hidden"><strong>Special Issue:</strong> Selected accepted papers are invited to a Special Issue in <strong>IJCIS</strong> (Springer Nature, SCI-indexed). <a class="news-panel__hint" href="assets/files/flyer-Machine learning and knowledge engineering f_260413_161526.pdf" target="_blank" rel="noopener">View Flyer &rarr;</a></li>
@@ -146,25 +147,6 @@
   </div>
 
 
-  <!-- Registration reminder modal -->
-  <div class="reg-modal" id="reg-modal" role="dialog" aria-modal="true" aria-labelledby="reg-modal-title" hidden>
-    <div class="reg-modal__backdrop" id="reg-modal-backdrop"></div>
-    <div class="reg-modal__box">
-      <div class="reg-modal__header">
-        <h2 class="reg-modal__title" id="reg-modal-title">Author Registration Reminder</h2>
-        <button class="reg-modal__close" id="reg-modal-close" aria-label="Close">&times;</button>
-      </div>
-      <div class="reg-modal__body">
-        <p>At least one author per accepted paper must register by <mark>1 May 2026</mark> to ensure the paper is included in the proceedings.</p>
-        <p>Other attendees and co-authors can still enjoy the early-bird price until <mark>31 May 2026</mark>.</p>
-      </div>
-      <div class="reg-modal__footer">
-        <a class="btn btn-primary" href="registration.html">Register Now &rarr;</a>
-        <button class="btn btn-ghost" id="reg-modal-dismiss">Dismiss</button>
-      </div>
-    </div>
-  </div>
-
   <div class="overlay" data-overlay hidden></div>
   <script src="assets/js/include-partials.js"></script>
   <script defer src="assets/js/slideshow.js"></script>
@@ -182,25 +164,6 @@
       list.querySelectorAll('li.news-hidden').forEach(function (li) { li.classList.remove('news-hidden'); });
       btn.hidden = true;
     });
-  })();
-</script>
-<script>
-  (function () {
-    var KEY = 'reg-modal-dismissed';
-    var modal = document.getElementById('reg-modal');
-    var close = document.getElementById('reg-modal-close');
-    var dismiss = document.getElementById('reg-modal-dismiss');
-    var backdrop = document.getElementById('reg-modal-backdrop');
-    if (!modal) return;
-    // Show once per session
-    if (!sessionStorage.getItem(KEY)) {
-      setTimeout(function () { modal.hidden = false; }, 800);
-    }
-    function hide() { modal.hidden = true; sessionStorage.setItem(KEY, '1'); }
-    close.addEventListener('click', hide);
-    dismiss.addEventListener('click', hide);
-    backdrop.addEventListener('click', hide);
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') hide(); });
   })();
 </script>
 
