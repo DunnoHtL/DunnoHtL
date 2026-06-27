@@ -68,9 +68,11 @@
   /* section nav */
   .agenda-nav{
     display:flex;flex-direction:column;gap:6px;
-    padding:10px 0 14px;margin-bottom:8px;
+    padding:10px 16px 12px;margin:0 -24px 16px;
     border-bottom:2px solid #fdf0ed;
-    position:sticky;top:0;background:#fff;z-index:10;
+    background:#fff;
+    position:sticky;top:56px;z-index:9;
+    box-shadow:0 4px 10px rgba(0,0,0,.06);
   }
   .agenda-nav-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
   .agenda-nav-label{
@@ -101,10 +103,10 @@
     .preview-header__sub,.preview-header__date{font-size:11px}
 
     /* Nav */
-    .agenda-nav{padding:8px 0 12px;gap:6px}
+    .agenda-nav{padding:8px 12px 10px;margin:0 -12px 12px;gap:5px;top:56px}
     .agenda-nav-row{flex-wrap:wrap}
     .agenda-nav-label{font-size:9px;min-width:56px;width:100%}
-    .agenda-nav a{padding:7px 14px;font-size:13px}
+    .agenda-nav a{padding:6px 12px;font-size:12px}
 
     /* Headings */
     #agenda-preview h2{font-size:14px;padding:7px 10px;margin:16px 0 10px}
@@ -265,8 +267,9 @@
       const header = container.querySelector('.preview-header');
       if (header) header.after(nav); else container.prepend(nav);
 
-      // offset scrollIntoView so h2 is not hidden behind the sticky nav
-      const offset = nav.offsetHeight + 8;
+      // offset scrollIntoView so h2 clears both sticky topbar and sticky nav
+      const topbarH = document.querySelector('.topbar')?.offsetHeight ?? 56;
+      const offset = topbarH + nav.offsetHeight + 8;
       container.querySelectorAll('h2').forEach(h => h.style.scrollMarginTop = offset + 'px');
     }
 
