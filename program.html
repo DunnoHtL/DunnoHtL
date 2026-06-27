@@ -9,6 +9,152 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=15" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+  /* ── Agenda preview (scoped to #agenda-preview) ── */
+  #agenda-preview{font-family:'Segoe UI',system-ui,sans-serif}
+
+  .preview-header{
+    display:flex;align-items:center;gap:20px;
+    padding:24px 20px;border-bottom:3px solid #EF4A2D;margin-bottom:20px;
+    background:linear-gradient(rgba(255,255,255,0.72),rgba(255,255,255,0.72)),
+               url('assets/img/sydney.png') center/cover no-repeat;
+    border-radius:8px;
+  }
+  .preview-header__logo{height:64px;width:auto;flex-shrink:0}
+  .preview-header__conf{font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#EF4A2D;margin-bottom:3px}
+  .preview-header__title{font-size:17px;font-weight:800;color:#1a1a1a;line-height:1.25;margin-bottom:3px}
+  .preview-header__sub{font-size:12px;color:#666;font-style:italic;margin-bottom:4px}
+  .preview-header__date{font-size:12px;font-weight:700;color:#c03820}
+
+  #agenda-preview h1{display:none}
+  #agenda-preview blockquote{display:none}
+  #agenda-preview hr{border:none;border-top:2px solid #fdf0ed;margin:20px 0}
+  #agenda-preview h2{
+    font-size:16px;font-weight:800;color:#fff;background:#EF4A2D;
+    padding:6px 12px;border-radius:5px;margin:22px 0 14px;
+  }
+  #agenda-preview h3{
+    font-size:15px;font-weight:700;color:#c03820;
+    margin:12px 0 2px;padding:5px 10px;background:#fdf0ed;
+    border-left:4px solid #EF4A2D;border-radius:0 4px 4px 0;
+  }
+  #agenda-preview h3+em{
+    font-size:14px;font-weight:700;color:#c03820;
+    display:block;margin-bottom:6px;padding:3px 10px 3px 12px;
+    background:#fae8e4;border-radius:0 4px 4px 0;
+  }
+  #agenda-preview p{font-size:15px;line-height:1.5;color:#1a1a1a;margin-bottom:6px}
+  #agenda-preview strong{color:#c03820}
+  #agenda-preview em{color:#666}
+
+  #agenda-preview table{
+    width:100%;border-collapse:collapse;font-size:15px;
+    margin-bottom:12px;border-radius:6px;overflow:hidden;
+    box-shadow:0 1px 4px rgba(0,0,0,.08);
+  }
+  #agenda-preview thead tr{background:#f4f4f4;color:#1a1a1a}
+  #agenda-preview thead th{
+    padding:6px 9px;font-weight:700;text-align:left;
+    font-size:14px;border-bottom:2px solid #ddd;border-top:none;
+  }
+  #agenda-preview tbody tr{border-bottom:1px solid #f0e0dc}
+  #agenda-preview tbody tr:last-child{border-bottom:none}
+  #agenda-preview tbody tr:nth-child(even){background:#fae8e4}
+  #agenda-preview tbody td{padding:5px 9px;vertical-align:top;color:#1a1a1a;line-height:1.4}
+  #agenda-preview .cell-time{white-space:nowrap}
+  #agenda-preview .cell-loc{white-space:nowrap}
+
+  /* section nav */
+  .agenda-nav{
+    display:flex;flex-direction:column;gap:6px;
+    padding:10px 0 14px;margin-bottom:8px;
+    border-bottom:2px solid #fdf0ed;
+    position:sticky;top:0;background:#fff;z-index:10;
+  }
+  .agenda-nav-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .agenda-nav-label{
+    font-size:10px;font-weight:700;text-transform:uppercase;
+    letter-spacing:.07em;color:#666;white-space:nowrap;min-width:72px;
+  }
+  .agenda-nav a{
+    display:inline-block;padding:4px 11px;border-radius:20px;
+    background:#fdf0ed;color:#c03820;
+    font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap;
+    transition:background .15s,color .15s;
+  }
+  .agenda-nav a:hover{background:#EF4A2D;color:#fff}
+
+  /* scrollable table wrapper injected by JS */
+  .agenda-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:12px}
+  .agenda-table-scroll table{margin-bottom:0}
+
+  @media (max-width:700px){
+    /* Header */
+    .preview-header{
+      flex-direction:column;align-items:flex-start;
+      gap:10px;padding:14px 12px;margin-bottom:12px;
+    }
+    .preview-header__logo{height:36px}
+    .preview-header__conf{font-size:8px}
+    .preview-header__title{font-size:14px}
+    .preview-header__sub,.preview-header__date{font-size:11px}
+
+    /* Nav: wrap pills, bigger tap targets */
+    .agenda-nav{padding:8px 0 12px;gap:6px}
+    .agenda-nav-row{flex-wrap:wrap}
+    .agenda-nav-label{font-size:9px;min-width:56px;width:100%}
+    .agenda-nav a{padding:7px 14px;font-size:13px}
+
+    /* Headings */
+    #agenda-preview h2{font-size:14px;padding:7px 10px;margin:16px 0 10px}
+    #agenda-preview h3{font-size:13px;padding:5px 8px}
+    #agenda-preview h3+em{font-size:12px;padding:3px 8px 3px 10px}
+    #agenda-preview p{font-size:13px}
+
+    /* Card layout — no horizontal scroll */
+    .agenda-table-scroll{overflow-x:visible}
+    #agenda-preview table{display:block;box-shadow:none;border-radius:0}
+    #agenda-preview thead{display:none}
+    #agenda-preview tbody{display:block}
+    #agenda-preview tbody tr{
+      display:block;margin-bottom:10px;
+      border:1px solid #f0d8d4;border-radius:8px;
+      padding:10px 12px;background:#fff;
+      box-shadow:0 1px 3px rgba(0,0,0,.06);
+    }
+    #agenda-preview tbody tr:nth-child(even){background:#fff8f7}
+    #agenda-preview tbody td{
+      display:block;padding:2px 0 4px;
+      border:none;font-size:13px;line-height:1.45;
+    }
+    /* Hide slot/no. — not meaningful on mobile */
+    #agenda-preview tbody td[data-label="Slot"],
+    #agenda-preview tbody td[data-label="No."]{display:none}
+    /* Time — coloured header line */
+    #agenda-preview tbody td[data-label="Time"]{
+      font-size:12px;font-weight:600;color:#c03820;
+      padding-bottom:5px;margin-bottom:4px;
+      border-bottom:1px solid #fae8e4;
+    }
+    /* Title / Agenda — main content */
+    #agenda-preview tbody td[data-label="Title"],
+    #agenda-preview tbody td[data-label="Agenda"]{
+      font-size:14px;font-weight:600;padding-top:2px;
+    }
+    /* Paper ID, Authors, Note — label prefix */
+    #agenda-preview tbody td[data-label="Paper ID"]::before,
+    #agenda-preview tbody td[data-label="Authors"]::before,
+    #agenda-preview tbody td[data-label="Note"]::before{
+      content:attr(data-label) ': ';
+      font-size:10px;font-weight:700;text-transform:uppercase;
+      letter-spacing:.05em;color:#aaa;
+    }
+    #agenda-preview tbody td[data-label="Authors"]{font-size:12px;color:#555}
+    #agenda-preview tbody td[data-label="Note"]{font-size:12px;color:#888}
+    #agenda-preview tbody td[data-label="Paper ID"]{font-size:12px;color:#c03820}
+  }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,125 +178,7 @@
       </header>
 
       <main id="main" class="content">
-
-<section>
-    <p class="note">Detailed timetable with session assignments will be published closer to the conference dates.</p>
-  <p><strong>Time:</strong> July 15–19, 2026 &nbsp;|&nbsp; <strong>Venue:</strong> Building 8, UTS</p>
-  <div class="table-wrap">
-    <table class="table-compact program-table">
-      <thead>
-        <tr><th>Date</th><th>Time</th><th>Event</th><th>Location</th></tr>
-      </thead>
-      <tbody>
-        <!-- July 15 -->
-        <tr class="program-day-row"><td colspan="4"><strong>July 15</strong></td></tr>
-        <tr>
-          <td>Jul 15</td>
-          <td>Full Day</td>
-          <td><strong>All-EEKE 2026 Workshop</strong></td>
-          <td>CB08.02.002</td>
-        </tr>
-
-        <!-- July 16 -->
-        <tr class="program-day-row"><td colspan="4"><strong>July 16</strong></td></tr>
-        <tr>
-          <td>Jul 16</td>
-          <td>Full Day</td>
-          <td>
-            <strong>Tutorials</strong><br>
-          </td>
-          <td>CB08.02.002</td>
-        </tr>
-        <tr>
-          <td>Jul 16</td>
-          <td>6:00 pm - 9:00 pm</td>
-          <td>
-            <strong>FLINS-ISKE 2026 Reception</strong><br>
-          </td>
-          <td>CB08.03 Foyer Space</td>
-        </tr>
-
-        <!-- July 17 -->
-        <tr class="program-day-row"><td colspan="4"><strong>July 17 (Main Conference)</strong></td></tr>
-        <tr>
-          <td>Jul 17</td>
-          <td>9:00 am – 10:15 am</td>
-          <td>
-            <strong>Opening Remarks</strong><br>
-          </td>
-          <td>CB08.02.005</td>
-        </tr>
-        <tr>
-          <td>Jul 17</td>
-          <td>Morning</td>
-          <td><strong>Morning Session: Keynotes</strong></td>
-          <td>CB08.02.005</td>
-        </tr>
-        <tr>
-          <td>Jul 17</td>
-          <td>Midday</td>
-          <td><strong>Poster Session &amp; Morning/Afternoon Tea &amp; Lunch</strong></td>
-          <td>CB08.02 Foyer Space nearby CB08.02.005</td>
-        </tr>
-        <tr>
-          <td>Jul 17</td>
-          <td>Afternoon</td>
-          <td><strong>Afternoon Parallel Sessions</strong></td>
-          <td>CB08.02.005, CB08.02.002 &amp; CB08.03.002</td>
-        </tr>
-
-        <!-- July 18 -->
-        <tr class="program-day-row"><td colspan="4"><strong>July 18 (Main Conference)</strong></td></tr>
-        <tr>
-          <td>Jul 18</td>
-          <td>Morning</td>
-          <td><strong>Morning Session: Keynotes</strong></td>
-          <td>CB08.02.005</td>
-        </tr>
-        <tr>
-          <td>Jul 18</td>
-          <td>Midday</td>
-          <td><strong>Poster Session &amp; Morning/Afternoon Tea &amp; Lunch</strong></td>
-          <td>CB08.02 Foyer Space nearby CB08.02.005</td>
-        </tr>
-        <tr>
-          <td>Jul 18</td>
-          <td>Afternoon</td>
-          <td><strong>Afternoon Parallel Sessions</strong></td>
-          <td>CB08.02.005, CB08.02.002 &amp; CB08.03.002</td>
-        </tr>
-        <tr>
-          <td>Jul 18</td>
-          <td>Evening</td>
-          <td><strong>Banquet</strong></td>
-          <td>TBC</td>
-        </tr>
-
-        <!-- July 19 -->
-        <tr class="program-day-row"><td colspan="4"><strong>July 19 (Main Conference)</strong></td></tr>
-        <tr>
-          <td>Jul 19</td>
-          <td>Morning</td>
-          <td><strong>Morning Session: Keynotes</strong></td>
-          <td>CB08.02.005</td>
-        </tr>
-        <tr>
-          <td>Jul 19</td>
-          <td>Midday</td>
-          <td><strong>Poster Session &amp; Morning Tea</strong></td>
-          <td>CB08.02 Foyer Space nearby CB08.02.005</td>
-        </tr>
-        <tr>
-          <td>Jul 19</td>
-          <td>Afternoon</td>
-          <td><strong>Parallel Sessions</strong></td>
-          <td>TBC</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
+        <div id="agenda-preview"><p style="color:#888;font-size:13px">Loading program…</p></div>
       </main>
 <div data-include="partials/footer.html"></div>
 
@@ -159,5 +187,135 @@
 
   <div class="overlay" data-overlay hidden></div>
   <script src="assets/js/include-partials.js"></script>
+  <script>
+  (function(){
+    const preview = document.getElementById('agenda-preview');
+    const LOGO = 'assets/img/logo.svg';
+
+    marked.setOptions({ gfm: true, breaks: false });
+
+    function buildHeader() {
+      return `<div class="preview-header">
+        <img class="preview-header__logo" src="${LOGO}" alt="FLINS-ISKE logo"/>
+        <div>
+          <div class="preview-header__conf">FLINS-ISKE 2026</div>
+          <div class="preview-header__title">The 17th FLINS Conference &amp; the 21st ISKE Conference</div>
+          <div class="preview-header__sub">Machine Learning and Knowledge Engineering for Decision Making</div>
+          <div class="preview-header__date">July 15–19, 2026 &nbsp;·&nbsp; UTS Building 8 (CB08), Sydney, Australia</div>
+        </div>
+      </div>`;
+    }
+
+    function annotateTableColumns(container) {
+      container.querySelectorAll('table').forEach(table => {
+        const headers = [...table.querySelectorAll('thead th')]
+          .map(th => th.textContent.trim().toLowerCase());
+        const timeIdx    = headers.findIndex(h => h === 'time');
+        const locIdx     = headers.findIndex(h => ['room','note','venue','location'].includes(h));
+        const slotIdx    = headers.findIndex(h => h === 'slot');
+        const noIdx      = headers.findIndex(h => ['no.','no'].includes(h));
+        const paperIdIdx = headers.findIndex(h => h === 'paper id');
+        const authorIdx  = headers.findIndex(h => ['authors','author'].includes(h));
+
+        const ths = [...table.querySelectorAll('thead th')];
+        const setW = (i, w) => { if (i >= 0 && ths[i]) ths[i].style.width = w; };
+        setW(locIdx,     '28%');
+        setW(authorIdx,  '28%');
+        setW(slotIdx,    '4%');
+        setW(noIdx,      '4%');
+        setW(timeIdx,    locIdx >= 0 && slotIdx < 0 && noIdx < 0 ? '15%' : '13%');
+        setW(paperIdIdx, '8%');
+        if (paperIdIdx >= 0 && ths[paperIdIdx]) ths[paperIdIdx].style.whiteSpace = 'nowrap';
+        if (slotIdx    >= 0 && ths[slotIdx])    ths[slotIdx].style.whiteSpace    = 'nowrap';
+
+        const headerTexts = ths.map(th => th.textContent.trim());
+        table.querySelectorAll('tbody tr').forEach(row => {
+          const cells = [...row.querySelectorAll('td')];
+          cells.forEach((td, i) => { if (headerTexts[i]) td.dataset.label = headerTexts[i]; });
+          if (timeIdx >= 0 && cells[timeIdx]) cells[timeIdx].classList.add('cell-time');
+          if (locIdx  >= 0 && cells[locIdx])  cells[locIdx].classList.add('cell-loc');
+        });
+      });
+    }
+
+    function wrapTables(container) {
+      container.querySelectorAll('table').forEach(table => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'agenda-table-scroll';
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+      });
+    }
+
+    function buildNav(container) {
+      const nav = document.createElement('nav');
+      nav.className = 'agenda-nav';
+
+      const mkRow = label => {
+        const row = document.createElement('div');
+        row.className = 'agenda-nav-row';
+        const lbl = document.createElement('span');
+        lbl.className = 'agenda-nav-label';
+        lbl.textContent = label;
+        row.appendChild(lbl);
+        return row;
+      };
+
+      const rowPre      = mkRow('Pre-Conference');
+      const rowMain     = mkRow('Main Conference');
+      const rowDetails  = mkRow('Sessions');
+      const sessionLinks = [], posterLinks = [];
+
+      container.querySelectorAll('h2').forEach((h2, i) => {
+        h2.id = 'sec-' + i;
+        const text = h2.textContent;
+        const a = document.createElement('a');
+        a.href = '#sec-' + i;
+        a.onclick = e => { e.preventDefault(); h2.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+
+        if (text.includes('UTS')) {
+          a.textContent = text.split(' | ')[0].trim();
+          (text.startsWith('Day') ? rowMain : rowPre).appendChild(a);
+        } else if (/Poster Session (\d+)/i.test(text)) {
+          const n = parseInt(text.match(/Poster Session (\d+)/i)[1]);
+          a.textContent = 'Day ' + n + ' Poster';
+          posterLinks[n - 1] = a;
+        } else {
+          const m = text.match(/Day (\d+)/);
+          const n = m ? parseInt(m[1]) : sessionLinks.length + 1;
+          a.textContent = 'Day ' + n + ' Sessions';
+          sessionLinks[n - 1] = a;
+        }
+      });
+
+      for (let i = 0; i < Math.max(sessionLinks.length, posterLinks.length); i++) {
+        if (sessionLinks[i]) rowDetails.appendChild(sessionLinks[i]);
+        if (posterLinks[i]) rowDetails.appendChild(posterLinks[i]);
+      }
+
+      nav.appendChild(rowPre);
+      nav.appendChild(rowMain);
+      nav.appendChild(rowDetails);
+      const header = container.querySelector('.preview-header');
+      if (header) header.after(nav); else container.prepend(nav);
+
+      // offset scrollIntoView so h2 is not hidden behind the sticky nav
+      const offset = nav.offsetHeight + 8;
+      container.querySelectorAll('h2').forEach(h => h.style.scrollMarginTop = offset + 'px');
+    }
+
+    fetch('assets/files/agenda.md')
+      .then(r => { if (!r.ok) throw new Error(); return r.text(); })
+      .then(md => {
+        preview.innerHTML = buildHeader() + marked.parse(md);
+        annotateTableColumns(preview);
+        buildNav(preview);
+        wrapTables(preview);
+      })
+      .catch(() => {
+        preview.innerHTML = '<p style="color:#c03820">Could not load program. Please try again later.</p>';
+      });
+  })();
+  </script>
 </body>
 </html>
