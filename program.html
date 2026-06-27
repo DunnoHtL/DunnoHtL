@@ -100,7 +100,7 @@
     .preview-header__title{font-size:14px}
     .preview-header__sub,.preview-header__date{font-size:11px}
 
-    /* Nav: wrap pills, bigger tap targets */
+    /* Nav */
     .agenda-nav{padding:8px 0 12px;gap:6px}
     .agenda-nav-row{flex-wrap:wrap}
     .agenda-nav-label{font-size:9px;min-width:56px;width:100%}
@@ -112,47 +112,13 @@
     #agenda-preview h3+em{font-size:12px;padding:3px 8px 3px 10px}
     #agenda-preview p{font-size:13px}
 
-    /* Card layout — no horizontal scroll */
-    .agenda-table-scroll{overflow-x:visible}
-    #agenda-preview table{display:block;box-shadow:none;border-radius:0}
-    #agenda-preview thead{display:none}
-    #agenda-preview tbody{display:block}
-    #agenda-preview tbody tr{
-      display:block;margin-bottom:10px;
-      border:1px solid #f0d8d4;border-radius:8px;
-      padding:10px 12px;background:#fff;
-      box-shadow:0 1px 3px rgba(0,0,0,.06);
-    }
-    #agenda-preview tbody tr:nth-child(even){background:#fff8f7}
-    #agenda-preview tbody td{
-      display:block;padding:2px 0 4px;
-      border:none;font-size:13px;line-height:1.45;
-    }
-    /* Hide slot/no. — not meaningful on mobile */
-    #agenda-preview tbody td[data-label="Slot"],
-    #agenda-preview tbody td[data-label="No."]{display:none}
-    /* Time — coloured header line */
-    #agenda-preview tbody td[data-label="Time"]{
-      font-size:12px;font-weight:600;color:#c03820;
-      padding-bottom:5px;margin-bottom:4px;
-      border-bottom:1px solid #fae8e4;
-    }
-    /* Title / Agenda — main content */
-    #agenda-preview tbody td[data-label="Title"],
-    #agenda-preview tbody td[data-label="Agenda"]{
-      font-size:14px;font-weight:600;padding-top:2px;
-    }
-    /* Paper ID, Authors, Note — label prefix */
-    #agenda-preview tbody td[data-label="Paper ID"]::before,
-    #agenda-preview tbody td[data-label="Authors"]::before,
-    #agenda-preview tbody td[data-label="Note"]::before{
-      content:attr(data-label) ': ';
-      font-size:10px;font-weight:700;text-transform:uppercase;
-      letter-spacing:.05em;color:#aaa;
-    }
-    #agenda-preview tbody td[data-label="Authors"]{font-size:12px;color:#555}
-    #agenda-preview tbody td[data-label="Note"]{font-size:12px;color:#888}
-    #agenda-preview tbody td[data-label="Paper ID"]{font-size:12px;color:#c03820}
+    /* Tables: shrink text and let wrapper scroll horizontally */
+    .agenda-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+    #agenda-preview table{font-size:12px;min-width:480px}
+    #agenda-preview thead th{font-size:11px;padding:5px 7px;white-space:nowrap}
+    #agenda-preview tbody td{font-size:12px;padding:4px 7px;line-height:1.35}
+    #agenda-preview .cell-time{white-space:nowrap}
+    #agenda-preview .cell-loc{white-space:nowrap}
   }
   </style>
 </head>

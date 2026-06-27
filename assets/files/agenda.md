@@ -46,7 +46,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 13:30 - 15:10 | S12: Paper Session | CB08.02.002 · 5 papers · 13:30-15:10 |
 | 13:30 - 15:10 | S13: Paper Session | CB08.03.002 · 5 papers · 13:30-15:10 |
 | 15:10 - 15:30 | Break (Afternoon Tea) | Poster Session 1 |
-| 15:30 - 17:10 | S14: Paper Session | CB08.02.005 · 4 papers · 15:30-16:50 |
+| 15:30 - 17:10 | S14: Paper Session | CB08.02.005 · 3 papers · 15:30-16:30 |
 | 15:30 - 17:10 | S15: Paper Session | CB08.02.002 · 4 papers · 15:30-16:50 |
 | 15:30 - 17:10 | S16: Paper Session | CB08.03.002 · 5 papers · 15:30-17:10 |
 
@@ -132,14 +132,13 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 14:50 - 15:10 | 165 | A Collaborative Large-Small Language Model Framework For Explainable Electricity Charge Anomaly Analysis in Smart Grids | Diego Weng Qiu, zhouhongyong, Yuting Sun, Wenyue Xiao, Lin Shang |
 
 ### S14 - Paper Session
-*July 17 | Afternoon | 15:30-16:50 | CB08.02.005*
+*July 17 | Afternoon | 15:30-16:30 | CB08.02.005*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
-| 1 | 15:30 - 15:50 | 253 | From Gene-Disease Discovery to Personalised Recommendations: AI for Translational Genomics | Kairui Guo, Mengjia Wu, Yi Zhang, Guangquan Zhang, Hua Lin, Mark Grosser, Jie Lu |
-| 2 | 15:50 - 16:10 | 103 | Fuzzy-Guided Agentic Memory for LLM-Based Recommendation | Di Zhang |
-| 3 | 16:10 - 16:30 | 152 | Wind Power Data Missing Value Completion Method based on DBO-LRTC | Tiefeng Zhang |
-| 4 | 16:30 - 16:50 | 9 | Receding-Horizon Trajectory Planning for Unmanned Surface Vessel Based on Reachable Set | Yu Luan, Hao Sun, Qinglin Sun, Panlong Tan |
+| 1 | 15:30 - 15:50 | 103 | Fuzzy-Guided Agentic Memory for LLM-Based Recommendation | Di Zhang |
+| 2 | 15:50 - 16:10 | 152 | Wind Power Data Missing Value Completion Method based on DBO-LRTC | Tiefeng Zhang |
+| 3 | 16:10 - 16:30 | 9 | Receding-Horizon Trajectory Planning for Unmanned Surface Vessel Based on Reachable Set | Yu Luan, Hao Sun, Qinglin Sun, Panlong Tan |
 
 ### S15 - Paper Session
 *July 17 | Afternoon | 15:30-17:10 | CB08.02.002*
@@ -399,38 +398,37 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ---
 
 ## Poster Session 2
-*Day 2, July 18 | 09:00-17:10 | 28 poster papers*
+*Day 2, July 18 | 09:00-17:10 | 27 poster papers*
 
 | No. | Time | Paper ID | Title | Authors |
 |-----|------|----------|-------|---------|
 | 1 | 09:00 - 17:10 | 284 | Knowledge Graph-Based Causal Chain Modeling and Spatio-temporal Analysis of Gas Emergencies | Fang Li |
-| 2 | 09:00 - 17:10 | 281 | Personalized Dynamic Local Skin Temperature Prediction for Thermal Comfort in Office Environments Using Transfer Learning | Yiqu Zhang, Tao Xuyuan, Xianyi Zeng |
-| 3 | 09:00 - 17:10 | 249 | Enhancing Stock Market Forecasting through LLM-Based Social Media Feature Extraction | Shiping Wen |
-| 4 | 09:00 - 17:10 | 248 | A Heterogeneous Encoding Disentangled Representation Network for Financial Time Series Forecasting | Shiping Wen |
-| 5 | 09:00 - 17:10 | 189 | A Fuzzy Model for Motor Activity Interpretation Using a Piezoelectric Sensor Grid | Victoria Lopez, Roberto Morales-Arsenal, Pavel Llamocca Portella |
-| 6 | 09:00 - 17:10 | 166 | An IoT Chair-Based Sensing System for Unobtrusive Restlessness Detection | Victoria Lopez, Pavel Llamocca Portella, Joe Carrion-Jumbo |
-| 7 | 09:00 - 17:10 | 144 | Evolutionary game analysis of the collaborative mechanisms of medical and long-term nursing care consortiums | Yue Zheng |
-| 8 | 09:00 - 17:10 | 133 | Learning from Others: Cross-context POMDP and Its Application to Adaptive Scheduling Optimization for Health Screening | Hongtao Yu, Mu Du, Nan Kong |
-| 9 | 09:00 - 17:10 | 22 | Risk Factor Identification Method Based on Accident Reports of Oil and Gas Storage and Transportation Facilities | Anqi Xin, Lijun Sun |
-| 10 | 09:00 - 17:10 | 215 | A Simplified Multilevel SVPWM Strategy for Cascaded H-Bridge Converters | Jiawei Wang, Yunhe Wang, Wenjie Ma, Guidong Zhang, Lihao Wu, Zhong Li |
-| 11 | 09:00 - 17:10 | 214 | A Switching Control for LLC Converter under Pulse-Load Conditions | Bingran Liang, Yuzhe Bie, Guidong Zhang, Wenjie Ma, Lihao Wu, Zhong Li |
-| 12 | 09:00 - 17:10 | 210 | Main-Auxiliary Cooperative Minimum-Time Control for Asymmetric Multiphase Buck Converters | Yaopei Liang, Chen Zhang, Lihao Wu, Wenjie Ma, Guidong Zhang, Zhong Li |
-| 13 | 09:00 - 17:10 | 186 | A Crest Factor-Based Chaotic Synchronization Error Energy Method for Early Bearing Degradation Detection | Junying Niu, Zhong Li |
-| 14 | 09:00 - 17:10 | 118 | Fuzzy Control With Feedforward for the Secondary-Side-Parallel CLLC Resonant Converter | Li Lai, Bo Zhang, Jingyang Lin |
-| 15 | 09:00 - 17:10 | 17 | Time Series Classification via Interval Gray Transformation Frame and its Application | Liyuan Jiang |
-| 16 | 09:00 - 17:10 | 143 | Quasi-projective Synchronization of Quaternion-valued Non-identical Cohen-Grossberg Neural Networks with Interaction Terms and Mismatched Parameters | Manchun Tan |
-| 17 | 09:00 - 17:10 | 134 | Online Fatigue-Aware Power Dispatch for Wind Farms with Hard Feasibility Guarantees | Jiangtao Zhao, Lin Zhang, Tiantian He, Tianyi Zhang, Ximeng Wang, Bin Wang, Feng Hong |
-| 18 | 09:00 - 17:10 | 220 | A Masked Reconstruction Method for Incomplete sEMG Signals Based on Muscle Synergy | Lixing Hou, Renyu Yang, Donglong Zhu, ZhongBoMing, Limin Wang, Su Hu |
-| 19 | 09:00 - 17:10 | 171 | Research on Learning and Evaluation of Orthopedic Techniques Based on Time Cycle Consistency | Gao Jian, Tianqiang Huang, Feng Ye, Aokun Zheng, Qi Zhang |
-| 20 | 09:00 - 17:10 | 101 | Attention Deep Neural Networks with Bayesian Hyper-Parameter Optimization for Short-Term Load Forecasting | Vimal Singh Patel, Li Zhang |
-| 21 | 09:00 - 17:10 | 50 | Long- and Short-Term Spatio-Temporal Information-aware Transformer for Traffic Flow Prediction | Zhangyi Xu, Yinan Wang, Peilun Yang, Renjie Sun, Xijuan Liu, Ying Zhang |
-| 22 | 09:00 - 17:10 | 199 | Domain Knowledge Guided for Varicose Vein Classification with Adaptive Clinical Experts | Yanrun Zhu, Xiaodong Yue, Yufei Chen, Zhikang Xu, Zhipeng Wei, Jie Shi |
-| 23 | 09:00 - 17:10 | 221 | Facility Location for Emergency Supply Distribution Centers Considering Priority Levels | Chijun Zhang, Zhixi Li, Ziying Zhang, Yugang Zhao |
-| 24 | 09:00 - 17:10 | 188 | TimeGFD: A Lightweight Client-side Time-series Forecasting Framework Based on Generative Federated Distillation | Junling Chen, Xiaocao Ouyang, Jia Liu, Pengfei Zhang, Wei Huang |
-| 25 | 09:00 - 17:10 | 131 | Transfer Learning-Enabled Cross-Station Photovoltaic Power Forecasting via Dendritic Neural Network | Yang Yu |
-| 26 | 09:00 - 17:10 | 23 | Resource-Efficient Safety-Critical Control for Uncertain Nonlinear Systems and Application to Adaptive Cruise Control | Liqi Wang, Shan Xue, BO XU, Liu Guangliang, Siling Feng, Weidong Zhang |
-| 27 | 09:00 - 17:10 | 201 | TGNN: A Teacher-Guided Graph Neural Network Framework for Semi-Supervised Learning on Non-Stationary Streaming Data | Shukun Li, Hang Yu, Yimin Wen, Huafu Xu |
-| 28 | 09:00 - 17:10 | 82 | TGCRN: Time-Varying Graph Convolutional Recurrent Network for Traffic Flow Prediction | Yaxi Pan, Jingbo Hou, Wei Huang, Jihong Wan, Jie Wang, Xiaocao Ouyang, Xin Yang, Yajing Zhou, Yan Yang |
+| 2 | 09:00 - 17:10 | 249 | Enhancing Stock Market Forecasting through LLM-Based Social Media Feature Extraction | Shiping Wen |
+| 3 | 09:00 - 17:10 | 248 | A Heterogeneous Encoding Disentangled Representation Network for Financial Time Series Forecasting | Shiping Wen |
+| 4 | 09:00 - 17:10 | 189 | A Fuzzy Model for Motor Activity Interpretation Using a Piezoelectric Sensor Grid | Victoria Lopez, Roberto Morales-Arsenal, Pavel Llamocca Portella |
+| 5 | 09:00 - 17:10 | 166 | An IoT Chair-Based Sensing System for Unobtrusive Restlessness Detection | Victoria Lopez, Pavel Llamocca Portella, Joe Carrion-Jumbo |
+| 6 | 09:00 - 17:10 | 144 | Evolutionary game analysis of the collaborative mechanisms of medical and long-term nursing care consortiums | Yue Zheng |
+| 7 | 09:00 - 17:10 | 133 | Learning from Others: Cross-context POMDP and Its Application to Adaptive Scheduling Optimization for Health Screening | Hongtao Yu, Mu Du, Nan Kong |
+| 8 | 09:00 - 17:10 | 22 | Risk Factor Identification Method Based on Accident Reports of Oil and Gas Storage and Transportation Facilities | Anqi Xin, Lijun Sun |
+| 9 | 09:00 - 17:10 | 215 | A Simplified Multilevel SVPWM Strategy for Cascaded H-Bridge Converters | Jiawei Wang, Yunhe Wang, Wenjie Ma, Guidong Zhang, Lihao Wu, Zhong Li |
+| 10 | 09:00 - 17:10 | 214 | A Switching Control for LLC Converter under Pulse-Load Conditions | Bingran Liang, Yuzhe Bie, Guidong Zhang, Wenjie Ma, Lihao Wu, Zhong Li |
+| 11 | 09:00 - 17:10 | 210 | Main-Auxiliary Cooperative Minimum-Time Control for Asymmetric Multiphase Buck Converters | Yaopei Liang, Chen Zhang, Lihao Wu, Wenjie Ma, Guidong Zhang, Zhong Li |
+| 12 | 09:00 - 17:10 | 186 | A Crest Factor-Based Chaotic Synchronization Error Energy Method for Early Bearing Degradation Detection | Junying Niu, Zhong Li |
+| 13 | 09:00 - 17:10 | 118 | Fuzzy Control With Feedforward for the Secondary-Side-Parallel CLLC Resonant Converter | Li Lai, Bo Zhang, Jingyang Lin |
+| 14 | 09:00 - 17:10 | 17 | Time Series Classification via Interval Gray Transformation Frame and its Application | Liyuan Jiang |
+| 15 | 09:00 - 17:10 | 143 | Quasi-projective Synchronization of Quaternion-valued Non-identical Cohen-Grossberg Neural Networks with Interaction Terms and Mismatched Parameters | Manchun Tan |
+| 16 | 09:00 - 17:10 | 134 | Online Fatigue-Aware Power Dispatch for Wind Farms with Hard Feasibility Guarantees | Jiangtao Zhao, Lin Zhang, Tiantian He, Tianyi Zhang, Ximeng Wang, Bin Wang, Feng Hong |
+| 17 | 09:00 - 17:10 | 220 | A Masked Reconstruction Method for Incomplete sEMG Signals Based on Muscle Synergy | Lixing Hou, Renyu Yang, Donglong Zhu, ZhongBoMing, Limin Wang, Su Hu |
+| 18 | 09:00 - 17:10 | 171 | Research on Learning and Evaluation of Orthopedic Techniques Based on Time Cycle Consistency | Gao Jian, Tianqiang Huang, Feng Ye, Aokun Zheng, Qi Zhang |
+| 19 | 09:00 - 17:10 | 101 | Attention Deep Neural Networks with Bayesian Hyper-Parameter Optimization for Short-Term Load Forecasting | Vimal Singh Patel, Li Zhang |
+| 20 | 09:00 - 17:10 | 50 | Long- and Short-Term Spatio-Temporal Information-aware Transformer for Traffic Flow Prediction | Zhangyi Xu, Yinan Wang, Peilun Yang, Renjie Sun, Xijuan Liu, Ying Zhang |
+| 21 | 09:00 - 17:10 | 199 | Domain Knowledge Guided for Varicose Vein Classification with Adaptive Clinical Experts | Yanrun Zhu, Xiaodong Yue, Yufei Chen, Zhikang Xu, Zhipeng Wei, Jie Shi |
+| 22 | 09:00 - 17:10 | 221 | Facility Location for Emergency Supply Distribution Centers Considering Priority Levels | Chijun Zhang, Zhixi Li, Ziying Zhang, Yugang Zhao |
+| 23 | 09:00 - 17:10 | 188 | TimeGFD: A Lightweight Client-side Time-series Forecasting Framework Based on Generative Federated Distillation | Junling Chen, Xiaocao Ouyang, Jia Liu, Pengfei Zhang, Wei Huang |
+| 24 | 09:00 - 17:10 | 131 | Transfer Learning-Enabled Cross-Station Photovoltaic Power Forecasting via Dendritic Neural Network | Yang Yu |
+| 25 | 09:00 - 17:10 | 23 | Resource-Efficient Safety-Critical Control for Uncertain Nonlinear Systems and Application to Adaptive Cruise Control | Liqi Wang, Shan Xue, BO XU, Liu Guangliang, Siling Feng, Weidong Zhang |
+| 26 | 09:00 - 17:10 | 201 | TGNN: A Teacher-Guided Graph Neural Network Framework for Semi-Supervised Learning on Non-Stationary Streaming Data | Shukun Li, Hang Yu, Yimin Wen, Huafu Xu |
+| 27 | 09:00 - 17:10 | 82 | TGCRN: Time-Varying Graph Convolutional Recurrent Network for Traffic Flow Prediction | Yaxi Pan, Jingbo Hou, Wei Huang, Jihong Wan, Jie Wang, Xiaocao Ouyang, Xin Yang, Yajing Zhou, Yan Yang |
 
 ---
 
