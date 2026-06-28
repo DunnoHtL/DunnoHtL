@@ -45,6 +45,10 @@
     background:#fae8e4;border-radius:0 4px 4px 0;
   }
   #agenda-preview p{font-size:15px;line-height:1.5;color:#1a1a1a;margin-bottom:6px}
+  .agenda-nav__note{
+    font-size:11px;font-style:italic;color:#999;
+    padding-top:6px;border-top:1px solid #fdf0ed;margin-top:2px;line-height:1.4;
+  }
   #agenda-preview strong{color:#c03820}
   #agenda-preview em{color:#666}
 
@@ -261,9 +265,14 @@
         if (posterLinks[i]) rowDetails.appendChild(posterLinks[i]);
       }
 
+      const noteEl = document.createElement('p');
+      noteEl.className = 'agenda-nav__note';
+      noteEl.textContent = '* Author names are imported from OpenReview and may differ from your camera-ready version. The final proceedings will use names from your camera-ready submission.';
+
       nav.appendChild(rowPre);
       nav.appendChild(rowMain);
       nav.appendChild(rowDetails);
+      nav.appendChild(noteEl);
       const header = container.querySelector('.preview-header');
       if (header) header.after(nav); else container.prepend(nav);
 
@@ -272,6 +281,8 @@
       const offset = topbarH + nav.offsetHeight + 8;
       container.querySelectorAll('h2').forEach(h => h.style.scrollMarginTop = offset + 'px');
     }
+
+
 
     fetch('assets/files/agenda.md')
       .then(r => { if (!r.ok) throw new Error(); return r.text(); })

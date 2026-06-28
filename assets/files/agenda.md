@@ -68,7 +68,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 13:30 - 15:30 | S25: Special Session on Artificial Intelligence for Optimization and Decision Making | CB08.02.002 · 6 papers · 13:30-15:30 |
 | 13:30 - 15:30 | S26: Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs | CB08.03.002 · 6 papers · 13:30-15:30 |
 | 15:30 - 15:50 | Break (Afternoon Tea) | Poster Session 2 |
-| 15:50 - 17:30 | S27: Special Session on AI for Health | CB08.02.005 · 15:50-17:30 |
+| 15:50 - 17:30 | S27: Paper Session | CB08.02.005 · 1 paper · 15:50-16:10 |
 | 15:50 - 17:30 | S28: Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience | CB08.02.002 · 5 papers · 15:50-17:30 |
 | 15:50 - 17:30 | S29: Special Session on Evolving Deep and Transfer Learning Models for Computer Vision and Medical Imaging | CB08.03.002 · 5 papers · 15:50-17:30 |
 | 19:00 - 22:00 | Banquet (Cruise, Darling Harbour - Circular Quay) | |
@@ -85,7 +85,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 10:40 - 11:00 | Break (Morning Tea) | Poster Session 3 |
 | 11:00 - 12:00 | Meeting Editors | CB08.02.005 (Auditorium) |
 | 12:00 - 13:30 | Lunch | Poster Session 3 |
-| 13:30 - 15:10 | S34: Special Session on Information Aggregation Tools for Artificial Intelligence | CB08.02.005 · 5 papers · 13:30-15:10 |
+| 13:30 - 15:10 | S34: Special Session on Information Aggregation Tools for Artificial Intelligence | CB08.02.005 · 4 papers · 13:30-14:50 |
 | 13:30 - 15:10 | S35: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI) | CB08.02.002 · 5 papers · 13:30-15:10 |
 | 13:30 - 15:10 | S36: Paper Session | CB08.03.002 · 5 papers · 13:30-15:10 |
 | 15:10 - 15:30 | Break (Afternoon Tea) | Poster Session 3 |
@@ -141,7 +141,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 3 | 16:10 - 16:30 | 9 | Receding-Horizon Trajectory Planning for Unmanned Surface Vessel Based on Reachable Set | Yu Luan, Hao Sun, Qinglin Sun, Panlong Tan |
 
 ### S15 - Paper Session
-*July 17 | Afternoon | 15:30-17:10 | CB08.02.002*
+*July 17 | Afternoon | 15:30-16:50 | CB08.02.002*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -231,11 +231,12 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 14:50 - 15:10 | 91 | SPARQ: Graph-Structured Queries Drive GNN Retrieval for Knowledge Graph Question Answering | Mingxuan Wang, Xinzhi Wang, Ruishen Liu, Yuxuan Li, Xiangfeng Luo |
 | 6 | 15:10 - 15:30 | 46 | Re-KGR: Mitigating Factual Hallucinations via Hybrid Graph Reasoning and Semantic Refinement | Yuxuan Li, Xinzhi Wang, Ruishen Liu, Mingxuan Wang, Xiangfeng Luo |
 
-### S27 - Special Session on AI for Health
-*July 18 | Afternoon | 15:50-17:30 | CB08.02.005*
+### S27 - Paper Session
+*July 18 | Afternoon | 15:50-16:10 | CB08.02.005*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
+| 1 | 15:50 - 16:10 | 98 | Fuzzy-Transformer Fusion for Sentiment Analysis: An Empirical Study on Spanish Twitter Data | Clara Simon de Blas, Jesus Gonzalez Gironda, DANIEL GOMEZ GONZALEZ |
 
 ### S28 - Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience
 *July 18 | Afternoon | 15:50-17:30 | CB08.02.002*
@@ -296,15 +297,14 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 10:00 - 10:20 | 35 | Automated Detection of Ergonomically Incorrect Postures Using Machine Learning | Jose Ortiz, Cristina Lema, Kevin Landazuri, Lenin Ramirez-Cando, Diego Almeida, Vladimir Bonilla, Luis Zhinin-Vera, Gandhi Fernando Villalba Meneses, CESAR BYRON GUEVARA MALDONADO |
 
 ### S34 - Special Session on Information Aggregation Tools for Artificial Intelligence
-*July 19 | Afternoon | 13:30-15:10 | CB08.02.005*
+*July 19 | Afternoon | 13:30-14:50 | CB08.02.005*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
 | 1 | 13:30 - 13:50 | 269 | Induced aggregation systems with average triangles | Muhammad Saqlain, Jose M Merigo |
 | 2 | 13:50 - 14:10 | 224 | Modeling affective polarization by means of opposite fuzzy sets | ESTRELLA GARCIA PELLUZ, Juan Antonio Guevara, Javier Montero, J. C. Losada |
-| 3 | 14:10 - 14:30 | 98 | Fuzzy-Transformer Fusion for Sentiment Analysis: An Empirical Study on Spanish Twitter Data | Clara Simon de Blas, Jesus Gonzalez Gironda, DANIEL GOMEZ GONZALEZ |
-| 4 | 14:30 - 14:50 | 21 | Hybrid Feature Selection with Global Context and Focused Attention | Zeeshan Amir |
-| 5 | 14:50 - 15:10 | 117 | A Priori Evaluation of Image Pre-processing via Multi-Criteria Metrics: From Classical to Discrete Smoothing | Pablo A. Flores-Vidal, Anahi De la Fuente Gambra, DANIEL GOMEZ GONZALEZ, Luis Magdalena |
+| 3 | 14:10 - 14:30 | 21 | Hybrid Feature Selection with Global Context and Focused Attention | Zeeshan Amir |
+| 4 | 14:30 - 14:50 | 117 | A Priori Evaluation of Image Pre-processing via Multi-Criteria Metrics: From Classical to Discrete Smoothing | Pablo A. Flores-Vidal, Anahi De la Fuente Gambra, DANIEL GOMEZ GONZALEZ, Luis Magdalena |
 
 ### S35 - Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)
 *July 19 | Afternoon | 13:30-15:10 | CB08.02.002*
