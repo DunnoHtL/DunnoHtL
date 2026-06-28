@@ -46,7 +46,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 13:30 - 15:10 | S12: Paper Session | CB08.02.002 · 5 papers · 13:30-15:10 |
 | 13:30 - 15:10 | S13: Paper Session | CB08.03.002 · 5 papers · 13:30-15:10 |
 | 15:10 - 15:30 | Break (Afternoon Tea) | Poster Session 1 |
-| 15:30 - 17:10 | S14: Paper Session | CB08.02.005 · 3 papers · 15:30-16:30 |
+| 15:30 - 17:10 | S14: Paper Session | CB08.02.005 · 4 papers · 15:30-16:50 |
 | 15:30 - 17:10 | S15: Paper Session | CB08.02.002 · 4 papers · 15:30-16:50 |
 | 15:30 - 17:10 | S16: Paper Session | CB08.03.002 · 5 papers · 15:30-17:10 |
 
@@ -68,7 +68,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 13:30 - 15:30 | S25: Special Session on Artificial Intelligence for Optimization and Decision Making | CB08.02.002 · 6 papers · 13:30-15:30 |
 | 13:30 - 15:30 | S26: Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs | CB08.03.002 · 6 papers · 13:30-15:30 |
 | 15:30 - 15:50 | Break (Afternoon Tea) | Poster Session 2 |
-| 15:50 - 17:30 | S27: Paper Session | CB08.02.005 · 1 paper · 15:50-16:10 |
+| 15:50 - 17:30 | S27: Special Session on Information Aggregation Tools for Artificial Intelligence | CB08.02.005 · 5 papers · 15:50-17:30 |
 | 15:50 - 17:30 | S28: Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience | CB08.02.002 · 5 papers · 15:50-17:30 |
 | 15:50 - 17:30 | S29: Special Session on Evolving Deep and Transfer Learning Models for Computer Vision and Medical Imaging | CB08.03.002 · 5 papers · 15:50-17:30 |
 | 19:00 - 22:00 | Banquet (Cruise, Darling Harbour - Circular Quay) | |
@@ -85,9 +85,9 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 10:40 - 11:00 | Break (Morning Tea) | Poster Session 3 |
 | 11:00 - 12:00 | Meeting Editors | CB08.02.005 (Auditorium) |
 | 12:00 - 13:30 | Lunch | Poster Session 3 |
-| 13:30 - 15:10 | S34: Special Session on Information Aggregation Tools for Artificial Intelligence | CB08.02.005 · 4 papers · 13:30-14:50 |
+| 13:30 - 15:10 | S34: Paper Session (Reserved) | CB08.02.005 |
 | 13:30 - 15:10 | S35: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI) | CB08.02.002 · 5 papers · 13:30-15:10 |
-| 13:30 - 15:10 | S36: Paper Session | CB08.03.002 · 5 papers · 13:30-15:10 |
+| 13:30 - 15:10 | S36: Paper Session | CB08.03.002 · 4 papers · 13:30-14:50 |
 | 15:10 - 15:30 | Break (Afternoon Tea) | Poster Session 3 |
 | 15:30 - 17:10 | S37: Paper Session | CB08.02.005 · 5 papers · 15:30-17:10 |
 | 15:30 - 17:10 | S38: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI) | CB08.02.002 · 3 papers · 15:30-16:30 |
@@ -132,13 +132,14 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 14:50 - 15:10 | 165 | A Collaborative Large-Small Language Model Framework For Explainable Electricity Charge Anomaly Analysis in Smart Grids | Diego Weng Qiu, zhouhongyong, Yuting Sun, Wenyue Xiao, Lin Shang |
 
 ### S14 - Paper Session
-*July 17 | Afternoon | 15:30-16:30 | CB08.02.005*
+*July 17 | Afternoon | 15:30-16:50 | CB08.02.005*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
 | 1 | 15:30 - 15:50 | 103 | Fuzzy-Guided Agentic Memory for LLM-Based Recommendation | Di Zhang |
 | 2 | 15:50 - 16:10 | 152 | Wind Power Data Missing Value Completion Method based on DBO-LRTC | Tiefeng Zhang |
 | 3 | 16:10 - 16:30 | 9 | Receding-Horizon Trajectory Planning for Unmanned Surface Vessel Based on Reachable Set | Yu Luan, Hao Sun, Qinglin Sun, Panlong Tan |
+| 4 | 16:30 - 16:50 | 127 | CEGNN: Cross-Environment Consistent Graph Neural Networks for Robust OOD Generalization | Qiying Li, Tingyi Cai, Ruiting Zhao, Xinyi Li, Ming Li |
 
 ### S15 - Paper Session
 *July 17 | Afternoon | 15:30-16:50 | CB08.02.002*
@@ -231,12 +232,16 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 14:50 - 15:10 | 91 | SPARQ: Graph-Structured Queries Drive GNN Retrieval for Knowledge Graph Question Answering | Mingxuan Wang, Xinzhi Wang, Ruishen Liu, Yuxuan Li, Xiangfeng Luo |
 | 6 | 15:10 - 15:30 | 46 | Re-KGR: Mitigating Factual Hallucinations via Hybrid Graph Reasoning and Semantic Refinement | Yuxuan Li, Xinzhi Wang, Ruishen Liu, Mingxuan Wang, Xiangfeng Luo |
 
-### S27 - Paper Session
-*July 18 | Afternoon | 15:50-16:10 | CB08.02.005*
+### S27 - Special Session on Information Aggregation Tools for Artificial Intelligence
+*July 18 | Afternoon | 15:50-17:30 | CB08.02.005*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
 | 1 | 15:50 - 16:10 | 98 | Fuzzy-Transformer Fusion for Sentiment Analysis: An Empirical Study on Spanish Twitter Data | Clara Simon de Blas, Jesus Gonzalez Gironda, DANIEL GOMEZ GONZALEZ |
+| 2 | 16:10 - 16:30 | 269 | Induced aggregation systems with average triangles | Muhammad Saqlain, Jose M Merigo |
+| 3 | 16:30 - 16:50 | 224 | Modeling affective polarization by means of opposite fuzzy sets | ESTRELLA GARCIA PELLUZ, Juan Antonio Guevara, Javier Montero, J. C. Losada |
+| 4 | 16:50 - 17:10 | 21 | Hybrid Feature Selection with Global Context and Focused Attention | Zeeshan Amir |
+| 5 | 17:10 - 17:30 | 117 | A Priori Evaluation of Image Pre-processing via Multi-Criteria Metrics: From Classical to Discrete Smoothing | Pablo A. Flores-Vidal, Anahi De la Fuente Gambra, DANIEL GOMEZ GONZALEZ, Luis Magdalena |
 
 ### S28 - Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience
 *July 18 | Afternoon | 15:50-17:30 | CB08.02.002*
@@ -296,15 +301,11 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 3 | 09:40 - 10:00 | 79 | ECMNet: An Efficient CNN-Mamba Network for Maritime Radar Target Detection | Wenjing He, Yi Zhong, Yongyan Li, Ju Wang |
 | 4 | 10:00 - 10:20 | 35 | Automated Detection of Ergonomically Incorrect Postures Using Machine Learning | Jose Ortiz, Cristina Lema, Kevin Landazuri, Lenin Ramirez-Cando, Diego Almeida, Vladimir Bonilla, Luis Zhinin-Vera, Gandhi Fernando Villalba Meneses, CESAR BYRON GUEVARA MALDONADO |
 
-### S34 - Special Session on Information Aggregation Tools for Artificial Intelligence
-*July 19 | Afternoon | 13:30-14:50 | CB08.02.005*
+### S34 - Paper Session (Reserved)
+*July 19 | Afternoon | CB08.02.005*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
-| 1 | 13:30 - 13:50 | 269 | Induced aggregation systems with average triangles | Muhammad Saqlain, Jose M Merigo |
-| 2 | 13:50 - 14:10 | 224 | Modeling affective polarization by means of opposite fuzzy sets | ESTRELLA GARCIA PELLUZ, Juan Antonio Guevara, Javier Montero, J. C. Losada |
-| 3 | 14:10 - 14:30 | 21 | Hybrid Feature Selection with Global Context and Focused Attention | Zeeshan Amir |
-| 4 | 14:30 - 14:50 | 117 | A Priori Evaluation of Image Pre-processing via Multi-Criteria Metrics: From Classical to Discrete Smoothing | Pablo A. Flores-Vidal, Anahi De la Fuente Gambra, DANIEL GOMEZ GONZALEZ, Luis Magdalena |
 
 ### S35 - Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)
 *July 19 | Afternoon | 13:30-15:10 | CB08.02.002*
@@ -318,15 +319,14 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 14:50 - 15:10 | 116 | From Policy Documents to Structured Survey Responses: Evaluating Large Language Models for Policy Monitoring | Carolyn Cole, Matthias Deschryvere, Toqeer Ehsan, Arash Hajikhani |
 
 ### S36 - Paper Session
-*July 19 | Afternoon | 13:30-15:10 | CB08.03.002*
+*July 19 | Afternoon | 13:30-14:50 | CB08.03.002*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
 | 1 | 13:30 - 13:50 | 114 | CBAM-ResU-Net: A Parameter-Efficient Residual Attention 3D U-Net for Brain Tumor Segmentation | Anam Amjad, Usama Ijaz Bajwa, Zulfiqar Habib, Rehan Raza |
-| 2 | 13:50 - 14:10 | 127 | CEGNN: Cross-Environment Consistent Graph Neural Networks for Robust OOD Generalization | Qiying Li, Tingyi Cai, Ruiting Zhao, Xinyi Li, Ming Li |
-| 3 | 14:10 - 14:30 | 113 | Feature Fusion-based Attribute Graph Clustering | Jingxiao zhang, Chao Li, Zhenghua Xin, Shifei Ding |
-| 4 | 14:30 - 14:50 | 110 | Prediction of Forest-Grassland Fires based on Graph Attention Mechanism | Xingpeng Liu |
-| 5 | 14:50 - 15:10 | 58 | HGCRE: Heterogeneous Graph Representation Learning via Contrastive Learning | Dongming Chen, Hongxun Wang, Jiaming Liu, Beilei Wang, Tao Ren |
+| 2 | 13:50 - 14:10 | 113 | Feature Fusion-based Attribute Graph Clustering | Jingxiao zhang, Chao Li, Zhenghua Xin, Shifei Ding |
+| 3 | 14:10 - 14:30 | 110 | Prediction of Forest-Grassland Fires based on Graph Attention Mechanism | Xingpeng Liu |
+| 4 | 14:30 - 14:50 | 58 | HGCRE: Heterogeneous Graph Representation Learning via Contrastive Learning | Dongming Chen, Hongxun Wang, Jiaming Liu, Beilei Wang, Tao Ren |
 
 ### S37 - Paper Session
 *July 19 | Afternoon | 15:30-17:10 | CB08.02.005*
