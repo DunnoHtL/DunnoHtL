@@ -167,7 +167,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ## Day 2 | July 18
 
 ### S21 - Special Session on AI for Agriculture - Innovations and Applications
-*July 18 | Morning | 11:10-12:10 | CB08.02.005*
+*July 18 | Morning | 11:10-12:10 | CB08.02.005 | Chair: Guanjin Wang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -176,7 +176,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 3 | 11:50 - 12:10 | 33 | Few-Shot Pest Recognition via Multimodal Fusion of Visual and Semantic Features | Wenyong Li, Chuanheng Sun, Guanjin Wang, Ferdous Sohel |
 
 ### S22 - Special Session on Towards Responsible Intelligent Decision Support Systems
-*July 18 | Morning | 11:10-12:30 | CB08.02.002*
+*July 18 | Morning | 11:10-12:30 | CB08.02.002 | Chair: Luis Martínez*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -186,7 +186,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 12:10 - 12:30 | 228 | Immersive 3D Interface for Explainable Movie Recommendations | Oscar Ortega, Alvaro Labella, Raciel Yera, Luis Martinez |
 
 ### S23 - Special Session on Spatio-Temporal Autonomous Learning in Uncertain Decision Situations
-*July 18 | Morning | 11:10-12:30 | CB08.03.002*
+*July 18 | Morning | 11:10-12:30 | CB08.03.002 | Chair: Kun Wang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -196,7 +196,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 12:10 - 12:30 | 49 | Concept Drift Detection Based on Attribute Interaction Changes | Chenxia Jin, Zekang Han, Fachao Li, Fei Guan |
 
 ### S24 - Special Session on AI for Health
-*July 18 | Afternoon | 13:30-15:30 | CB08.02.005*
+*July 18 | Afternoon | 13:30-15:30 | CB08.02.005 | Chair: Jie Lu*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -209,7 +209,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 6 | 15:10 - 15:30 | 34 | Real-Time Detection of Sleep Apnea Using Respiratory Sound Analysis | Paula Olaya, Jeremmy Leon, Alejandro Erazo, Kevin Landazuri, Lenin Ramirez-Cando, Diego Almeida, Vladimir Bonilla, Luis Zhinin-Vera, Gandhi Fernando Villalba Meneses, CESAR BYRON GUEVARA MALDONADO |
 
 ### S25 - Special Session on Artificial Intelligence for Optimization and Decision Making
-*July 18 | Afternoon | 13:30-15:30 | CB08.02.002*
+*July 18 | Afternoon | 13:30-15:30 | CB08.02.002 | Chair: Zhen Zhang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -221,7 +221,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 6 | 15:10 - 15:30 | 97 | Uncertainty-Aware Forecasting and Inventory Optimization for ATM Cash Management in Vietnam | Huu-Thanh Phan, Xuan-Bach Le, Tho Quan |
 
 ### S26 - Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs
-*July 18 | Afternoon | 13:30-15:30 | CB08.03.002*
+*July 18 | Afternoon | 13:30-15:30 | CB08.03.002 | Chair: Jianxin Li and Xinzhi Wang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -233,7 +233,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 6 | 15:10 - 15:30 | 46 | Re-KGR: Mitigating Factual Hallucinations via Hybrid Graph Reasoning and Semantic Refinement | Yuxuan Li, Xinzhi Wang, Ruishen Liu, Mingxuan Wang, Xiangfeng Luo |
 
 ### S27 - Special Session on Information Aggregation Tools for Artificial Intelligence
-*July 18 | Afternoon | 15:50-17:10 | CB08.02.005*
+*July 18 | Afternoon | 15:50-17:10 | CB08.02.005 | Chair: Javier Montero*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -243,7 +243,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 16:50 - 17:10 | 117 | A Priori Evaluation of Image Pre-processing via Multi-Criteria Metrics: From Classical to Discrete Smoothing | Pablo A. Flores-Vidal, Anahi De la Fuente Gambra, DANIEL GOMEZ GONZALEZ, Luis Magdalena |
 
 ### S28 - Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience
-*July 18 | Afternoon | 15:50-17:30 | CB08.02.002*
+*July 18 | Afternoon | 15:50-17:30 | CB08.02.002 | Chair: Angela Huo*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -254,7 +254,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 17:10 - 17:30 | 30 | Robust and Interpretable Deep Evolutionary Clustering for Dynamic Community Detection with Explicit Migration Modeling | Limengzi Yuan, Xiangmin Zhou, Wei Shao, Jin Qiu Carrie Ruan Hu, Iqbal Gondal |
 
 ### S29 - Special Session on Evolving Deep and Transfer Learning Models for Computer Vision and Medical Imaging
-*July 18 | Afternoon | 15:50-17:30 | CB08.03.002*
+*July 18 | Afternoon | 15:50-17:30 | CB08.03.002 | Chair: Li Zhang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -307,7 +307,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 |------|------|----------|-------|---------|
 
 ### S35 - Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)
-*July 19 | Afternoon | 13:30-15:10 | CB08.02.002*
+*July 19 | Afternoon | 13:30-15:10 | CB08.02.002 | Chair: Jun Liu*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
