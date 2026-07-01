@@ -68,7 +68,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 13:30 - 15:30 | S25: Special Session on Artificial Intelligence for Optimization and Decision Making | CB08.02.002 · 6 papers · 13:30-15:30 |
 | 13:30 - 15:30 | S26: Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs | CB08.03.002 · 6 papers · 13:30-15:30 |
 | 15:30 - 15:50 | Break (Afternoon Tea) | Poster Session 2 |
-| 15:50 - 17:30 | S27: Special Session on Information Aggregation Tools for Artificial Intelligence | CB08.02.005 · 5 papers · 15:50-17:30 |
+| 15:50 - 17:10 | S27: Special Session on Information Aggregation Tools for Artificial Intelligence | CB08.02.005 · 4 papers · 15:50-17:10 |
 | 15:50 - 17:30 | S28: Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience | CB08.02.002 · 5 papers · 15:50-17:30 |
 | 15:50 - 17:30 | S29: Special Session on Evolving Deep and Transfer Learning Models for Computer Vision and Medical Imaging | CB08.03.002 · 5 papers · 15:50-17:30 |
 | 19:00 - 22:00 | Banquet (Cruise, Darling Harbour - Circular Quay) | |
@@ -233,15 +233,14 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 6 | 15:10 - 15:30 | 46 | Re-KGR: Mitigating Factual Hallucinations via Hybrid Graph Reasoning and Semantic Refinement | Yuxuan Li, Xinzhi Wang, Ruishen Liu, Mingxuan Wang, Xiangfeng Luo |
 
 ### S27 - Special Session on Information Aggregation Tools for Artificial Intelligence
-*July 18 | Afternoon | 15:50-17:30 | CB08.02.005*
+*July 18 | Afternoon | 15:50-17:10 | CB08.02.005*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
 | 1 | 15:50 - 16:10 | 98 | Fuzzy-Transformer Fusion for Sentiment Analysis: An Empirical Study on Spanish Twitter Data | Clara Simon de Blas, Jesus Gonzalez Gironda, DANIEL GOMEZ GONZALEZ |
 | 2 | 16:10 - 16:30 | 269 | Induced aggregation systems with average triangles | Muhammad Saqlain, Jose M Merigo |
 | 3 | 16:30 - 16:50 | 224 | Modeling affective polarization by means of opposite fuzzy sets | ESTRELLA GARCIA PELLUZ, Juan Antonio Guevara, Javier Montero, J. C. Losada |
-| 4 | 16:50 - 17:10 | 21 | Hybrid Feature Selection with Global Context and Focused Attention | Zeeshan Amir |
-| 5 | 17:10 - 17:30 | 117 | A Priori Evaluation of Image Pre-processing via Multi-Criteria Metrics: From Classical to Discrete Smoothing | Pablo A. Flores-Vidal, Anahi De la Fuente Gambra, DANIEL GOMEZ GONZALEZ, Luis Magdalena |
+| 4 | 16:50 - 17:10 | 117 | A Priori Evaluation of Image Pre-processing via Multi-Criteria Metrics: From Classical to Discrete Smoothing | Pablo A. Flores-Vidal, Anahi De la Fuente Gambra, DANIEL GOMEZ GONZALEZ, Luis Magdalena |
 
 ### S28 - Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience
 *July 18 | Afternoon | 15:50-17:30 | CB08.02.002*
