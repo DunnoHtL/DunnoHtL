@@ -401,7 +401,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 
 | No. | Time | Paper ID | Title | Authors |
 |-----|------|----------|-------|---------|
-| 1 | 09:00 - 17:10 | 284 | Knowledge Graph-Based Causal Chain Modeling and Spatio-temporal Analysis of Gas Emergencies | Fang Li |
+| 1 | 09:00 - 17:10 | 284 | Knowledge Graph-Based Causal Chain Modeling and Spatio-temporal Analysis of Gas Emergencies | Fang Li, Yafei Wang, Jingjing Wang |
 | 2 | 09:00 - 17:10 | 249 | Enhancing Stock Market Forecasting through LLM-Based Social Media Feature Extraction | Shiping Wen |
 | 3 | 09:00 - 17:10 | 248 | A Heterogeneous Encoding Disentangled Representation Network for Financial Time Series Forecasting | Shiping Wen |
 | 4 | 09:00 - 17:10 | 189 | A Fuzzy Model for Motor Activity Interpretation Using a Piezoelectric Sensor Grid | Victoria Lopez, Roberto Morales-Arsenal, Pavel Llamocca Portella |
