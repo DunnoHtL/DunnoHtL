@@ -84,7 +84,8 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 09:00 - 10:40 | S33: Paper Session | CB08.03.002 · 4 papers · 09:00-10:20 |
 | 10:40 - 11:00 | Break (Morning Tea) | Poster Session 3 |
 | 11:00 - 12:00 | Meeting Editors | CB08.02.005 (Auditorium) |
-| 12:00 - 13:30 | Lunch | Poster Session 3 |
+| 12:00 - 13:00 | Lunch | Poster Session 3 |
+| 13:00 - 13:30 | Knowledge-based Systems (KBS) Author Workshop | CB08.02.005 |
 | 13:30 - 15:10 | S34: Paper Session (Reserved) | CB08.02.005 |
 | 13:30 - 15:10 | S35: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI) | CB08.02.002 · 5 papers · 13:30-15:10 |
 | 13:30 - 15:10 | S36: Paper Session | CB08.03.002 · 4 papers · 13:30-14:50 |
