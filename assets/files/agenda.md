@@ -66,7 +66,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 12:30 - 13:30 | Lunch | Poster Session 2 |
 | 13:30 - 15:30 | S24: Special Session on AI for Health | CB08.02.005 · 6 papers · 13:30-15:30 |
 | 13:30 - 15:30 | S25: Special Session on Artificial Intelligence for Optimization and Decision Making | CB08.02.002 · 6 papers · 13:30-15:30 |
-| 13:30 - 15:30 | S26: Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs | CB08.03.002 · 6 papers · 13:30-15:30 |
+| 13:30 - 15:10 | S26: Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs | CB08.03.002 · 5 papers · 13:30-15:10 |
 | 15:30 - 15:50 | Break (Afternoon Tea) | Poster Session 2 |
 | 15:50 - 17:10 | S27: Special Session on Information Aggregation Tools for Artificial Intelligence | CB08.02.005 · 4 papers · 15:50-17:10 |
 | 15:50 - 17:30 | S28: Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience | CB08.02.002 · 5 papers · 15:50-17:30 |
@@ -222,7 +222,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 6 | 15:10 - 15:30 | 97 | Uncertainty-Aware Forecasting and Inventory Optimization for ATM Cash Management in Vietnam | Huu-Thanh Phan, Xuan-Bach Le, Tho Quan |
 
 ### S26 - Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs
-*July 18 | Afternoon | 13:30-15:30 | CB08.03.002 | Chair: Jianxin Li and Xinzhi Wang*
+*July 18 | Afternoon | 13:30-15:10 | CB08.03.002 | Chair: Jianxin Li and Xinzhi Wang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -231,7 +231,6 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 3 | 14:10 - 14:30 | 86 | Adaptive Role Flipping based Robust Cross-Modal Hashing | ZihanWang, Wentao Fan, Linwei Chen, Huaxiong Li |
 | 4 | 14:30 - 14:50 | 183 | KRAG: Refining Knowledge for Retrieval-Augmented Generation through Kahneman-Tversky Optimization | Cheng Zhang, Xiangfeng Luo, Jianqiang Huang |
 | 5 | 14:50 - 15:10 | 91 | SPARQ: Graph-Structured Queries Drive GNN Retrieval for Knowledge Graph Question Answering | Mingxuan Wang, Xinzhi Wang, Ruishen Liu, Yuxuan Li, Xiangfeng Luo |
-| 6 | 15:10 - 15:30 | 46 | Re-KGR: Mitigating Factual Hallucinations via Hybrid Graph Reasoning and Semantic Refinement | Yuxuan Li, Xinzhi Wang, Ruishen Liu, Mingxuan Wang, Xiangfeng Luo |
 
 ### S27 - Special Session on Information Aggregation Tools for Artificial Intelligence
 *July 18 | Afternoon | 15:50-17:10 | CB08.02.005 | Chair: Javier Montero*
@@ -398,7 +397,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ---
 
 ## Poster Session 2
-*Day 2, July 18 | 09:00-17:10 | 27 poster papers*
+*Day 2, July 18 | 09:00-17:10 | 28 poster papers*
 
 | No. | Time | Paper ID | Title | Authors |
 |-----|------|----------|-------|---------|
@@ -429,6 +428,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 25 | 09:00 - 17:10 | 23 | Resource-Efficient Safety-Critical Control for Uncertain Nonlinear Systems and Application to Adaptive Cruise Control | Liqi Wang, Shan Xue, BO XU, Liu Guangliang, Siling Feng, Weidong Zhang |
 | 26 | 09:00 - 17:10 | 201 | TGNN: A Teacher-Guided Graph Neural Network Framework for Semi-Supervised Learning on Non-Stationary Streaming Data | Shukun Li, Hang Yu, Yimin Wen, Huafu Xu |
 | 27 | 09:00 - 17:10 | 82 | TGCRN: Time-Varying Graph Convolutional Recurrent Network for Traffic Flow Prediction | Yaxi Pan, Jingbo Hou, Wei Huang, Jihong Wan, Jie Wang, Xiaocao Ouyang, Xin Yang, Yajing Zhou, Yan Yang |
+| 28 | 09:00 - 17:10 | 46 | Re-KGR: Mitigating Factual Hallucinations via Hybrid Graph Reasoning and Semantic Refinement | Yuxuan Li, Xinzhi Wang, Ruishen Liu, Mingxuan Wang, Xiangfeng Luo |
 
 ---
 
