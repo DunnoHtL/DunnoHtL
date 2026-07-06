@@ -100,7 +100,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ## Day 1 | July 17
 
 ### S11 - Paper Session
-*July 17 | Afternoon | 13:30-15:10 | CB08.02.005*
+*July 17 | Afternoon | 13:30-15:10 | CB08.02.005 | Chair: Guanjin Wang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -111,7 +111,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 14:50 - 15:10 | 254 | The Ordered Weighted Average Budget | Ihab Alkasrawi, Jose M Merigo, Li Guan |
 
 ### S12 - Paper Session
-*July 17 | Afternoon | 13:30-15:10 | CB08.02.002*
+*July 17 | Afternoon | 13:30-15:10 | CB08.02.002 | Chair: Feng Liu*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -133,7 +133,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 14:50 - 15:10 | 165 | A Collaborative Large-Small Language Model Framework For Explainable Electricity Charge Anomaly Analysis in Smart Grids | Diego Weng Qiu, zhouhongyong, Yuting Sun, Wenyue Xiao, Lin Shang |
 
 ### S14 - Paper Session
-*July 17 | Afternoon | 15:30-16:50 | CB08.02.005*
+*July 17 | Afternoon | 15:30-16:50 | CB08.02.005 | Chair: Guanjin Wang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -143,7 +143,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 16:30 - 16:50 | 127 | CEGNN: Cross-Environment Consistent Graph Neural Networks for Robust OOD Generalization | Qiying Li, Tingyi Cai, Ruiting Zhao, Xinyi Li, Ming Li |
 
 ### S15 - Paper Session
-*July 17 | Afternoon | 15:30-16:50 | CB08.02.002*
+*July 17 | Afternoon | 15:30-16:50 | CB08.02.002 | Chair: Feng Liu*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -269,7 +269,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ## Day 3 | July 19
 
 ### S31 - Paper Session
-*July 19 | Morning | 09:00-10:40 | CB08.02.005*
+*July 19 | Morning | 09:00-10:40 | CB08.02.005 | Chair: Thi Luu Phuong*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -280,7 +280,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 10:20 - 10:40 | 180 | Cross-lingual Parkinson's Disease Detection based on Double-level Optimized Meta-learning | Wei Ji, Chunjie Wang, Yun Li |
 
 ### S32 - Paper Session
-*July 19 | Morning | 09:00-10:40 | CB08.02.002*
+*July 19 | Morning | 09:00-10:40 | CB08.02.002 | Chair: Xianyi Zeng*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
