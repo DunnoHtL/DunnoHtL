@@ -50,11 +50,24 @@ mark{background:var(--primary-100); color:inherit; padding:.15em .3em; border-ra
 .nav__link:hover{background:var(--primary-50)}
 .nav__link.active{background:var(--primary-100); color:var(--primary-800); box-shadow:inset 0 0 0 1px var(--primary-200)}
 .nav .icon{width:20px; display:inline-block; text-align:center}
-.sidebar.collapsed{width:120px; flex-basis:120px}
+.sidebar.collapsed{width:120px !important; flex-basis:120px !important}
 .sidebar.collapsed .label{display:none !important}
 .sidebar.collapsed .nav__section{display:none}
 .sidebar.collapsed .nav__link{justify-content:center; padding:0}
 .sidebar.collapsed .sidebar__footer{display:none}
+
+/* Sidebar resize handle */
+.sidebar-resize-handle{
+  width:5px; flex:0 0 5px; cursor:col-resize; background:transparent;
+  position:relative; z-index:5; transition:background .15s;
+}
+.sidebar-resize-handle::after{
+  content:''; position:absolute; inset:0;
+  background:var(--primary-300); opacity:0; transition:opacity .15s;
+}
+.sidebar-resize-handle:hover::after,
+.sidebar-resize-handle.dragging::after{opacity:1}
+@media(max-width:980px){.sidebar-resize-handle{display:none}}
 
 /* Content Area */
 .content-area{flex:1; display:flex; flex-direction:column; min-width:0; background:linear-gradient(180deg, #fff, #fff 55%, var(--primary-50) 100%)}

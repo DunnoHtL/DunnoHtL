@@ -151,6 +151,7 @@
 
       <main id="main" class="content">
         <div id="agenda-preview"><p style="color:#888;font-size:13px">Loading program…</p></div>
+
       </main>
 <div data-include="partials/footer.html"></div>
 
@@ -250,6 +251,8 @@
           (text.startsWith('Day') ? rowMain : rowPre).appendChild(a);
         } else if (/Poster Session (\d+)/i.test(text)) {
           const n = parseInt(text.match(/Poster Session (\d+)/i)[1]);
+          const notice = h2.previousElementSibling?.classList.contains('notice-box') ? h2.previousElementSibling : null;
+          if (notice) a.onclick = e => { e.preventDefault(); notice.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
           a.textContent = 'Day ' + n + ' Poster';
           posterLinks[n - 1] = a;
         } else {
@@ -280,15 +283,33 @@
       const topbarH = document.querySelector('.topbar')?.offsetHeight ?? 56;
       const offset = topbarH + nav.offsetHeight + 8;
       container.querySelectorAll('h2').forEach(h => h.style.scrollMarginTop = offset + 'px');
+      container.querySelectorAll('.notice-box').forEach(n => n.style.scrollMarginTop = offset + 'px');
     }
 
 
+
+    function addPosterNotices(container) {
+      container.querySelectorAll('h2').forEach(h2 => {
+        if (/Poster Session \d+/i.test(h2.textContent)) {
+          const notice = document.createElement('div');
+          notice.className = 'notice-box';
+          notice.innerHTML =
+            '<strong>Poster Session Arrangement:</strong> The poster session runs the whole day, ' +
+            'specifically during the morning breaks, lunch, and afternoon breaks. ' +
+            '<strong>Setup:</strong> Put your poster (A0 portrait) on the provided board at the venue in the morning. ' +
+            '<strong>Authors:</strong> Stand by your poster during breaks so attendees can discuss your work with you. ' +
+            '<strong>Teardown:</strong> Please remove your poster at the end of the day.';
+          h2.before(notice);
+        }
+      });
+    }
 
     fetch('assets/files/agenda.md')
       .then(r => { if (!r.ok) throw new Error(); return r.text(); })
       .then(md => {
         preview.innerHTML = buildHeader() + marked.parse(md);
         annotateTableColumns(preview);
+        addPosterNotices(preview);
         buildNav(preview);
         wrapTables(preview);
       })
