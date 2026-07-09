@@ -122,7 +122,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 14:50 - 15:10 | 65 | Multimodal Physiological Modelling for Early Emotional Stress Prediction | Gursimar Kaur, Xiangmin Zhou, Chengkun He, Feifan Wang, Xiaodong Li, Iqbal Gondal, Wei Shao, Guang Xu, Jin Qiu Carrie Ruan Hu |
 
 ### S13 - Paper Session
-*July 17 | Afternoon | 13:30-15:10 | CB08.03.002*
+*July 17 | Afternoon | 13:30-15:10 | CB08.03.002 | Chair: Tho Quan Thanh*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
