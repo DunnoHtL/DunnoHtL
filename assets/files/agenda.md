@@ -222,7 +222,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 6 | 15:10 - 15:30 | 97 | Uncertainty-Aware Forecasting and Inventory Optimization for ATM Cash Management in Vietnam | Huu-Thanh Phan, Xuan-Bach Le, Tho Quan |
 
 ### S26 - Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs
-*July 18 | Afternoon | 13:30-15:10 | CB08.03.002 | Chair: Jianxin Li and Xinzhi Wang*
+*July 18 | Afternoon | 13:30-15:10 | CB08.03.002 | Chair: Jianxin Li*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
