@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>FLINS-ISKE 2026 – Conference Program</title>
+<style>
+/* ── Print button (hidden when printing) ── */
+.print-bar {
+  position: sticky; top: 0; z-index: 99;
+  background: #fff; border-bottom: 2px solid #EF4A2D;
+  padding: 10px 16px; display: flex; align-items: center; gap: 12px;
+}
+.print-bar__title { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: 700; color: #1a1a1a; }
+.print-bar__btn {
+  margin-left: auto;
+  background: #EF4A2D; color: #fff;
+  border: none; border-radius: 5px;
+  padding: 7px 20px; font-size: 13px; font-weight: 700;
+  cursor: pointer; letter-spacing: .03em;
+}
+.print-bar__btn:hover { background: #c03820; }
+
+@media print {
+  .print-bar { display: none; }
+  @page {
+    size: A4;
+    margin: 10mm 10mm 14mm;
+    @top-left    { content: ''; }
+    @top-center  { content: ''; }
+    @top-right   { content: ''; }
+    @bottom-left { content: ''; }
+    @bottom-right{ content: ''; }
+    @bottom-center {
+      content: counter(page) " / " counter(pages);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 8px;
+      color: #888;
+    }
+  }
+  body    { margin: 0; padding: 0; }
+  .content{ max-width: none; margin: 0; padding: 0; }
+}
+
+/* ── Shared layout ── */
+* {
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 9.5px; color: #1a1a1a; line-height: 1.4;
+  margin: 0; padding: 0 0 30px;
+}
+.content { max-width: 900px; margin: 0 auto; padding: 16px 20px 0; }
+
+/* ── Header banner ── */
+.pdf-header {
+  display: flex; align-items: center; gap: 14px;
+  padding: 10px 12px; margin-bottom: 14px;
+  border-bottom: 3px solid #EF4A2D;
+  background: #fff8f7; border-radius: 5px;
+}
+.pdf-header__conf  { font-size: 7.5px; font-weight: 800; letter-spacing:.12em; text-transform:uppercase; color:#EF4A2D; margin-bottom:2px; }
+.pdf-header__title { font-size: 13px; font-weight: 800; color:#1a1a1a; line-height:1.2; margin-bottom:2px; }
+.pdf-header__sub   { font-size: 9px; color:#666; font-style:italic; margin-bottom:2px; }
+.pdf-header__date  { font-size: 9.5px; font-weight: 700; color:#c03820; }
+
+/* ── Day headings (h2) ── */
+h2 {
+  font-size: 11.5px; font-weight: 800; color: #fff;
+  background: #EF4A2D; padding: 5px 10px;
+  border-radius: 4px; margin: 18px 0 10px;
+  page-break-before: always; page-break-after: avoid;
+}
+h2:first-of-type { page-break-before: avoid; }
+
+/* ── Session headings (h3) ── */
+h3 {
+  font-size: 9.5px; font-weight: 700; color: #c03820;
+  margin: 10px 0 1px; padding: 3px 8px;
+  background: #fdf0ed; border-left: 4px solid #EF4A2D;
+  border-radius: 0 3px 3px 0; page-break-after: avoid;
+}
+
+em { font-size: 8.5px; color: #666; }
+p  { margin: 3px 0 5px; }
+strong { color: #c03820; }
+hr { display: none; }
+table + p { display: none; }
+
+/* ── Tables ── */
+table {
+  width: 100%; table-layout: fixed;
+  border-collapse: collapse; font-size: 8.5px; margin-bottom: 0;
+  border-bottom: 0.5px solid #e8e8e8;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+thead tr { background: #f0f0f0; }
+thead th {
+  padding: 4px 5px; font-weight: 700; text-align: left;
+  border-bottom: 1.5px solid #ccc; white-space: nowrap; overflow: hidden;
+}
+tbody tr { border-bottom: 1px solid #eee; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:nth-child(even) { background: #fae8e4; }
+tbody td {
+  padding: 3px 5px; vertical-align: top;
+  overflow-wrap: break-word; word-break: break-word;
+}
+</style>
+</head>
+<body>
+
+<div class="print-bar">
+  <span class="print-bar__title">FLINS-ISKE 2026 – Conference Program</span>
+  <button class="print-bar__btn" onclick="window.print()">&#128438; Print / Save as PDF</button>
+</div>
+
+<div class="content">
+<div class="pdf-header">
+  <div>
+    <div class="pdf-header__conf">FLINS-ISKE 2026</div>
+    <div class="pdf-header__title">The 17th FLINS Conference &amp; the 21st ISKE Conference</div>
+    <div class="pdf-header__sub">Machine Learning and Knowledge Engineering for Decision Making</div>
+    <div class="pdf-header__date">July 15–19, 2026 &nbsp;&middot;&nbsp; UTS Building 8 (CB08), Sydney, Australia</div>
+  </div>
+</div>
+<h1>FLINS-ISKE 2026 - Conference Program</h1>
+<p><strong>The 17th FLINS Conference &amp; the 21st ISKE Conference</strong>
+<em>Machine Learning and Knowledge Engineering for Decision Making</em></p>
+<p>July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia</p>
+<hr />
+<h2>July 15 | UTS Building 8 (CB08)</h2>
+<table><colgroup><col style="width:13%"><col style="width:57%"><col style="width:30%"></colgroup>
+<thead>
+<tr>
+<th>Time</th>
+<th>Agenda</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00 - 17:00</td>
+<td>AII-EEKE 2026 Workshop</td>
+<td>CB08.02.002</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>July 16 | UTS Building 8 (CB08)</h2>
+<table><colgroup><col style="width:13%"><col style="width:57%"><col style="width:30%"></colgroup>
+<thead>
+<tr>
+<th>Time</th>
+<th>Agenda</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00 - 12:00</td>
+<td>Tutorial 1 - Yang Xu, Shuwei Chen, and Jun Liu</td>
+<td>CB08.03.002</td>
+</tr>
+<tr>
+<td>12:00 - 13:30</td>
+<td>Lunch</td>
+<td></td>
+</tr>
+<tr>
+<td>13:30 - 15:00</td>
+<td>Tutorial 2 - Bo Peng</td>
+<td>CB08.03.002</td>
+</tr>
+<tr>
+<td>15:00 - 15:20</td>
+<td>Break</td>
+<td></td>
+</tr>
+<tr>
+<td>15:20 - 16:40</td>
+<td>Tutorial 3 - Feng Liu</td>
+<td>CB08.03.002</td>
+</tr>
+<tr>
+<td>18:00 - 21:00</td>
+<td>FLINS-ISKE 2026 Reception</td>
+<td>CB08.03 Foyer Space</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Day 1, July 17 | UTS Building 8 (CB08)</h2>
+<table><colgroup><col style="width:13%"><col style="width:57%"><col style="width:30%"></colgroup>
+<thead>
+<tr>
+<th>Time</th>
+<th>Agenda</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00 - 09:10</td>
+<td>Opening Remarks - Dist Prof Jie Lu (General Chair)</td>
+<td>CB08.02.005 (Auditorium)</td>
+</tr>
+<tr>
+<td>09:10 - 09:20</td>
+<td>Welcome from UTS - Prof Andrew Parfitt (UTS Vice-Chancellor and President)</td>
+<td>CB08.02.005 (Auditorium)</td>
+</tr>
+<tr>
+<td>09:20 - 09:25</td>
+<td>Welcome from FLINS - Prof Javier Montero (General Chair)</td>
+<td>CB08.02.005 (Auditorium)</td>
+</tr>
+<tr>
+<td>09:25 - 09:30</td>
+<td>Welcome from ISKE - Prof Tianrui Li (Program Chair)</td>
+<td>CB08.02.005 (Auditorium)</td>
+</tr>
+<tr>
+<td>09:30 - 09:35</td>
+<td>FLINS-ISKE 2026 Submission &amp; Review Highlights - Dr Junyu Xuan (Program Chair)</td>
+<td>CB08.02.005 (Auditorium)</td>
+</tr>
+<tr>
+<td>09:35 - 09:50</td>
+<td>Conference photo</td>
+<td></td>
+</tr>
+<tr>
+<td>09:50 - 10:40</td>
+<td>Keynote - Prof Anton van den Hengel · Chaired by Prof Jie Lu</td>
+<td>CB08.02.005</td>
+</tr>
+<tr>
+<td>10:40 - 11:00</td>
+<td>Break (Morning Tea)</td>
+<td>Poster Session 1</td>
+</tr>
+<tr>
+<td>11:00 - 11:50</td>
+<td>Keynote - Prof Lei Chen · Chaired by Prof Luis Martinez Lopez</td>
+<td>CB08.02.005</td>
+</tr>
+<tr>
+<td>11:50 - 13:30</td>
+<td>Lunch</td>
+<td>Poster Session 1</td>
+</tr>
+<tr>
+<td>13:30 - 15:10</td>
+<td>S11: Paper Session</td>
+<td>CB08.02.005 · 5 papers · 13:30-15:10</td>
+</tr>
+<tr>
+<td>13:30 - 15:10</td>
+<td>S12: Paper Session</td>
+<td>CB08.02.002 · 5 papers · 13:30-15:10</td>
+</tr>
+<tr>
+<td>13:30 - 15:10</td>
+<td>S13: Paper Session</td>
+<td>CB08.03.002 · 5 papers · 13:30-15:10</td>
+</tr>
+<tr>
+<td>15:10 - 15:30</td>
+<td>Break (Afternoon Tea)</td>
+<td>Poster Session 1</td>
+</tr>
+<tr>
+<td>15:30 - 17:10</td>
+<td>S14: Paper Session</td>
+<td>CB08.02.005 · 4 papers · 15:30-16:50</td>
+</tr>
+<tr>
+<td>15:30 - 17:10</td>
+<td>S15: Paper Session</td>
+<td>CB08.02.002 · 4 papers · 15:30-16:50</td>
+</tr>
+<tr>
+<td>15:30 - 17:30</td>
+<td>S16: Paper Session</td>
+<td>CB08.03.002 · 6 papers · 15:30-17:30</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Day 2, July 18 | UTS Building 8 (CB08)</h2>
+<table><colgroup><col style="width:13%"><col style="width:57%"><col style="width:30%"></colgroup>
+<thead>
+<tr>
+<th>Time</th>
+<th>Agenda</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00 - 09:50</td>
+<td>Keynote - Prof Dongrui Wu · Chaired by Prof Javier Montero</td>
+<td>CB08.02.005</td>
+</tr>
+<tr>
+<td>09:50 - 10:00</td>
+<td>Break</td>
+<td>Poster Session 2</td>
+</tr>
+<tr>
+<td>10:00 - 10:50</td>
+<td>Keynote - Prof Jun Wang · Chaired by Prof Li Zhong</td>
+<td>CB08.02.005</td>
+</tr>
+<tr>
+<td>10:50 - 11:10</td>
+<td>Break (Morning Tea)</td>
+<td>Poster Session 2</td>
+</tr>
+<tr>
+<td>11:10 - 12:30</td>
+<td>S21: Special Session on AI for Agriculture - Innovations and Applications</td>
+<td>CB08.02.005 · 3 papers · 11:10-12:10</td>
+</tr>
+<tr>
+<td>11:10 - 12:30</td>
+<td>S22: Special Session on Towards Responsible Intelligent Decision Support Systems</td>
+<td>CB08.02.002 · 4 papers · 11:10-12:30</td>
+</tr>
+<tr>
+<td>11:10 - 12:30</td>
+<td>S23: Special Session on Spatio-Temporal Autonomous Learning in Uncertain Decision Situations</td>
+<td>CB08.03.002 · 4 papers · 11:10-12:30</td>
+</tr>
+<tr>
+<td>12:30 - 13:30</td>
+<td>Lunch</td>
+<td>Poster Session 2</td>
+</tr>
+<tr>
+<td>13:30 - 15:10</td>
+<td>S24: Special Session on AI for Health</td>
+<td>CB08.02.005 · 5 papers · 13:30-15:10</td>
+</tr>
+<tr>
+<td>13:30 - 15:30</td>
+<td>S25: Special Session on Artificial Intelligence for Optimization and Decision Making</td>
+<td>CB08.02.002 · 6 papers · 13:30-15:30</td>
+</tr>
+<tr>
+<td>13:30 - 15:10</td>
+<td>S26: Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs</td>
+<td>CB08.03.002 · 5 papers · 13:30-15:10</td>
+</tr>
+<tr>
+<td>15:30 - 15:50</td>
+<td>Break (Afternoon Tea)</td>
+<td>Poster Session 2</td>
+</tr>
+<tr>
+<td>15:50 - 17:10</td>
+<td>S27: Special Session on Information Aggregation Tools for Artificial Intelligence</td>
+<td>CB08.02.005 · 4 papers · 15:50-17:10</td>
+</tr>
+<tr>
+<td>15:50 - 17:30</td>
+<td>S28: Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience</td>
+<td>CB08.02.002 · 5 papers · 15:50-17:30</td>
+</tr>
+<tr>
+<td>15:50 - 17:10</td>
+<td>S29: Special Session on Evolving Deep and Transfer Learning Models for Computer Vision and Medical Imaging</td>
+<td>CB08.03.002 · 4 papers · 15:50-17:10</td>
+</tr>
+<tr>
+<td>19:00 - 22:00</td>
+<td>Banquet (Cruise, Darling Harbour - Circular Quay)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Day 3, July 19 | UTS Building 8 (CB08)</h2>
+<table><colgroup><col style="width:13%"><col style="width:57%"><col style="width:30%"></colgroup>
+<thead>
+<tr>
+<th>Time</th>
+<th>Agenda</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00 - 10:40</td>
+<td>S31: Paper Session</td>
+<td>CB08.02.005 · 5 papers · 09:00-10:40</td>
+</tr>
+<tr>
+<td>09:00 - 10:40</td>
+<td>S32: Paper Session</td>
+<td>CB08.02.002 · 5 papers · 09:00-10:40</td>
+</tr>
+<tr>
+<td>09:00 - 10:40</td>
+<td>S33: Paper Session</td>
+<td>CB08.03.002 · 4 papers · 09:00-10:20</td>
+</tr>
+<tr>
+<td>10:40 - 11:00</td>
+<td>Break (Morning Tea)</td>
+<td>Poster Session 3</td>
+</tr>
+<tr>
+<td>11:00 - 12:00</td>
+<td>Meeting Editors</td>
+<td>CB08.02.005 (Auditorium)</td>
+</tr>
+<tr>
+<td>12:00 - 13:00</td>
+<td>Lunch</td>
+<td>Poster Session 3</td>
+</tr>
+<tr>
+<td>13:00 - 13:30</td>
+<td>Knowledge-based Systems (KBS) Author Workshop</td>
+<td>CB08.02.005</td>
+</tr>
+<tr>
+<td>13:30 - 15:10</td>
+<td>S34: Paper Session (Reserved)</td>
+<td>CB08.02.005</td>
+</tr>
+<tr>
+<td>13:30 - 15:10</td>
+<td>S35: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)</td>
+<td>CB08.02.002 · 5 papers · 13:30-15:10</td>
+</tr>
+<tr>
+<td>13:30 - 15:10</td>
+<td>S36: Paper Session</td>
+<td>CB08.03.002 · 4 papers · 13:30-14:50</td>
+</tr>
+<tr>
+<td>15:10 - 15:30</td>
+<td>Break (Afternoon Tea)</td>
+<td>Poster Session 3</td>
+</tr>
+<tr>
+<td>15:30 - 17:10</td>
+<td>S37: Paper Session</td>
+<td>CB08.02.005 · 5 papers · 15:30-17:10</td>
+</tr>
+<tr>
+<td>15:30 - 17:10</td>
+<td>S38: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)</td>
+<td>CB08.02.002 · 3 papers · 15:30-16:30</td>
+</tr>
+<tr>
+<td>15:30 - 17:10</td>
+<td>S39: Paper Session</td>
+<td>CB08.03.002 · 5 papers · 15:30-17:10</td>
+</tr>
+<tr>
+<td>17:10 - 17:20</td>
+<td>Closing Remarks - Dist Prof Jie Lu (General Chair)</td>
+<td>CB08.02.005 (Auditorium)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Day 1 | July 17</h2>
+<h3>S11 - Paper Session</h3>
+<p><em>July 17 | Afternoon | 13:30-15:10 | CB08.02.005 | Chair: Guanjin Wang</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>13:30 - 13:50</td>
+<td>271</td>
+<td>Restricted Decision Trees: Hierarchical Feature Selection for Knowledge-Guided Staged Decision Systems</td>
+<td>Amrit Nath Mishra</td>
+</tr>
+<tr>
+<td>2</td>
+<td>13:50 - 14:10</td>
+<td>193</td>
+<td>Research on the Impact of Green Innovation on the Performance of Agricultural Enterprises ESG</td>
+<td>Yuewen Wang, Cheng Sixian, Siqi Hou, Limin Du</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14:10 - 14:30</td>
+<td>135</td>
+<td>Multi-View Masked ECG Representation Learning with Hierarchical Fuzzy Memory</td>
+<td>Tianyi Zhou, Yuepeng Chen, Wei Zhang, Fan Fu, Weiping Ding</td>
+</tr>
+<tr>
+<td>4</td>
+<td>14:30 - 14:50</td>
+<td>258</td>
+<td>Trust-Based Consensus Reaching with Bridging-Aware Influence Regulation using ELICIT Information</td>
+<td>Zihan Tang, Zhen Hua</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:50 - 15:10</td>
+<td>254</td>
+<td>The Ordered Weighted Average Budget</td>
+<td>Ihab Alkasrawi, Jose M Merigo, Li Guan</td>
+</tr>
+</tbody>
+</table>
+<h3>S12 - Paper Session</h3>
+<p><em>July 17 | Afternoon | 13:30-15:10 | CB08.02.002 | Chair: Feng Liu</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>13:30 - 13:50</td>
+<td>96</td>
+<td>Real-time Multimodal Emotion Recognition in Conversations with MLLMs</td>
+<td>Xiaolin Zhao, Junyi Chen, Zhedong Zheng, Qian Liu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>13:50 - 14:10</td>
+<td>43</td>
+<td>Source Code Slice Level Java Vulnerability Detection Using Large Language Mode</td>
+<td>Dhika Rizki Anbiya, Grzegorz Kolaczek</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14:10 - 14:30</td>
+<td>59</td>
+<td>Temporal Instruction Tuning for Video Large Language Models</td>
+<td>Weipeng DENG, Anlin Zheng, Yucheng Zhao, Tiancai Wang, Xiaojuan Qi, Edith Cheuk-Han Ngai</td>
+</tr>
+<tr>
+<td>4</td>
+<td>14:30 - 14:50</td>
+<td>61</td>
+<td>Knowledge-Constrained Causal Discovery for Root Cause Diagnosis in Continuous Steel Casting</td>
+<td>Jike Li, Haiping Du</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:50 - 15:10</td>
+<td>65</td>
+<td>Multimodal Physiological Modelling for Early Emotional Stress Prediction</td>
+<td>Gursimar Kaur, Xiangmin Zhou, Chengkun He, Feifan Wang, Xiaodong Li, Iqbal Gondal, Wei Shao, Guang Xu, Jin Qiu Carrie Ruan Hu</td>
+</tr>
+</tbody>
+</table>
+<h3>S13 - Paper Session</h3>
+<p><em>July 17 | Afternoon | 13:30-15:10 | CB08.03.002 | Chair: Tho Quan Thanh</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>13:30 - 13:50</td>
+<td>37</td>
+<td>An Empirical Study of LLM-Generated Local Explanations for Linear Additive Models</td>
+<td>Ahmet Menevse, Rehan Raza, Marco Fisichella, Guanjin Wang</td>
+</tr>
+<tr>
+<td>2</td>
+<td>13:50 - 14:10</td>
+<td>260</td>
+<td>A Multi-Agent Framework for Factuality Hallucination Detection using Complex Knowledge Graph</td>
+<td>Lu Xuan Minh, Huynh Ngoc Duy Khuong, Nguyen Hong Minh, Nguyen Minh Nhut, Trinh Long Phat, Nguyen Ngoc Vinh, Cao An Trinh, Bui Thi Thanh Tuyen, Tho Quan, Truong P. Hua</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14:10 - 14:30</td>
+<td>182</td>
+<td>FW-Aug: Fourier-Wavelet Input Augmentation for Transformer-based Time Series Forecasting</td>
+<td>Xiaoqun Wei, Mengjia Wu, Guangquan Zhang, Jie Lu, Yi Zhang</td>
+</tr>
+<tr>
+<td>4</td>
+<td>14:30 - 14:50</td>
+<td>167</td>
+<td>TDRC: A Trend-Detail Reservoir Computing Framework for Model-Space Fault Diagnosis</td>
+<td>Ziyu Tang, Wei Wang, Xiren Zhou, Xiangyu Wang, Qiuju Chen, AO DING, YAO ZHANG, Huanhuan Chen</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:50 - 15:10</td>
+<td>165</td>
+<td>A Collaborative Large-Small Language Model Framework For Explainable Electricity Charge Anomaly Analysis in Smart Grids</td>
+<td>Diego Weng Qiu, zhouhongyong, Yuting Sun, Wenyue Xiao, Lin Shang</td>
+</tr>
+</tbody>
+</table>
+<h3>S14 - Paper Session</h3>
+<p><em>July 17 | Afternoon | 15:30-16:50 | CB08.02.005 | Chair: Guanjin Wang</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15:30 - 15:50</td>
+<td>103</td>
+<td>Fuzzy-Guided Agentic Memory for LLM-Based Recommendation</td>
+<td>Di Zhang</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15:50 - 16:10</td>
+<td>152</td>
+<td>Wind Power Data Missing Value Completion Method based on DBO-LRTC</td>
+<td>Tiefeng Zhang</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16:10 - 16:30</td>
+<td>9</td>
+<td>Receding-Horizon Trajectory Planning for Unmanned Surface Vessel Based on Reachable Set</td>
+<td>Yu Luan, Hao Sun, Qinglin Sun, Panlong Tan</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16:30 - 16:50</td>
+<td>127</td>
+<td>CEGNN: Cross-Environment Consistent Graph Neural Networks for Robust OOD Generalization</td>
+<td>Qiying Li, Tingyi Cai, Ruiting Zhao, Xinyi Li, Ming Li</td>
+</tr>
+</tbody>
+</table>
+<h3>S15 - Paper Session</h3>
+<p><em>July 17 | Afternoon | 15:30-16:50 | CB08.02.002 | Chair: Feng Liu</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15:30 - 15:50</td>
+<td>119</td>
+<td>Three-Stage Clustered Federated Learning with Fine-Tuning Clusters and Adaptively Updated Weights</td>
+<td>Yinan Guo, Minghao Wang, Jiawei Feng, Jiayang Pu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15:50 - 16:10</td>
+<td>174</td>
+<td>EAU-Net: Efficient Asymmetric U-Net for Butterfly Ecological Image Segmentation</td>
+<td>Jie Yu, Yinyuan Lu, Juanying Xie</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16:10 - 16:30</td>
+<td>181</td>
+<td>Culturally Grounded Character Generation via Identity Fusion and Garment-Guided Costume Replacement</td>
+<td>Xuanrui Zhang, Yinyuan Lu, Juanying Xie</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16:30 - 16:50</td>
+<td>60</td>
+<td>Open-set Domain Adaptation with Pseudo-Labels Enhanced by Multimodal Model</td>
+<td>Keqiuyin Li, Jie Lu, Hua Zuo, Guangquan Zhang</td>
+</tr>
+</tbody>
+</table>
+<h3>S16 - Paper Session</h3>
+<p><em>July 17 | Afternoon | 15:30-17:30 | CB08.03.002 | Chair: Jose M Merigo</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15:30 - 15:50</td>
+<td>272</td>
+<td>Drive with Causal Insight: A Neuro-Symbolic Agent for Interpretable Real-Time Decision Making</td>
+<td>Shan Yang, Wenjun HOU, Runnan Li</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15:50 - 16:10</td>
+<td>141</td>
+<td>FuzzyRules: A Fuzzy Rule-based System for Artificial Intelligence and Classification package for R</td>
+<td>Ronei M. Moraes, Jodavid A. Ferreira, Sergio C. Santos, Liliane S. Machado</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16:10 - 16:30</td>
+<td>140</td>
+<td>A New Fuzzy Weibull-Based Naive Bayes Network for User Assessment in Virtual Reality Simulations</td>
+<td>Ronei M. Moraes, Jodavid A. Ferreira, Isaac S. L. Araujo, Liliane S. Machado</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16:30 - 16:50</td>
+<td>277</td>
+<td>Regret Fuzzy Sets</td>
+<td>Jose M Merigo</td>
+</tr>
+<tr>
+<td>5</td>
+<td>16:50 - 17:10</td>
+<td>274</td>
+<td>Generation of Fuzzy Sets with Distance Measures</td>
+<td>Naveen Kumar, Jose M Merigo</td>
+</tr>
+<tr>
+<td>6</td>
+<td>17:10 - 17:30</td>
+<td>112</td>
+<td>MedVisualLLM: A Parameter-Efficient Multimodal Alignment Framework for Medical Visual Question Answering</td>
+<td>Fatima Zulfiqar, Kok Wai Wong, Hamid Laga, Deval Mehta, Guanjin Wang</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Day 2 | July 18</h2>
+<h3>S21 - Special Session on AI for Agriculture - Innovations and Applications</h3>
+<p><em>July 18 | Morning | 11:10-12:10 | CB08.02.005 | Chair: Guanjin Wang</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>11:10 - 11:30</td>
+<td>259</td>
+<td>Research on the Impact of Digital New-Quality Productive Forces on the ESG Performance of Agriculture-Related Enterprises</td>
+<td>Sixian Cheng, Yuewen Wang, Siqi Hou, Limin Du</td>
+</tr>
+<tr>
+<td>2</td>
+<td>11:30 - 11:50</td>
+<td>77</td>
+<td>Trusted-auditing chain: A security blockchain prototype used in agriculture traceability</td>
+<td>Chuanheng Sun, Shanshan Li, Zhe Zhang, Wenyong Li, Ferdous Sohel</td>
+</tr>
+<tr>
+<td>3</td>
+<td>11:50 - 12:10</td>
+<td>33</td>
+<td>Few-Shot Pest Recognition via Multimodal Fusion of Visual and Semantic Features</td>
+<td>Wenyong Li, Chuanheng Sun, Guanjin Wang, Ferdous Sohel</td>
+</tr>
+</tbody>
+</table>
+<h3>S22 - Special Session on Towards Responsible Intelligent Decision Support Systems</h3>
+<p><em>July 18 | Morning | 11:10-12:30 | CB08.02.002 | Chair: Luis Martínez</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>11:10 - 11:30</td>
+<td>155</td>
+<td>Consensus-Trust-Driven Choquet Aggregation for Probabilistic Opinion Fusion</td>
+<td>Han Wang, Zhen-Song Chen, Rosa M. Rodriguez, Luis Martinez</td>
+</tr>
+<tr>
+<td>2</td>
+<td>11:30 - 11:50</td>
+<td>262</td>
+<td>An AI-Driven Digital Transformation Skills Framework: A Systematic Literature Review and Machine Learning Analysis</td>
+<td>Assel Omarbekova, Aizhan NAZYROVA</td>
+</tr>
+<tr>
+<td>3</td>
+<td>11:50 - 12:10</td>
+<td>164</td>
+<td>A Conceptual Framework for Human-in-the-Loop Multi-Attribute Decision Making under Uncertainty</td>
+<td>Esra CAKIR</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12:10 - 12:30</td>
+<td>228</td>
+<td>Immersive 3D Interface for Explainable Movie Recommendations</td>
+<td>Oscar Ortega, Alvaro Labella, Raciel Yera, Luis Martinez</td>
+</tr>
+</tbody>
+</table>
+<h3>S23 - Special Session on Spatio-Temporal Autonomous Learning in Uncertain Decision Situations</h3>
+<p><em>July 18 | Morning | 11:10-12:30 | CB08.03.002 | Chair: Kun Wang</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>11:10 - 11:30</td>
+<td>203</td>
+<td>Real-Time Trajectory Tracking with Conditional Random Field and Markov Chain</td>
+<td>Mengyuan Lu, Li Xiong, Kun Wang</td>
+</tr>
+<tr>
+<td>2</td>
+<td>11:30 - 11:50</td>
+<td>241</td>
+<td>CL-JL: Cross-Level Joint Learning for Hierarchical 3D CAD Model Generation</td>
+<td>Yunwei Ji, Shijie Ding, Fenghua Xiang, Weimin Huang, Lin Qi, Mengxi Jiang</td>
+</tr>
+<tr>
+<td>3</td>
+<td>11:50 - 12:10</td>
+<td>226</td>
+<td>Self-Attentive Sequential Recommendation with User Preference Clustering</td>
+<td>Ho Dang Huu Trong, Thi Thanh Sang Nguyen</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12:10 - 12:30</td>
+<td>49</td>
+<td>Concept Drift Detection Based on Attribute Interaction Changes</td>
+<td>Chenxia Jin, Zekang Han, Fachao Li, Fei Guan</td>
+</tr>
+</tbody>
+</table>
+<h3>S24 - Special Session on AI for Health</h3>
+<p><em>July 18 | Afternoon | 13:30-15:10 | CB08.02.005 | Chair: Jie Lu</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>13:30 - 13:35</td>
+<td>-</td>
+<td>Special Session Opening Remarks</td>
+<td>Dist Prof Jie Lu</td>
+</tr>
+<tr>
+<td>1</td>
+<td>13:35 - 13:50</td>
+<td>253</td>
+<td>From Gene-Disease Discovery to Personalised Recommendations: AI for Translational Genomics</td>
+<td>Kairui Guo, Mengjia Wu, Yi Zhang, Guangquan Zhang, Hua Lin, Mark Grosser, Jie Lu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>13:50 - 14:10</td>
+<td>261</td>
+<td>Genome-Guided Multimodal Learning for Ischaemic Stroke Risk Prediction</td>
+<td>Yue Yang, Kairui Guo, Zhen Fang, Hua Lin, Mark Grosser, Guangquan Zhang, Jie Lu</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14:10 - 14:30</td>
+<td>149</td>
+<td>AE-UVNet: An Attention Enhanced hybrid architecture using U-Net and V-Net for Multimodal Brain Tumour Segmentation</td>
+<td>Maoying Qiao, Haolan Zou, Aditya Anil</td>
+</tr>
+<tr>
+<td>4</td>
+<td>14:30 - 14:50</td>
+<td>204</td>
+<td>Dual-Agent Multiple-Model Reinforcement Learning for Event-Triggered Human-Robot Co-Adaptation in Decoupled Task Spaces</td>
+<td>Yaqi Li, Zhengqi Han, Huifang Liu, Steven W. Su</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:50 - 15:10</td>
+<td>34</td>
+<td>Real-Time Detection of Sleep Apnea Using Respiratory Sound Analysis</td>
+<td>Paula Olaya, Jeremmy Leon, Alejandro Erazo, Kevin Landazuri, Lenin Ramirez-Cando, Diego Almeida, Vladimir Bonilla, Luis Zhinin-Vera, Gandhi Fernando Villalba Meneses, CESAR BYRON GUEVARA MALDONADO</td>
+</tr>
+</tbody>
+</table>
+<h3>S25 - Special Session on Artificial Intelligence for Optimization and Decision Making</h3>
+<p><em>July 18 | Afternoon | 13:30-15:30 | CB08.02.002 | Chair: Zhen Zhang</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>13:30 - 13:50</td>
+<td>71</td>
+<td>A Modular and Reproducible Z-Number Fuzzy AHP-TOPSIS Framework in R</td>
+<td>Gizem Intepe, Irem Ucal Sari, Chng Wei Lau</td>
+</tr>
+<tr>
+<td>2</td>
+<td>13:50 - 14:10</td>
+<td>70</td>
+<td>Evidence-Driven and Game-Theoretic Consensus Modeling for Group Decision-Making: A Case Study of Retail Marketing Strategy Selection</td>
+<td>Qihao Zhang</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14:10 - 14:30</td>
+<td>19</td>
+<td>Robust granular-ball clustering with justifiable granularity and local quality peaks</td>
+<td>Zihang Jia, Zhen Zhang, Wenyu Yu</td>
+</tr>
+<tr>
+<td>4</td>
+<td>14:30 - 14:50</td>
+<td>108</td>
+<td>Bridging the Semantic Gap in Social Commerce: A Multimodal Sequential Recommendation Framework via Vision-Language Models</td>
+<td>Hoang Van Manh, Thi Thanh Sang Nguyen</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:50 - 15:10</td>
+<td>111</td>
+<td>A Deep Non-negative Matrix Factorization Algorithm for Acupuncture Omics Data Clustering</td>
+<td>Zonglin Li, Lianbo Tao, Qiaofeng Wu, Ping Deng, Pengfei Zhang, Dexian Wang, Tianrui Li, Shuguang Yu</td>
+</tr>
+<tr>
+<td>6</td>
+<td>15:10 - 15:30</td>
+<td>97</td>
+<td>Uncertainty-Aware Forecasting and Inventory Optimization for ATM Cash Management in Vietnam</td>
+<td>Huu-Thanh Phan, Xuan-Bach Le, Tho Quan</td>
+</tr>
+</tbody>
+</table>
+<h3>S26 - Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs</h3>
+<p><em>July 18 | Afternoon | 13:30-15:10 | CB08.03.002 | Chair: Jianxin Li</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>13:30 - 13:50</td>
+<td>89</td>
+<td>TrustGIM: Trust-aware Core Graph Influence Maximization</td>
+<td>Zhixiang Xu, Kai Luo, Yuyao Meng, Yunliang Chen, Xiaohui Huang, Yuewei Wang, Longxiang Gao, Jianxin Li</td>
+</tr>
+<tr>
+<td>2</td>
+<td>13:50 - 14:10</td>
+<td>88</td>
+<td>ProbSparseAtt-Score Based Sparse Scene Graph Generation Model</td>
+<td>Yuyao Meng, Kai Luo, Zhixiang Xu, Yunliang Chen, Xiaohui Huang, Yuewei Wang, Longxiang Gao, Jianxin Li</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14:10 - 14:30</td>
+<td>86</td>
+<td>Adaptive Role Flipping based Robust Cross-Modal Hashing</td>
+<td>ZihanWang, Wentao Fan, Linwei Chen, Huaxiong Li</td>
+</tr>
+<tr>
+<td>4</td>
+<td>14:30 - 14:50</td>
+<td>183</td>
+<td>KRAG: Refining Knowledge for Retrieval-Augmented Generation through Kahneman-Tversky Optimization</td>
+<td>Cheng Zhang, Xiangfeng Luo, Jianqiang Huang</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:50 - 15:10</td>
+<td>91</td>
+<td>SPARQ: Graph-Structured Queries Drive GNN Retrieval for Knowledge Graph Question Answering</td>
+<td>Mingxuan Wang, Xinzhi Wang, Ruishen Liu, Yuxuan Li, Xiangfeng Luo</td>
+</tr>
+</tbody>
+</table>
+<h3>S27 - Special Session on Information Aggregation Tools for Artificial Intelligence</h3>
+<p><em>July 18 | Afternoon | 15:50-17:10 | CB08.02.005 | Chair: Javier Montero</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15:50 - 16:10</td>
+<td>98</td>
+<td>Fuzzy-Transformer Fusion for Sentiment Analysis: An Empirical Study on Spanish Twitter Data</td>
+<td>Clara Simon de Blas, Jesus Gonzalez Gironda, DANIEL GOMEZ GONZALEZ</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16:10 - 16:30</td>
+<td>269</td>
+<td>Induced aggregation systems with average triangles</td>
+<td>Muhammad Saqlain, Jose M Merigo</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16:30 - 16:50</td>
+<td>224</td>
+<td>Modeling affective polarization by means of opposite fuzzy sets</td>
+<td>ESTRELLA GARCIA PELLUZ, Juan Antonio Guevara, Javier Montero, J. C. Losada</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16:50 - 17:10</td>
+<td>117</td>
+<td>A Priori Evaluation of Image Pre-processing via Multi-Criteria Metrics: From Classical to Discrete Smoothing</td>
+<td>Pablo A. Flores-Vidal, Anahi De la Fuente Gambra, DANIEL GOMEZ GONZALEZ, Luis Magdalena</td>
+</tr>
+</tbody>
+</table>
+<h3>S28 - Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience</h3>
+<p><em>July 18 | Afternoon | 15:50-17:30 | CB08.02.002 | Chair: Angela Huo</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15:50 - 16:10</td>
+<td>38</td>
+<td>Understanding Cross-Cultural Project Communication with Large Language Models: Insights from Literature</td>
+<td>Yutong shen, Dilek Cetindamar, Yi Zhang</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16:10 - 16:30</td>
+<td>264</td>
+<td>DINOv3-Driven Wildfire Classification Using Robust Visual Features Learning</td>
+<td>Xianjing Fan, Taoyuan Zhu, Xing Zi, Xian Tao, Mahardhika Pratama, Catarina Moreira, Haiyan Lu, Mukesh Prasad</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16:30 - 16:50</td>
+<td>263</td>
+<td>ConCrackNet: CLIP-Driven Pseudo-Label Domain Adaptation for Concrete Crack Classification</td>
+<td>Taoyuan Zhu, Xing Zi, Ali Braytee, Xian Tao, Jun Li, Mahardhika Pratama, Catarina Moreira, Mukesh Prasad</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16:50 - 17:10</td>
+<td>281</td>
+<td>Personalized Dynamic Local Skin Temperature Prediction for Thermal Comfort in Office Environments Using Transfer Learning</td>
+<td>Yiqu Zhang, Tao Xuyuan, Xianyi Zeng</td>
+</tr>
+<tr>
+<td>5</td>
+<td>17:10 - 17:30</td>
+<td>30</td>
+<td>Robust and Interpretable Deep Evolutionary Clustering for Dynamic Community Detection with Explicit Migration Modeling</td>
+<td>Limengzi Yuan, Xiangmin Zhou, Wei Shao, Jin Qiu Carrie Ruan Hu, Iqbal Gondal</td>
+</tr>
+</tbody>
+</table>
+<h3>S29 - Special Session on Evolving Deep and Transfer Learning Models for Computer Vision and Medical Imaging</h3>
+<p><em>July 18 | Afternoon | 15:50-17:10 | CB08.03.002 | Chair: Li Zhang</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15:50 - 16:10</td>
+<td>102</td>
+<td>Adaptive Hybrid PSO with Q-Learning-based Algorithm Selection</td>
+<td>Mohamed El Khoukhi, Li Zhang</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16:10 - 16:30</td>
+<td>47</td>
+<td>Enhanced Attention CNN-Transformer Models for Medical Image Segmentation</td>
+<td>Yat Tseung, Li Zhang</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16:30 - 16:50</td>
+<td>36</td>
+<td>Early Brain Tumor Detection in MRI Using Convolutional Neural Networks and Grad-CAM Interpretability</td>
+<td>Surgit Rivadeneira, Francis Andaluz, Ricardo Moreira, Santiago Salinas, Kevin Landazuri, Lenin Ramirez-Cando, Diego Almeida, Vladimir Bonilla, Luis Zhinin-Vera, Gandhi Fernando Villalba Meneses, CESAR BYRON GUEVARA MALDONADO</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16:50 - 17:10</td>
+<td>278</td>
+<td>KALConv: Kolmogorov-Arnold Local Convolution with Adaptive Multi-Order Representation for Medical Image Segmentation</td>
+<td>Xundi Yang, Qiang Hua, Chunru Dong, Baochang Zhang</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Day 3 | July 19</h2>
+<h3>S31 - Paper Session</h3>
+<p><em>July 19 | Morning | 09:00-10:40 | CB08.02.005 | Chair: Thi Luu Phuong</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>09:00 - 09:20</td>
+<td>48</td>
+<td>LLM-based HSE Compliance Assessment: Benchmark, Performance, and Advancements</td>
+<td>Jianwei Wang, Mengqi Wang, Yinsi Zhou, Zhenchang Xing, Qing Liu, Xiwei Xu, Binghao Li, Serkan Saydam, Wenjie Zhang, Liming Zhu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>09:20 - 09:40</td>
+<td>41</td>
+<td>Multi-Domain Time Series Reconstruction with Frequency-Enhanced Transformers</td>
+<td>Khanh Trang Duong, Vo Thi Luu Phuong, Tung Kieu, Duc Ngoc Minh Dang</td>
+</tr>
+<tr>
+<td>3</td>
+<td>09:40 - 10:00</td>
+<td>106</td>
+<td>Hierarchical feature selection considering the irreplaceability of features</td>
+<td>Linlin Xie, Chuan Luo, Tianrui Li, Hongmei Chen</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10:00 - 10:20</td>
+<td>223</td>
+<td>Feature Selection Based on Discriminability and Non-Redundancy</td>
+<td>Chengkun Zhong</td>
+</tr>
+<tr>
+<td>5</td>
+<td>10:20 - 10:40</td>
+<td>180</td>
+<td>Cross-lingual Parkinson's Disease Detection based on Double-level Optimized Meta-learning</td>
+<td>Wei Ji, Chunjie Wang, Yun Li</td>
+</tr>
+</tbody>
+</table>
+<h3>S32 - Paper Session</h3>
+<p><em>July 19 | Morning | 09:00-10:40 | CB08.02.002 | Chair: Xianyi Zeng</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>09:00 - 09:20</td>
+<td>123</td>
+<td>Few-Shot Target Recognition in Foliage Environments across Different Weather Conditions via Meta-Learning</td>
+<td>Zhaojie Li, Yi Zhong, Ju Wang</td>
+</tr>
+<tr>
+<td>2</td>
+<td>09:20 - 09:40</td>
+<td>99</td>
+<td>Bridging Causal Reasoning and Fuzzy Calibration for Trustworthy AI Risk Assessment</td>
+<td>Gareth McConomy, Jun Liu, David Glass</td>
+</tr>
+<tr>
+<td>3</td>
+<td>09:40 - 10:00</td>
+<td>67</td>
+<td>A Heterogeneous Trust-Gated Ensemble Learning Approach for Streaming Data with Concept Drift and Incremental Features</td>
+<td>Guiying Liu, Botao Jiao, Kai Zhang, Xia Yan, Liqun Hu</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10:00 - 10:20</td>
+<td>44</td>
+<td>Robust Decision-Making under Uncertainty through Hybrid Fuzzy-Machine Learning Architectures</td>
+<td>Ayca Maden</td>
+</tr>
+<tr>
+<td>5</td>
+<td>10:20 - 10:40</td>
+<td>285</td>
+<td>Explainable Artificial Intelligence for Interpretable Pressure Prediction in Medical Compression Stockings</td>
+<td>Kim Duc Tran, Xianyi Zeng</td>
+</tr>
+</tbody>
+</table>
+<h3>S33 - Paper Session</h3>
+<p><em>July 19 | Morning | 09:00-10:20 | CB08.03.002</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>09:00 - 09:20</td>
+<td>268</td>
+<td>Cross-Domain Generalization in Audio Deepfake Detection: A Probing Study with Heterogeneous Audio Embeddings</td>
+<td>Swetha Krishna Sriram, Joseph Chun-Cin Ng, Akshitaa Sahoo, Dheeraj Arora, Xing Zi, Avinash Anand, Rajiv Ratn Shah, Zhengkui Wang, Huan Huo, Mukesh Prasad</td>
+</tr>
+<tr>
+<td>2</td>
+<td>09:20 - 09:40</td>
+<td>255</td>
+<td>QSS-Net: A Quanta-State-Slot Network for Non-Line-of-Sight Classification</td>
+<td>Yi Lin, Daoyuan Li, Zhengdong Zhu, Zuyuan Yang</td>
+</tr>
+<tr>
+<td>3</td>
+<td>09:40 - 10:00</td>
+<td>79</td>
+<td>ECMNet: An Efficient CNN-Mamba Network for Maritime Radar Target Detection</td>
+<td>Wenjing He, Yi Zhong, Yongyan Li, Ju Wang</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10:00 - 10:20</td>
+<td>35</td>
+<td>Automated Detection of Ergonomically Incorrect Postures Using Machine Learning</td>
+<td>Jose Ortiz, Cristina Lema, Kevin Landazuri, Lenin Ramirez-Cando, Diego Almeida, Vladimir Bonilla, Luis Zhinin-Vera, Gandhi Fernando Villalba Meneses, CESAR BYRON GUEVARA MALDONADO</td>
+</tr>
+</tbody>
+</table>
+<h3>S34 - Paper Session (Reserved)</h3>
+<p><em>July 19 | Afternoon | CB08.02.005</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>S35 - Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)</h3>
+<p><em>July 19 | Afternoon | 13:30-15:10 | CB08.02.002 | Chair: Jun Liu</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>13:30 - 13:50</td>
+<td>244</td>
+<td>Optimize Belief Rule Base based on BackPropagation</td>
+<td>XINLEI CAO, Jun Liu, Bilal Ahmed Lodhi, Li Zou, Xin Liu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>13:50 - 14:10</td>
+<td>243</td>
+<td>Rule Extraction Methods Based on Triadic Fuzzy Linguistic Formal Context</td>
+<td>Mingyang Shao</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14:10 - 14:30</td>
+<td>198</td>
+<td>Properties of Inclusion Relationship Between Clause Sets in Propositional Logic</td>
+<td>Xiaomei Zhong</td>
+</tr>
+<tr>
+<td>4</td>
+<td>14:30 - 14:50</td>
+<td>130</td>
+<td>On Possible Contribution of Fuzzy Logic / Inferences to LLMs: Theory and Debate</td>
+<td>Mourad Oussalah</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:50 - 15:10</td>
+<td>116</td>
+<td>From Policy Documents to Structured Survey Responses: Evaluating Large Language Models for Policy Monitoring</td>
+<td>Carolyn Cole, Matthias Deschryvere, Toqeer Ehsan, Arash Hajikhani</td>
+</tr>
+</tbody>
+</table>
+<h3>S36 - Paper Session</h3>
+<p><em>July 19 | Afternoon | 13:30-14:50 | CB08.03.002</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>13:30 - 13:50</td>
+<td>114</td>
+<td>CBAM-ResU-Net: A Parameter-Efficient Residual Attention 3D U-Net for Brain Tumor Segmentation</td>
+<td>Anam Amjad, Usama Ijaz Bajwa, Zulfiqar Habib, Rehan Raza</td>
+</tr>
+<tr>
+<td>2</td>
+<td>13:50 - 14:10</td>
+<td>113</td>
+<td>Feature Fusion-based Attribute Graph Clustering</td>
+<td>Jingxiao zhang, Chao Li, Zhenghua Xin, Shifei Ding</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14:10 - 14:30</td>
+<td>110</td>
+<td>Prediction of Forest-Grassland Fires based on Graph Attention Mechanism</td>
+<td>Xingpeng Liu</td>
+</tr>
+<tr>
+<td>4</td>
+<td>14:30 - 14:50</td>
+<td>58</td>
+<td>HGCRE: Heterogeneous Graph Representation Learning via Contrastive Learning</td>
+<td>Dongming Chen, Hongxun Wang, Jiaming Liu, Beilei Wang, Tao Ren</td>
+</tr>
+</tbody>
+</table>
+<h3>S37 - Paper Session</h3>
+<p><em>July 19 | Afternoon | 15:30-17:10 | CB08.02.005</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15:30 - 15:50</td>
+<td>161</td>
+<td>A LLM-Driven Framework for Interactive Behavior Chain Analysis of AV Crashes Using Crash Narratives and Multi-Source Data</td>
+<td>Minghao Gao, Qiong Bao, Tianyuan han, Huansong Zhang, Yongjun Shen</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15:50 - 16:10</td>
+<td>129</td>
+<td>Benchmarking Temporal Fusion Transformer for Multi-Store Walmart Weekly Sales Forecasting with SOTA and Seasonal Models</td>
+<td>Henil Patel</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16:10 - 16:30</td>
+<td>128</td>
+<td>A Social Personality Guided Diffusion Model for Session-based Social Recommendation</td>
+<td>Xiongtao Zhang, Yuxuan Cao</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16:30 - 16:50</td>
+<td>87</td>
+<td>Dual-level Expert Specialization Protection for MoE</td>
+<td>Junwei Bai</td>
+</tr>
+<tr>
+<td>5</td>
+<td>16:50 - 17:10</td>
+<td>69</td>
+<td>An Efficient Self-Exciting Framework for Modeling Exogenous Shocks in Retail Transaction Streams</td>
+<td>Wai Hong Tan, Feng Chen</td>
+</tr>
+</tbody>
+</table>
+<h3>S38 - Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)</h3>
+<p><em>July 19 | Afternoon | 15:30-16:30 | CB08.02.002</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15:30 - 15:50</td>
+<td>16</td>
+<td>Prediction of Lithium-ion Battery Defect Events Based on Event Evolution Weighted Graphs</td>
+<td>Du Jin, Mei Yiming, Wangjun Wan, Yu Yang, Qian Fei, Jing Han, Cai YongHua</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15:50 - 16:10</td>
+<td>279</td>
+<td>Responsibility-Oriented Evaluation of Vietnamese Speech Emotion Recognition under Class Imbalance and Silver Labels</td>
+<td>Duc Dat Pham, Trung Quang Nguyen, Ngoc Tram Huynh Thi, Vo Ngoc Minh Anh, Le Anh Tien, Tan Duy Le, Kha Tu Huynh, Nguyen Tan Viet Tuyen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16:10 - 16:30</td>
+<td>190</td>
+<td>Knowledge-Guided Evidential Reasoning for Trustworthy AI in Imbalanced Clinical Datasets</td>
+<td>Muhammad Asim Ali, Jun Liu, Samuel J. Moore, Omar Nibouche</td>
+</tr>
+</tbody>
+</table>
+<h3>S39 - Paper Session</h3>
+<p><em>July 19 | Afternoon | 15:30-17:10 | CB08.03.002</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15:30 - 15:50</td>
+<td>53</td>
+<td>A Global Path-Aware Graph Neural Network for Link Prediction</td>
+<td>Dongming Chen, Shuyue Zhang, Yue Sheng, Beilei Wang, Dongqi Wang</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15:50 - 16:10</td>
+<td>42</td>
+<td>Score: Bursting Dual Heterogeneity with a Semantic-Collaborative Graph Attention Framework for Cross-Domain Sequential Recommendation</td>
+<td>Yuxi Dong, Xiongtao Zhang</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16:10 - 16:30</td>
+<td>7</td>
+<td>Temporal Bipartite Graph Representation Learning for Behavior Anomaly Detection</td>
+<td>Yu Kong, Yuanyuan Xu, Dong Wen, Yu Zhang, Binghao Li, Wenjie Zhang</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16:30 - 16:50</td>
+<td>2</td>
+<td>Skeleton Granular Ball Spectral Clustering Method</td>
+<td>Hongli Wang, Jusheng Mi, Yanfang Liu</td>
+</tr>
+<tr>
+<td>5</td>
+<td>16:50 - 17:10</td>
+<td>196</td>
+<td>Graph Attention Network with Supervision Augmentation for Instrument Recognition</td>
+<td>Jian Zhang, Na BaI, Shifei Ding</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Poster Session 1</h2>
+<p><em>Day 1, July 17 | 09:00-17:10 | 29 poster papers</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>No.</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>09:00 - 17:10</td>
+<td>286</td>
+<td>Responsible Artificial Intelligence in Human Resources Management: A case study in University settings</td>
+<td>Nguyen Anh Luong</td>
+</tr>
+<tr>
+<td>2</td>
+<td>09:00 - 17:10</td>
+<td>252</td>
+<td>Measuring uncertainty in LLM-Based Decision Support through self-consistency and prompt quality</td>
+<td>Andres Montoro-Montarroso, Jose A. Olivas, Jared D.T. Guerrero-Sosa, Francisco P. Romero, Jesus Serrano-Guerrero</td>
+</tr>
+<tr>
+<td>3</td>
+<td>09:00 - 17:10</td>
+<td>251</td>
+<td>Explainable AI in Strategic Decision-Making: A Framework for Balancing Accuracy, Interpretability, and Organizational Trust</td>
+<td>Shang-Lun Huang, Shih-Hsin Chen, Chang Hung Chi</td>
+</tr>
+<tr>
+<td>4</td>
+<td>09:00 - 17:10</td>
+<td>211</td>
+<td>Non-Personal Data for Serious-Game Emotion Inference</td>
+<td>Diego Riofrio-Luzcando, Miguel De Andres, Victoria Lopez, Matilde Santos, Diego Urgeles Puertolas, Mateo Perez-Wiesner</td>
+</tr>
+<tr>
+<td>5</td>
+<td>09:00 - 17:10</td>
+<td>187</td>
+<td>When Inconsistency Reveals Bias: A Fairness-Aware Diagnostic Framework for Preference Disaggregation</td>
+<td>Bapi Dutta, Luis Martinez</td>
+</tr>
+<tr>
+<td>6</td>
+<td>09:00 - 17:10</td>
+<td>139</td>
+<td>Aggregation of multivalued time series machine learning forecasters via admissible orders-based induced functions</td>
+<td>Mikel Ferrero-Jaurrieta, Alfonso Indurain-Ibero, Javier Aguirre-Eraso, Humberto Bustince</td>
+</tr>
+<tr>
+<td>7</td>
+<td>09:00 - 17:10</td>
+<td>95</td>
+<td>Extending the Uzzi Paradigm: A Gravity Model for Knowledge Recombination</td>
+<td>Ming Lei</td>
+</tr>
+<tr>
+<td>8</td>
+<td>09:00 - 17:10</td>
+<td>80</td>
+<td>Hybrid CP-SAT-Fuzzy IDSS for Reservation Acceptance and Table Assignment</td>
+<td>Joaquin Arellano Goicoechea, Humberto Bustince</td>
+</tr>
+<tr>
+<td>9</td>
+<td>09:00 - 17:10</td>
+<td>76</td>
+<td>Trusted Verification Methods for Public Data Products Based on Generative AI and Zero-Knowledge Proofs</td>
+<td>Dequan Meng, Xiangpei Hu, Yonggang Li, Hui Yang</td>
+</tr>
+<tr>
+<td>10</td>
+<td>09:00 - 17:10</td>
+<td>74</td>
+<td>FRRI-Online: Interpretable Fuzzy-Rough Rule Updating from Validated Streams</td>
+<td>Henri Bollaert, Fatemeh Sadeghi, Chris Cornelis</td>
+</tr>
+<tr>
+<td>11</td>
+<td>09:00 - 17:10</td>
+<td>68</td>
+<td>Bayesian Ideal Point Models as Knowledge Representation Systems in Graphs for Fuzzy-Set-Based Polarization Measurement</td>
+<td>Juan Antonio Guevara, DANIEL GOMEZ GONZALEZ, Rosario Susi</td>
+</tr>
+<tr>
+<td>12</td>
+<td>09:00 - 17:10</td>
+<td>55</td>
+<td>On a Natural Notion of Entropy and Independence via Fuzzy Relations</td>
+<td>Raquel Fernandez-Peralta, Javier Fumanal-Idocin</td>
+</tr>
+<tr>
+<td>13</td>
+<td>09:00 - 17:10</td>
+<td>54</td>
+<td>SNA for fuzzy measures understanding</td>
+<td>Inmaculada Gutierrez, Carlos I. Perez-Sechi, Javier Castro, DANIEL GOMEZ GONZALEZ</td>
+</tr>
+<tr>
+<td>14</td>
+<td>09:00 - 17:10</td>
+<td>25</td>
+<td>Achieving Excellence in E-Healthcare: A Robust Fuzzy Group Decision-Making Framework for Telemedicine Provider Optimization</td>
+<td>Palanivel K.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>09:00 - 17:10</td>
+<td>10</td>
+<td>A Neural-Dynamic Framework for Review-Driven Large-Scale Group Decision Making: Integrating Emotion, Adaptive TODIM, and Consensus</td>
+<td>Junfeng Chu</td>
+</tr>
+<tr>
+<td>16</td>
+<td>09:00 - 17:10</td>
+<td>245</td>
+<td>The Ordered Weighted Average Gross Domestic Product</td>
+<td>Hadeel Baraheem, Jose M Merigo</td>
+</tr>
+<tr>
+<td>17</td>
+<td>09:00 - 17:10</td>
+<td>107</td>
+<td>A Hybrid Knowledge-Guided Training-Free Decision Framework for Engineering Construction Progress Monitoring</td>
+<td>Yumeng Kang, Hongbo Zhou, Kefeng Huang, Zhenyu Liu, Baozhu Zhang, Zefeng Qian, Chongyang Zhang</td>
+</tr>
+<tr>
+<td>18</td>
+<td>09:00 - 17:10</td>
+<td>94</td>
+<td>A Multi-Attribute Group Decision-Making Approach Based on Linguistic Truth-Valued Lattice Implication Algebra and Prospect Theory</td>
+<td>Kuo Pang</td>
+</tr>
+<tr>
+<td>19</td>
+<td>09:00 - 17:10</td>
+<td>85</td>
+<td>Personalized Services through Lifecycle Tracking: A Probabilistic Graphical Approach to Modeling Consumer Psychological Dynamics</td>
+<td>Yao Mu, Baojun Ma</td>
+</tr>
+<tr>
+<td>20</td>
+<td>09:00 - 17:10</td>
+<td>62</td>
+<td>Dual-scale Adaptive Fuzzy Rough Sets for Feature Selection</td>
+<td>Shimin Yang, Jin Qian, ShaoWei Yan, Dongsheng Zhi</td>
+</tr>
+<tr>
+<td>21</td>
+<td>09:00 - 17:10</td>
+<td>13</td>
+<td>Rule-Anchored Semantic Alignment: A Residual TSK Network for Unsupervised Domain Adaptation</td>
+<td>Xiu Chen, Chengyu Liu, Can Ti, Yuanpeng Zhang, Sai-Kit Lam, Wang Shitong</td>
+</tr>
+<tr>
+<td>22</td>
+<td>09:00 - 17:10</td>
+<td>275</td>
+<td>FedCDA: Class-Conditional Distribution Alignment for Federated Learning with Non-IID Data</td>
+<td>Di Wu, Jielei Chu, Tianrui Li</td>
+</tr>
+<tr>
+<td>23</td>
+<td>09:00 - 17:10</td>
+<td>145</td>
+<td>A Dependence-Aware Knowledge-Engineering Framework for Benchmarking and Uncertainty-Aware Forecasting of National AI Competitiveness</td>
+<td>Qi Zhang, Tianqiang Huang</td>
+</tr>
+<tr>
+<td>24</td>
+<td>09:00 - 17:10</td>
+<td>104</td>
+<td>FedPAD: Prototype-Guided Domain Association and Robust Prototype Learning for Heterogeneous Federated Learning</td>
+<td>Leyuan Zhang, Yang Long, Fan Wan</td>
+</tr>
+<tr>
+<td>25</td>
+<td>09:00 - 17:10</td>
+<td>78</td>
+<td>Federated Unlearning Model Recovery in Data with Skewed Label Distributions</td>
+<td>Xinrui Yu, Wenbin Pei, Bing Xue, Qiang Zhang</td>
+</tr>
+<tr>
+<td>26</td>
+<td>09:00 - 17:10</td>
+<td>66</td>
+<td>Semi-Supervised Hierarchical Drift Detection via Prediction Uncertainty Distributions</td>
+<td>Di Wang, Shihui Liu, Kai Zhang, Botao Jiao, Piyang Liu</td>
+</tr>
+<tr>
+<td>27</td>
+<td>09:00 - 17:10</td>
+<td>45</td>
+<td>Enhancing Adversarial Transferability by Attention Center Shuffle and Mask</td>
+<td>Quan Liu, Feng Ye, Chenhao Lu, Shumin Zeng, Guangliang Huang, Runze Chen, Xudong Ke</td>
+</tr>
+<tr>
+<td>28</td>
+<td>09:00 - 17:10</td>
+<td>26</td>
+<td>Entropy-based Graph Embedding for Credit Risk Evaluation Incorporating Sample Correlations</td>
+<td>Mingyu Liu, Lixin Cui, Xin Jin, Zhipeng Cui, Lu Bai</td>
+</tr>
+<tr>
+<td>29</td>
+<td>09:00 - 17:10</td>
+<td>73</td>
+<td>Development of A Serious Video Game for Pattern Detection in Emotional Behaviour</td>
+<td>Miguel De Andres, Diego Riofrio-Luzcando, Victoria Lopez, Matilde Santos, Diego Urgeles Puertolas</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Poster Session 2</h2>
+<p><em>Day 2, July 18 | 09:00-17:10 | 28 poster papers</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>No.</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>09:00 - 17:10</td>
+<td>284</td>
+<td>Knowledge Graph-Based Causal Chain Modeling and Spatio-temporal Analysis of Gas Emergencies</td>
+<td>Fang Li, Yafei Wang, Jingjing Wang</td>
+</tr>
+<tr>
+<td>2</td>
+<td>09:00 - 17:10</td>
+<td>249</td>
+<td>Enhancing Stock Market Forecasting through LLM-Based Social Media Feature Extraction</td>
+<td>Shiping Wen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>09:00 - 17:10</td>
+<td>248</td>
+<td>A Heterogeneous Encoding Disentangled Representation Network for Financial Time Series Forecasting</td>
+<td>Shiping Wen</td>
+</tr>
+<tr>
+<td>4</td>
+<td>09:00 - 17:10</td>
+<td>189</td>
+<td>A Fuzzy Model for Motor Activity Interpretation Using a Piezoelectric Sensor Grid</td>
+<td>Victoria Lopez, Roberto Morales-Arsenal, Pavel Llamocca Portella</td>
+</tr>
+<tr>
+<td>5</td>
+<td>09:00 - 17:10</td>
+<td>166</td>
+<td>An IoT Chair-Based Sensing System for Unobtrusive Restlessness Detection</td>
+<td>Victoria Lopez, Pavel Llamocca Portella, Joe Carrion-Jumbo</td>
+</tr>
+<tr>
+<td>6</td>
+<td>09:00 - 17:10</td>
+<td>144</td>
+<td>Evolutionary game analysis of the collaborative mechanisms of medical and long-term nursing care consortiums</td>
+<td>Yue Zheng</td>
+</tr>
+<tr>
+<td>7</td>
+<td>09:00 - 17:10</td>
+<td>133</td>
+<td>Learning from Others: Cross-context POMDP and Its Application to Adaptive Scheduling Optimization for Health Screening</td>
+<td>Hongtao Yu, Mu Du, Nan Kong</td>
+</tr>
+<tr>
+<td>8</td>
+<td>09:00 - 17:10</td>
+<td>22</td>
+<td>Risk Factor Identification Method Based on Accident Reports of Oil and Gas Storage and Transportation Facilities</td>
+<td>Anqi Xin, Lijun Sun</td>
+</tr>
+<tr>
+<td>9</td>
+<td>09:00 - 17:10</td>
+<td>215</td>
+<td>A Simplified Multilevel SVPWM Strategy for Cascaded H-Bridge Converters</td>
+<td>Jiawei Wang, Yunhe Wang, Wenjie Ma, Guidong Zhang, Lihao Wu, Zhong Li</td>
+</tr>
+<tr>
+<td>10</td>
+<td>09:00 - 17:10</td>
+<td>214</td>
+<td>A Switching Control for LLC Converter under Pulse-Load Conditions</td>
+<td>Bingran Liang, Yuzhe Bie, Guidong Zhang, Wenjie Ma, Lihao Wu, Zhong Li</td>
+</tr>
+<tr>
+<td>11</td>
+<td>09:00 - 17:10</td>
+<td>210</td>
+<td>Main-Auxiliary Cooperative Minimum-Time Control for Asymmetric Multiphase Buck Converters</td>
+<td>Yaopei Liang, Chen Zhang, Lihao Wu, Wenjie Ma, Guidong Zhang, Zhong Li</td>
+</tr>
+<tr>
+<td>12</td>
+<td>09:00 - 17:10</td>
+<td>186</td>
+<td>A Crest Factor-Based Chaotic Synchronization Error Energy Method for Early Bearing Degradation Detection</td>
+<td>Junying Niu, Zhong Li</td>
+</tr>
+<tr>
+<td>13</td>
+<td>09:00 - 17:10</td>
+<td>118</td>
+<td>Fuzzy Control With Feedforward for the Secondary-Side-Parallel CLLC Resonant Converter</td>
+<td>Li Lai, Bo Zhang, Jingyang Lin</td>
+</tr>
+<tr>
+<td>14</td>
+<td>09:00 - 17:10</td>
+<td>17</td>
+<td>Time Series Classification via Interval Gray Transformation Frame and its Application</td>
+<td>Liyuan Jiang</td>
+</tr>
+<tr>
+<td>15</td>
+<td>09:00 - 17:10</td>
+<td>143</td>
+<td>Quasi-projective Synchronization of Quaternion-valued Non-identical Cohen-Grossberg Neural Networks with Interaction Terms and Mismatched Parameters</td>
+<td>Manchun Tan</td>
+</tr>
+<tr>
+<td>16</td>
+<td>09:00 - 17:10</td>
+<td>134</td>
+<td>Online Fatigue-Aware Power Dispatch for Wind Farms with Hard Feasibility Guarantees</td>
+<td>Jiangtao Zhao, Lin Zhang, Tiantian He, Tianyi Zhang, Ximeng Wang, Bin Wang, Feng Hong</td>
+</tr>
+<tr>
+<td>17</td>
+<td>09:00 - 17:10</td>
+<td>220</td>
+<td>A Masked Reconstruction Method for Incomplete sEMG Signals Based on Muscle Synergy</td>
+<td>Lixing Hou, Renyu Yang, Donglong Zhu, ZhongBoMing, Limin Wang, Su Hu</td>
+</tr>
+<tr>
+<td>18</td>
+<td>09:00 - 17:10</td>
+<td>171</td>
+<td>Research on Learning and Evaluation of Orthopedic Techniques Based on Time Cycle Consistency</td>
+<td>Gao Jian, Tianqiang Huang, Feng Ye, Aokun Zheng, Qi Zhang</td>
+</tr>
+<tr>
+<td>19</td>
+<td>09:00 - 17:10</td>
+<td>101</td>
+<td>Attention Deep Neural Networks with Bayesian Hyper-Parameter Optimization for Short-Term Load Forecasting</td>
+<td>Vimal Singh Patel, Li Zhang</td>
+</tr>
+<tr>
+<td>20</td>
+<td>09:00 - 17:10</td>
+<td>50</td>
+<td>Long- and Short-Term Spatio-Temporal Information-aware Transformer for Traffic Flow Prediction</td>
+<td>Zhangyi Xu, Yinan Wang, Peilun Yang, Renjie Sun, Xijuan Liu, Ying Zhang</td>
+</tr>
+<tr>
+<td>21</td>
+<td>09:00 - 17:10</td>
+<td>199</td>
+<td>Domain Knowledge Guided for Varicose Vein Classification with Adaptive Clinical Experts</td>
+<td>Yanrun Zhu, Xiaodong Yue, Yufei Chen, Zhikang Xu, Zhipeng Wei, Jie Shi</td>
+</tr>
+<tr>
+<td>22</td>
+<td>09:00 - 17:10</td>
+<td>221</td>
+<td>Facility Location for Emergency Supply Distribution Centers Considering Priority Levels</td>
+<td>Chijun Zhang, Zhixi Li, Ziying Zhang, Yugang Zhao</td>
+</tr>
+<tr>
+<td>23</td>
+<td>09:00 - 17:10</td>
+<td>188</td>
+<td>TimeGFD: A Lightweight Client-side Time-series Forecasting Framework Based on Generative Federated Distillation</td>
+<td>Junling Chen, Xiaocao Ouyang, Jia Liu, Pengfei Zhang, Wei Huang</td>
+</tr>
+<tr>
+<td>24</td>
+<td>09:00 - 17:10</td>
+<td>131</td>
+<td>Transfer Learning-Enabled Cross-Station Photovoltaic Power Forecasting via Dendritic Neural Network</td>
+<td>Yang Yu</td>
+</tr>
+<tr>
+<td>25</td>
+<td>09:00 - 17:10</td>
+<td>23</td>
+<td>Resource-Efficient Safety-Critical Control for Uncertain Nonlinear Systems and Application to Adaptive Cruise Control</td>
+<td>Liqi Wang, Shan Xue, BO XU, Liu Guangliang, Siling Feng, Weidong Zhang</td>
+</tr>
+<tr>
+<td>26</td>
+<td>09:00 - 17:10</td>
+<td>201</td>
+<td>TGNN: A Teacher-Guided Graph Neural Network Framework for Semi-Supervised Learning on Non-Stationary Streaming Data</td>
+<td>Shukun Li, Hang Yu, Yimin Wen, Huafu Xu</td>
+</tr>
+<tr>
+<td>27</td>
+<td>09:00 - 17:10</td>
+<td>82</td>
+<td>TGCRN: Time-Varying Graph Convolutional Recurrent Network for Traffic Flow Prediction</td>
+<td>Yaxi Pan, Jingbo Hou, Wei Huang, Jihong Wan, Jie Wang, Xiaocao Ouyang, Xin Yang, Yajing Zhou, Yan Yang</td>
+</tr>
+<tr>
+<td>28</td>
+<td>09:00 - 17:10</td>
+<td>46</td>
+<td>Re-KGR: Mitigating Factual Hallucinations via Hybrid Graph Reasoning and Semantic Refinement</td>
+<td>Yuxuan Li, Xinzhi Wang, Ruishen Liu, Mingxuan Wang, Xiangfeng Luo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Poster Session 3</h2>
+<p><em>Day 3, July 19 | 09:00-17:10 | 28 poster papers</em></p>
+<table><colgroup><col style="width:5%"><col style="width:13%"><col style="width:8%"><col style="width:43%"><col style="width:31%"></colgroup>
+<thead>
+<tr>
+<th>No.</th>
+<th>Time</th>
+<th>Paper ID</th>
+<th>Title</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>09:00 - 17:10</td>
+<td>177</td>
+<td>Explainable EEG Classification via Compact Descriptors and Linguistic Fuzzy Rules</td>
+<td>Javier Aguirre-Eraso, Mikel Ferrero-Jaurrieta, Asier Urio-Larrea, Carlos Lopez-Molina, Carmen Vidaurre</td>
+</tr>
+<tr>
+<td>2</td>
+<td>09:00 - 17:10</td>
+<td>160</td>
+<td>DPT-CLIP: Discriminative Patch Tokens from CLIP for Generalizable Deepfake Detection</td>
+<td>Xueying Chen, Tianqiang Huang, Feng Ye, Aokun Zheng, ZhangQi</td>
+</tr>
+<tr>
+<td>3</td>
+<td>09:00 - 17:10</td>
+<td>154</td>
+<td>A New Image Thresholding Method Based on Polarization</td>
+<td>Pablo A. Flores-Vidal, DANIEL GOMEZ GONZALEZ, Juan Antonio Guevara</td>
+</tr>
+<tr>
+<td>4</td>
+<td>09:00 - 17:10</td>
+<td>75</td>
+<td>Deep learning-based localization and classification of vessel occlusions on CT-angiography in patients with acute ischemic stroke</td>
+<td>Jiacheng Sun, CHUSHUANG CHEN, Mark William Parsons, Longting Lin</td>
+</tr>
+<tr>
+<td>5</td>
+<td>09:00 - 17:10</td>
+<td>56</td>
+<td>Training-Free Multimedia Forensics via Multimodal Foundation Models</td>
+<td>Aokun Zheng, Tianqiang Huang</td>
+</tr>
+<tr>
+<td>6</td>
+<td>09:00 - 17:10</td>
+<td>283</td>
+<td>SEAT: Selective Entropy-Aware Token Merging for Efficient Diffusion Transformer Acceleration</td>
+<td>Hyunyup Kwak, Jitae Shin</td>
+</tr>
+<tr>
+<td>7</td>
+<td>09:00 - 17:10</td>
+<td>280</td>
+<td>Laghu: Localization of RL-Induced Reasoning in Small Language Models</td>
+<td>Vaddi Charan Sai Nandan Reddy, Gunda Sukesh, VELURU S L DHEERAJ CHOWDARY, Payyavula Mahendra Chowdary, Dr. Uma D</td>
+</tr>
+<tr>
+<td>8</td>
+<td>09:00 - 17:10</td>
+<td>208</td>
+<td>MQRank: Multi-Quality Ranking-Aware Distillation for Abstractive Summarization</td>
+<td>Xiaoliang Wang, Liqin Wei, Zihan Zhang, Ruiping Yin</td>
+</tr>
+<tr>
+<td>9</td>
+<td>09:00 - 17:10</td>
+<td>200</td>
+<td>Beyond Top-K: Representative Evidence Selection for Retrieval-Augmented Missing-Modality Learning</td>
+<td>WeiZhipeng, Xiaodong Yue, Yufei Chen, Zhikang Xu, Zihao Li, PeilinXu, Yuyang Wu</td>
+</tr>
+<tr>
+<td>10</td>
+<td>09:00 - 17:10</td>
+<td>184</td>
+<td>Beyond Statistical Divergence: A Hybrid Calibration Framework for Decoupling Hallucination in Large Language Models</td>
+<td>Jie Shi, Xiaodong Yue, Wei Liu, Yufei Chen, Feifan Dong, Zihao Li</td>
+</tr>
+<tr>
+<td>11</td>
+<td>09:00 - 17:10</td>
+<td>172</td>
+<td>SA-PLM: Semantic Alignment-based Unified Spatio-temporal Modeling with Pre-trained Language Model</td>
+<td>Weiyao Liu, Zhaolin Deng, Zhiyu Tian, Zhi Liu, Guojiang Shen, Xiangjie Kong</td>
+</tr>
+<tr>
+<td>12</td>
+<td>09:00 - 17:10</td>
+<td>93</td>
+<td>Uncovering Reasoning Failures: Hallucination Detection via Semantic Probing and Attention Tracking</td>
+<td>Feifan Dong, Xiaodong Yue, Yufei Chen, Jie Shi</td>
+</tr>
+<tr>
+<td>13</td>
+<td>09:00 - 17:10</td>
+<td>270</td>
+<td>WSF-Net: Wavelet-Spatial Fusion Network for Image Forensics Detection and Localization</td>
+<td>Chao Xu, Tianqiang Huang, Aokun Zheng, ZhangQi</td>
+</tr>
+<tr>
+<td>14</td>
+<td>09:00 - 17:10</td>
+<td>191</td>
+<td>PFRNet: Progressive Feature Relaxation for Low-Light Enhancement</td>
+<td>Yihan Sun, Xin Zheng, Hang Yu</td>
+</tr>
+<tr>
+<td>15</td>
+<td>09:00 - 17:10</td>
+<td>169</td>
+<td>UE5-Forest: Photorealistic Synthetic Stereo Pairs with Pixel-Exact Disparity for UAV Forestry Depth Estimation</td>
+<td>Yida Lin, Bing Xue, Mengjie Zhang, Richard Green, Sam Schofield</td>
+</tr>
+<tr>
+<td>16</td>
+<td>09:00 - 17:10</td>
+<td>157</td>
+<td>Progressive Per-Branch Depth Optimization with DEFOM-Stereo and SAM3 for UAV Forestry</td>
+<td>Yida Lin, Bing Xue, Mengjie Zhang, Richard Green, Sam Schofield</td>
+</tr>
+<tr>
+<td>17</td>
+<td>09:00 - 17:10</td>
+<td>156</td>
+<td>From Pseudo-Ground-Truth to Edge Deployment: Benchmarking Deep Stereo Matching Networks on Real Radiata Pine for UAV Tree Pruning</td>
+<td>Yida Lin, Bing Xue, Mengjie Zhang, Richard Green, Sam Schofield</td>
+</tr>
+<tr>
+<td>18</td>
+<td>09:00 - 17:10</td>
+<td>148</td>
+<td>A CNN-BiLSTM Framework for Robust Arrhythmia Classification Using 12-Lead ECG Signals</td>
+<td>Thi Thanh Tam Nguyen, Thi Thanh Sang Nguyen, Nguyen Thi Thuy Loan</td>
+</tr>
+<tr>
+<td>19</td>
+<td>09:00 - 17:10</td>
+<td>57</td>
+<td>Adaptive Semi-Supervised Ensemble for Tumor Data Classification</td>
+<td>Guojie Li, Ziwei Fan, Jiahao Liang, Zhiwen Yu</td>
+</tr>
+<tr>
+<td>20</td>
+<td>09:00 - 17:10</td>
+<td>4</td>
+<td>Mining Discriminative Salient Objects with Optimal Transport for Few-Shot Image Classification</td>
+<td>Yijia Mi, Haobo Wei, Hanchen Wang, Jianke Yu, Ying Zhang, Xijuan Liu</td>
+</tr>
+<tr>
+<td>21</td>
+<td>09:00 - 17:10</td>
+<td>222</td>
+<td>MAPF-Lite: A Parameter-Efficient Multi-Modal Framework for High-Fidelity Deepfake Detection</td>
+<td>Muhammad Abdullah Butt, Fouqia Zafeer, Aneeb Ahmad, Areej Atif, Minahil shahzadi, Isha</td>
+</tr>
+<tr>
+<td>22</td>
+<td>09:00 - 17:10</td>
+<td>197</td>
+<td>Interpretable Audio Deepfake Detection via Iterative Semantic-Physical Consistency Reasoning</td>
+<td>zhenglongbin, Tianqiang Huang, Feng Ye, Aokun Zheng, ZhangQi</td>
+</tr>
+<tr>
+<td>23</td>
+<td>09:00 - 17:10</td>
+<td>150</td>
+<td>A Semi-supervised Approach with Dual Filters for Graph-based Fraud Detection</td>
+<td>Lijing Huang, Zhengyang Liu, Xiangfeng Luo, Shaorong Xie</td>
+</tr>
+<tr>
+<td>24</td>
+<td>09:00 - 17:10</td>
+<td>100</td>
+<td>Decimated Hypergraph Framelets Based on Spline Wavelets Basis</td>
+<td>Qiu Chenghao, Ming Li, Xiaosheng Zhuang</td>
+</tr>
+<tr>
+<td>25</td>
+<td>09:00 - 17:10</td>
+<td>72</td>
+<td>LLM-Enhanced Multi-Granularity Hierarchical Perception in Temporal Knowledge Graph Completion</td>
+<td>Chaohong Wu, Siling Feng, Shan Xue, Liqi Wang, Weigang Kong</td>
+</tr>
+<tr>
+<td>26</td>
+<td>09:00 - 17:10</td>
+<td>40</td>
+<td>Interest-expansion-based Graph Convolutional Neural Networks for Recommendation</td>
+<td>Wenhui Guo, Tiantian Zhou, Sihui Li, Hailiang Ye, Feilong Cao</td>
+</tr>
+<tr>
+<td>27</td>
+<td>09:00 - 17:10</td>
+<td>32</td>
+<td>Boosting Targeted Label Attacks in Graph Neural Networks with Iterative Edge Injection</td>
+<td>Sihui Li, Qiyang Chen, Wenhui Guo, Hailiang Ye, Feilong Cao</td>
+</tr>
+<tr>
+<td>28</td>
+<td>09:00 - 17:10</td>
+<td>3</td>
+<td>HMGTF: A Hierarchical Multi-relational Graph and Text Fusion model for Social Event Detection</td>
+<td>ZhiHan Xu, Dongqi Wang, Di Wang, Dongming Chen</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
