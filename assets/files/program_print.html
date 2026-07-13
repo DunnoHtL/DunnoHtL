@@ -21,25 +21,46 @@
 .print-bar__btn:hover { background: #c03820; }
 
 @media print {
-  .print-bar { display: none; }
+  .print-bar   { display: none; }
+  .screen-footer { display: none; }
+  .print-footer  { display: none; }
+
   @page {
     size: A4;
-    margin: 10mm 10mm 14mm;
-    @top-left    { content: ''; }
-    @top-center  { content: ''; }
-    @top-right   { content: ''; }
-    @bottom-left { content: ''; }
-    @bottom-right{ content: ''; }
-    @bottom-center {
-      content: counter(page) " / " counter(pages);
+    margin: 10mm 10mm 12mm;
+    @top-left   { content: ''; }
+    @top-center {
+      content: 'FLINS-ISKE 2026 · Conference Program';
       font-family: 'Segoe UI', Arial, sans-serif;
-      font-size: 8px;
-      color: #888;
+      font-size: 10px;
+      color: #aaa;
     }
+    @top-right  { content: ''; }
+    @bottom-left  { content: ''; }
+    @bottom-center{ content: ''; }
+    @bottom-right { content: ''; }
   }
   body    { margin: 0; padding: 0; }
   .content{ max-width: none; margin: 0; padding: 0; }
 }
+
+/* ── Print footer: fixed at bottom of every printed page ── */
+.print-footer {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  padding: 4mm 10mm;
+  border-top: 1px solid #eee;
+  background: #fff;
+  justify-content: space-between;
+  align-items: flex-end;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.print-footer__left  { font-size: 20px; color: #555; line-height: 1.4; }
+.print-footer__title { font-weight: 800; display: block; }
+.print-footer__sub   { font-size: 14px; color: #888; display: block; }
+.print-footer__page  { font-size: 20px; color: #888; white-space: nowrap; }
 
 /* ── Shared layout ── */
 * {
@@ -87,6 +108,17 @@ em { font-size: 8.5px; color: #666; }
 p  { margin: 3px 0 5px; }
 strong { color: #c03820; }
 hr { display: none; }
+
+/* ── Screen footer (hidden when printing — print uses @page margin boxes) ── */
+.screen-footer {
+  margin-top: 32px;
+  padding: 14px 20px;
+  border-top: 2px solid #EF4A2D;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+}
+.screen-footer__title { font-size: 20px; font-weight: 800; color: #1a1a1a; }
+.screen-footer__sub   { font-size: 20px; color: #666; }
+@media print { .screen-footer { display: none; } }
 table + p { display: none; }
 
 /* ── Tables ── */
@@ -2229,6 +2261,8 @@ tbody td {
 </tr>
 </tbody>
 </table>
+
 </div>
+
 </body>
 </html>

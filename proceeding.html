@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Proceedings • FLINS-ISKE 2026</title>
   <meta name="description" content="FLINS-ISKE 2026 conference website template." />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -39,19 +40,13 @@
 </section>
 
 <style>
-.proc-list { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.proc-list { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .proc-item {
-  display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  padding: 12px 16px; border: 1px solid #eee; border-radius: 8px;
-  background: #fafafa;
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  padding: 10px 0; border-bottom: 1px solid #eee;
 }
-.proc-item__meta { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-.proc-item__part { font-weight: 700; font-size: 15px; }
-.proc-item__vol  { font-size: 13px; color: #666; }
-@media (max-width: 500px) {
-  .proc-item { flex-direction: column; align-items: flex-start; }
-  .proc-item .btn { width: 100%; text-align: center; }
-}
+.proc-item__part { font-weight: 700; font-size: 15px; white-space: nowrap; }
+.proc-item__vol  { font-size: 13px; color: #666; white-space: nowrap; margin-right: 4px; }
 </style>
 
 <section>
@@ -60,39 +55,29 @@
 
   <ul class="proc-list">
     <li class="proc-item">
-      <div class="proc-item__meta">
-        <span class="proc-item__part">Part I</span>
-        <span class="proc-item__vol">LNCS Vol. 16752</span>
-      </div>
-      <a href="https://link.springer.com/book/9789819223688" target="_blank" rel="noopener" class="btn btn-ghost">View on SpringerLink &rarr;</a>
+      <span class="proc-item__part">Part I</span>
+      <span class="proc-item__vol">LNCS Vol. 16752</span>
+      <a href="https://link.springer.com/book/10.1007/978-981-92-2369-5" target="_blank" rel="noopener" referrerpolicy="no-referrer-when-downgrade">https://link.springer.com/book/10.1007/978-981-92-2369-5</a>
     </li>
     <li class="proc-item">
-      <div class="proc-item__meta">
-        <span class="proc-item__part">Part II</span>
-        <span class="proc-item__vol">LNCS Vol. 16753</span>
-      </div>
-      <a href="https://link.springer.com/book/9789819224791" target="_blank" rel="noopener" class="btn btn-ghost">View on SpringerLink &rarr;</a>
+      <span class="proc-item__part">Part II</span>
+      <span class="proc-item__vol">LNCS Vol. 16753</span>
+      <a href="https://link.springer.com/book/10.1007/978-981-92-2480-7" target="_blank" rel="noopener" referrerpolicy="no-referrer-when-downgrade">https://link.springer.com/book/10.1007/978-981-92-2480-7</a>
     </li>
     <li class="proc-item">
-      <div class="proc-item__meta">
-        <span class="proc-item__part">Part III</span>
-        <span class="proc-item__vol">LNCS Vol. 16754</span>
-      </div>
-      <a href="https://link.springer.com/book/9789819224869" target="_blank" rel="noopener" class="btn btn-ghost">View on SpringerLink &rarr;</a>
+      <span class="proc-item__part">Part III</span>
+      <span class="proc-item__vol">LNCS Vol. 16754</span>
+      <a href="https://link.springer.com/book/10.1007/978-981-92-2487-6" target="_blank" rel="noopener" referrerpolicy="no-referrer-when-downgrade">https://link.springer.com/book/10.1007/978-981-92-2487-6</a>
     </li>
     <li class="proc-item">
-      <div class="proc-item__meta">
-        <span class="proc-item__part">Part IV</span>
-        <span class="proc-item__vol">LNCS Vol. 16755</span>
-      </div>
-      <a href="https://link.springer.com/book/9789819224937" target="_blank" rel="noopener" class="btn btn-ghost">View on SpringerLink &rarr;</a>
+      <span class="proc-item__part">Part IV</span>
+      <span class="proc-item__vol">LNCS Vol. 16755</span>
+      <a href="https://link.springer.com/book/10.1007/978-981-92-2494-4" target="_blank" rel="noopener" referrerpolicy="no-referrer-when-downgrade">https://link.springer.com/book/10.1007/978-981-92-2494-4</a>
     </li>
     <li class="proc-item">
-      <div class="proc-item__meta">
-        <span class="proc-item__part">Part V</span>
-        <span class="proc-item__vol">LNCS Vol. 16756</span>
-      </div>
-      <a href="https://link.springer.com/book/9789819224968" target="_blank" rel="noopener" class="btn btn-ghost">View on SpringerLink &rarr;</a>
+      <span class="proc-item__part">Part V</span>
+      <span class="proc-item__vol">LNCS Vol. 16756</span>
+      <a href="https://link.springer.com/book/10.1007/978-981-92-2497-5" target="_blank" rel="noopener" referrerpolicy="no-referrer-when-downgrade">https://link.springer.com/book/10.1007/978-981-92-2497-5</a>
     </li>
   </ul>
 </section>
