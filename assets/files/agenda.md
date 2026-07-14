@@ -11,6 +11,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 
 | Time | Agenda | Note |
 |------|--------|------|
+| 08:00 - 16:00 | Registration | |
 | 09:00 - 17:00 | AII-EEKE 2026 Workshop | CB08.02.002 |
 
 ---
@@ -19,6 +20,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 
 | Time | Agenda | Note |
 |------|--------|------|
+| 08:00 - 16:00 | Registration | |
 | 09:00 - 12:00 | Tutorial 1 - Yang Xu, Shuwei Chen, and Jun Liu | CB08.03.002 |
 | 12:00 - 13:30 | Lunch | |
 | 13:30 - 15:00 | Tutorial 2 - Bo Peng | CB08.03.002 |
@@ -32,6 +34,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 
 | Time | Agenda | Note |
 |------|--------|------|
+| 08:00 - 16:00 | Registration | |
 | 09:00 - 09:10 | Opening Remarks - Dist Prof Jie Lu (General Chair) | CB08.02.005 (Auditorium) |
 | 09:10 - 09:20 | Welcome from UTS - Prof Andrew Parfitt (UTS Vice-Chancellor and President) | CB08.02.005 (Auditorium) |
 | 09:20 - 09:25 | Welcome from FLINS - Prof Javier Montero (General Chair) | CB08.02.005 (Auditorium) |
@@ -56,6 +59,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 
 | Time | Agenda | Note |
 |------|--------|------|
+| 08:00 - 16:00 | Registration | |
 | 09:00 - 09:50 | Keynote - Prof Dongrui Wu · Chaired by Prof Javier Montero | CB08.02.005 |
 | 09:50 - 10:00 | Break | Poster Session 2 |
 | 10:00 - 10:50 | Keynote - Dist Prof CT Lin · Chaired by Prof Li Zhong | CB08.02.005 |
@@ -79,6 +83,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 
 | Time | Agenda | Note |
 |------|--------|------|
+| 08:00 - 16:00 | Registration | |
 | 09:00 - 10:40 | S31: Paper Session | CB08.02.005 · 5 papers · 09:00-10:40 |
 | 09:00 - 10:40 | S32: Paper Session | CB08.02.002 · 5 papers · 09:00-10:40 |
 | 09:00 - 10:40 | S33: Paper Session | CB08.03.002 · 4 papers · 09:00-10:20 |
