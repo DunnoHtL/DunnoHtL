@@ -64,7 +64,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 11:10 - 12:30 | S22: Special Session on Towards Responsible Intelligent Decision Support Systems | CB08.02.002 · 4 papers · 11:10-12:30 |
 | 11:10 - 12:30 | S23: Special Session on Spatio-Temporal Autonomous Learning in Uncertain Decision Situations | CB08.03.002 · 4 papers · 11:10-12:30 |
 | 12:30 - 13:30 | Lunch | Poster Session 2 |
-| 13:30 - 15:10 | S24: Special Session on AI for Health | CB08.02.005 · 5 papers · 13:30-15:10 |
+| 13:30 - 15:30 | S24: Special Session on AI for Health | CB08.02.005 · 6 papers · 13:30-15:30 |
 | 13:30 - 15:30 | S25: Special Session on Artificial Intelligence for Optimization and Decision Making | CB08.02.002 · 6 papers · 13:30-15:30 |
 | 13:30 - 15:10 | S26: Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs | CB08.03.002 · 5 papers · 13:30-15:10 |
 | 15:30 - 15:50 | Break (Afternoon Tea) | Poster Session 2 |
@@ -198,7 +198,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 12:10 - 12:30 | 49 | Concept Drift Detection Based on Attribute Interaction Changes | Chenxia Jin, Zekang Han, Fachao Li, Fei Guan |
 
 ### S24 - Special Session on AI for Health
-*July 18 | Afternoon | 13:30-15:10 | CB08.02.005 | Chair: Jie Lu*
+*July 18 | Afternoon | 13:30-15:30 | CB08.02.005 | Chair: Jie Lu*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -208,6 +208,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 3 | 14:10 - 14:30 | 149 | AE-UVNet: An Attention Enhanced hybrid architecture using U-Net and V-Net for Multimodal Brain Tumour Segmentation | Maoying Qiao, Haolan Zou, Aditya Anil |
 | 4 | 14:30 - 14:50 | 204 | Dual-Agent Multiple-Model Reinforcement Learning for Event-Triggered Human-Robot Co-Adaptation in Decoupled Task Spaces | Yaqi Li, Zhengqi Han, Huifang Liu, Steven W. Su |
 | 5 | 14:50 - 15:10 | 34 | Real-Time Detection of Sleep Apnea Using Respiratory Sound Analysis | Paula Olaya, Jeremmy Leon, Alejandro Erazo, Kevin Landazuri, Lenin Ramirez-Cando, Diego Almeida, Vladimir Bonilla, Luis Zhinin-Vera, Gandhi Fernando Villalba Meneses, CESAR BYRON GUEVARA MALDONADO |
+| 6 | 15:10 - 15:30 | 73 | Development of A Serious Video Game for Pattern Detection in Emotional Behaviour | Miguel De Andres, Diego Riofrio-Luzcando, Victoria Lopez, Matilde Santos, Diego Urgeles Puertolas |
 
 ### S25 - Special Session on Artificial Intelligence for Optimization and Decision Making
 *July 18 | Afternoon | 13:30-15:30 | CB08.02.002 | Chair: Zhen Zhang*
@@ -360,7 +361,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ---
 
 ## Poster Session 1
-*Day 1, July 17 | 09:00-17:10 | 29 poster papers*
+*Day 1, July 17 | 09:00-17:10 | 28 poster papers*
 
 | No. | Time | Paper ID | Title | Authors |
 |-----|------|----------|-------|---------|
@@ -392,7 +393,6 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 26 | 09:00 - 17:10 | 66 | Semi-Supervised Hierarchical Drift Detection via Prediction Uncertainty Distributions | Di Wang, Shihui Liu, Kai Zhang, Botao Jiao, Piyang Liu |
 | 27 | 09:00 - 17:10 | 45 | Enhancing Adversarial Transferability by Attention Center Shuffle and Mask | Quan Liu, Feng Ye, Chenhao Lu, Shumin Zeng, Guangliang Huang, Runze Chen, Xudong Ke |
 | 28 | 09:00 - 17:10 | 26 | Entropy-based Graph Embedding for Credit Risk Evaluation Incorporating Sample Correlations | Mingyu Liu, Lixin Cui, Xin Jin, Zhipeng Cui, Lu Bai |
-| 29 | 09:00 - 17:10 | 73 | Development of A Serious Video Game for Pattern Detection in Emotional Behaviour | Miguel De Andres, Diego Riofrio-Luzcando, Victoria Lopez, Matilde Santos, Diego Urgeles Puertolas |
 
 ---
 
