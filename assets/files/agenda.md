@@ -69,13 +69,13 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 11:10 - 12:30 | S23: Special Session on Spatio-Temporal Autonomous Learning in Uncertain Decision Situations | CB08.03.002 · 4 papers · 11:10-12:30 |
 | 12:30 - 13:30 | Lunch | Poster Session 2 |
 | 13:30 - 15:30 | S24: Special Session on AI for Health | CB08.02.005 · 6 papers · 13:30-15:30 |
-| 13:30 - 15:30 | S25: Special Session on Artificial Intelligence for Optimization and Decision Making | CB08.02.002 · 6 papers · 13:30-15:30 |
+| 13:30 - 15:15 | S25: Special Session on Artificial Intelligence for Optimization and Decision Making | CB08.02.002 · 7 papers · 13:30-15:15 |
 | 13:30 - 15:10 | S26: Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs | CB08.03.002 · 5 papers · 13:30-15:10 |
 | 15:30 - 15:50 | Break (Afternoon Tea) | Poster Session 2 |
 | 15:50 - 17:10 | S27: Special Session on Information Aggregation Tools for Artificial Intelligence | CB08.02.005 · 4 papers · 15:50-17:10 |
 | 15:50 - 17:30 | S28: Special Session on Human-Centric Intelligent Control: Behavioural Dynamics and Social Sensing for Resilience | CB08.02.002 · 5 papers · 15:50-17:30 |
 | 15:50 - 17:10 | S29: Special Session on Evolving Deep and Transfer Learning Models for Computer Vision and Medical Imaging | CB08.03.002 · 4 papers · 15:50-17:10 |
-| 19:00 - 22:00 | Banquet (Cruise, Darling Harbour - Circular Quay) | |
+| 19:00 - 22:00 | Banquet (Cruise, Darling Harbour - Circular Quay) | On-site ticket not available |
 
 ---
 
@@ -216,16 +216,17 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 6 | 15:10 - 15:30 | 73 | Development of A Serious Video Game for Pattern Detection in Emotional Behaviour | Miguel De Andres, Diego Riofrio-Luzcando, Victoria Lopez, Matilde Santos, Diego Urgeles Puertolas |
 
 ### S25 - Special Session on Artificial Intelligence for Optimization and Decision Making
-*July 18 | Afternoon | 13:30-15:30 | CB08.02.002 | Chair: Zhen Zhang*
+*July 18 | Afternoon | 13:30-15:15 | CB08.02.002 | Chair: Zhen Zhang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
-| 1 | 13:30 - 13:50 | 71 | A Modular and Reproducible Z-Number Fuzzy AHP-TOPSIS Framework in R | Gizem Intepe, Irem Ucal Sari, Chng Wei Lau |
-| 2 | 13:50 - 14:10 | 70 | Evidence-Driven and Game-Theoretic Consensus Modeling for Group Decision-Making: A Case Study of Retail Marketing Strategy Selection | Qihao Zhang |
-| 3 | 14:10 - 14:30 | 19 | Robust granular-ball clustering with justifiable granularity and local quality peaks | Zihang Jia, Zhen Zhang, Wenyu Yu |
-| 4 | 14:30 - 14:50 | 108 | Bridging the Semantic Gap in Social Commerce: A Multimodal Sequential Recommendation Framework via Vision-Language Models | Hoang Van Manh, Thi Thanh Sang Nguyen |
-| 5 | 14:50 - 15:10 | 111 | A Deep Non-negative Matrix Factorization Algorithm for Acupuncture Omics Data Clustering | Zonglin Li, Lianbo Tao, Qiaofeng Wu, Ping Deng, Pengfei Zhang, Dexian Wang, Tianrui Li, Shuguang Yu |
-| 6 | 15:10 - 15:30 | 97 | Uncertainty-Aware Forecasting and Inventory Optimization for ATM Cash Management in Vietnam | Huu-Thanh Phan, Xuan-Bach Le, Tho Quan |
+| 1 | 13:30 - 13:45 | 71 | A Modular and Reproducible Z-Number Fuzzy AHP-TOPSIS Framework in R | Gizem Intepe, Irem Ucal Sari, Chng Wei Lau |
+| 2 | 13:45 - 14:00 | 70 | Evidence-Driven and Game-Theoretic Consensus Modeling for Group Decision-Making: A Case Study of Retail Marketing Strategy Selection | Qihao Zhang |
+| 3 | 14:00 - 14:15 | 19 | Robust granular-ball clustering with justifiable granularity and local quality peaks | Zihang Jia, Zhen Zhang, Wenyu Yu |
+| 4 | 14:15 - 14:30 | 108 | Bridging the Semantic Gap in Social Commerce: A Multimodal Sequential Recommendation Framework via Vision-Language Models | Hoang Van Manh, Thi Thanh Sang Nguyen |
+| 5 | 14:30 - 14:45 | 111 | A Deep Non-negative Matrix Factorization Algorithm for Acupuncture Omics Data Clustering | Zonglin Li, Lianbo Tao, Qiaofeng Wu, Ping Deng, Pengfei Zhang, Dexian Wang, Tianrui Li, Shuguang Yu |
+| 6 | 14:45 - 15:00 | 97 | Uncertainty-Aware Forecasting and Inventory Optimization for ATM Cash Management in Vietnam | Huu-Thanh Phan, Xuan-Bach Le, Tho Quan |
+| 7 | 15:00 - 15:15 | 76 | Trusted Verification Methods for Public Data Products Based on Generative AI and Zero-Knowledge Proofs | Dequan Meng, Xiangpei Hu, Yonggang Li, Hui Yang |
 
 ### S26 - Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs
 *July 18 | Afternoon | 13:30-15:10 | CB08.03.002 | Chair: Jianxin Li*
@@ -296,7 +297,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 10:20 - 10:40 | 285 | Explainable Artificial Intelligence for Interpretable Pressure Prediction in Medical Compression Stockings | Kim Duc Tran, Xianyi Zeng |
 
 ### S33 - Paper Session
-*July 19 | Morning | 09:00-10:20 | CB08.03.002*
+*July 19 | Morning | 09:00-10:20 | CB08.03.002 | Chair: Kun Wang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -323,7 +324,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 14:50 - 15:10 | 116 | From Policy Documents to Structured Survey Responses: Evaluating Large Language Models for Policy Monitoring | Carolyn Cole, Matthias Deschryvere, Toqeer Ehsan, Arash Hajikhani |
 
 ### S36 - Paper Session
-*July 19 | Afternoon | 13:30-14:50 | CB08.03.002*
+*July 19 | Afternoon | 13:30-14:50 | CB08.03.002 | Chair: Xingpeng Liu*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -366,7 +367,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ---
 
 ## Poster Session 1
-*Day 1, July 17 | 09:00-17:10 | 28 poster papers*
+*Day 1, July 17 | 09:00-17:10 | 27 poster papers*
 
 | No. | Time | Paper ID | Title | Authors |
 |-----|------|----------|-------|---------|
@@ -378,26 +379,25 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 6 | 09:00 - 17:10 | 139 | Aggregation of multivalued time series machine learning forecasters via admissible orders-based induced functions | Mikel Ferrero-Jaurrieta, Alfonso Indurain-Ibero, Javier Aguirre-Eraso, Humberto Bustince |
 | 7 | 09:00 - 17:10 | 95 | Extending the Uzzi Paradigm: A Gravity Model for Knowledge Recombination | Ming Lei |
 | 8 | 09:00 - 17:10 | 80 | Hybrid CP-SAT-Fuzzy IDSS for Reservation Acceptance and Table Assignment | Joaquin Arellano Goicoechea, Humberto Bustince |
-| 9 | 09:00 - 17:10 | 76 | Trusted Verification Methods for Public Data Products Based on Generative AI and Zero-Knowledge Proofs | Dequan Meng, Xiangpei Hu, Yonggang Li, Hui Yang |
-| 10 | 09:00 - 17:10 | 74 | FRRI-Online: Interpretable Fuzzy-Rough Rule Updating from Validated Streams | Henri Bollaert, Fatemeh Sadeghi, Chris Cornelis |
-| 11 | 09:00 - 17:10 | 68 | Bayesian Ideal Point Models as Knowledge Representation Systems in Graphs for Fuzzy-Set-Based Polarization Measurement | Juan Antonio Guevara, DANIEL GOMEZ GONZALEZ, Rosario Susi |
-| 12 | 09:00 - 17:10 | 55 | On a Natural Notion of Entropy and Independence via Fuzzy Relations | Raquel Fernandez-Peralta, Javier Fumanal-Idocin |
-| 13 | 09:00 - 17:10 | 54 | SNA for fuzzy measures understanding | Inmaculada Gutierrez, Carlos I. Perez-Sechi, Javier Castro, DANIEL GOMEZ GONZALEZ |
-| 14 | 09:00 - 17:10 | 25 | Achieving Excellence in E-Healthcare: A Robust Fuzzy Group Decision-Making Framework for Telemedicine Provider Optimization | Palanivel K. |
-| 15 | 09:00 - 17:10 | 10 | A Neural-Dynamic Framework for Review-Driven Large-Scale Group Decision Making: Integrating Emotion, Adaptive TODIM, and Consensus | Junfeng Chu |
-| 16 | 09:00 - 17:10 | 245 | The Ordered Weighted Average Gross Domestic Product | Hadeel Baraheem, Jose M Merigo |
-| 17 | 09:00 - 17:10 | 107 | A Hybrid Knowledge-Guided Training-Free Decision Framework for Engineering Construction Progress Monitoring | Yumeng Kang, Hongbo Zhou, Kefeng Huang, Zhenyu Liu, Baozhu Zhang, Zefeng Qian, Chongyang Zhang |
-| 18 | 09:00 - 17:10 | 94 | A Multi-Attribute Group Decision-Making Approach Based on Linguistic Truth-Valued Lattice Implication Algebra and Prospect Theory | Kuo Pang |
-| 19 | 09:00 - 17:10 | 85 | Personalized Services through Lifecycle Tracking: A Probabilistic Graphical Approach to Modeling Consumer Psychological Dynamics | Yao Mu, Baojun Ma |
-| 20 | 09:00 - 17:10 | 62 | Dual-scale Adaptive Fuzzy Rough Sets for Feature Selection | Shimin Yang, Jin Qian, ShaoWei Yan, Dongsheng Zhi |
-| 21 | 09:00 - 17:10 | 13 | Rule-Anchored Semantic Alignment: A Residual TSK Network for Unsupervised Domain Adaptation | Xiu Chen, Chengyu Liu, Can Ti, Yuanpeng Zhang, Sai-Kit Lam, Wang Shitong |
-| 22 | 09:00 - 17:10 | 275 | FedCDA: Class-Conditional Distribution Alignment for Federated Learning with Non-IID Data | Di Wu, Jielei Chu, Tianrui Li |
-| 23 | 09:00 - 17:10 | 145 | A Dependence-Aware Knowledge-Engineering Framework for Benchmarking and Uncertainty-Aware Forecasting of National AI Competitiveness | Qi Zhang, Tianqiang Huang |
-| 24 | 09:00 - 17:10 | 104 | FedPAD: Prototype-Guided Domain Association and Robust Prototype Learning for Heterogeneous Federated Learning | Leyuan Zhang, Yang Long, Fan Wan |
-| 25 | 09:00 - 17:10 | 78 | Federated Unlearning Model Recovery in Data with Skewed Label Distributions | Xinrui Yu, Wenbin Pei, Bing Xue, Qiang Zhang |
-| 26 | 09:00 - 17:10 | 66 | Semi-Supervised Hierarchical Drift Detection via Prediction Uncertainty Distributions | Di Wang, Shihui Liu, Kai Zhang, Botao Jiao, Piyang Liu |
-| 27 | 09:00 - 17:10 | 45 | Enhancing Adversarial Transferability by Attention Center Shuffle and Mask | Quan Liu, Feng Ye, Chenhao Lu, Shumin Zeng, Guangliang Huang, Runze Chen, Xudong Ke |
-| 28 | 09:00 - 17:10 | 26 | Entropy-based Graph Embedding for Credit Risk Evaluation Incorporating Sample Correlations | Mingyu Liu, Lixin Cui, Xin Jin, Zhipeng Cui, Lu Bai |
+| 9 | 09:00 - 17:10 | 74 | FRRI-Online: Interpretable Fuzzy-Rough Rule Updating from Validated Streams | Henri Bollaert, Fatemeh Sadeghi, Chris Cornelis |
+| 10 | 09:00 - 17:10 | 68 | Bayesian Ideal Point Models as Knowledge Representation Systems in Graphs for Fuzzy-Set-Based Polarization Measurement | Juan Antonio Guevara, DANIEL GOMEZ GONZALEZ, Rosario Susi |
+| 11 | 09:00 - 17:10 | 55 | On a Natural Notion of Entropy and Independence via Fuzzy Relations | Raquel Fernandez-Peralta, Javier Fumanal-Idocin |
+| 12 | 09:00 - 17:10 | 54 | SNA for fuzzy measures understanding | Inmaculada Gutierrez, Carlos I. Perez-Sechi, Javier Castro, DANIEL GOMEZ GONZALEZ |
+| 13 | 09:00 - 17:10 | 25 | Achieving Excellence in E-Healthcare: A Robust Fuzzy Group Decision-Making Framework for Telemedicine Provider Optimization | Palanivel K. |
+| 14 | 09:00 - 17:10 | 10 | A Neural-Dynamic Framework for Review-Driven Large-Scale Group Decision Making: Integrating Emotion, Adaptive TODIM, and Consensus | Junfeng Chu |
+| 15 | 09:00 - 17:10 | 245 | The Ordered Weighted Average Gross Domestic Product | Hadeel Baraheem, Jose M Merigo |
+| 16 | 09:00 - 17:10 | 107 | A Hybrid Knowledge-Guided Training-Free Decision Framework for Engineering Construction Progress Monitoring | Yumeng Kang, Hongbo Zhou, Kefeng Huang, Zhenyu Liu, Baozhu Zhang, Zefeng Qian, Chongyang Zhang |
+| 17 | 09:00 - 17:10 | 94 | A Multi-Attribute Group Decision-Making Approach Based on Linguistic Truth-Valued Lattice Implication Algebra and Prospect Theory | Kuo Pang |
+| 18 | 09:00 - 17:10 | 85 | Personalized Services through Lifecycle Tracking: A Probabilistic Graphical Approach to Modeling Consumer Psychological Dynamics | Yao Mu, Baojun Ma |
+| 19 | 09:00 - 17:10 | 62 | Dual-scale Adaptive Fuzzy Rough Sets for Feature Selection | Shimin Yang, Jin Qian, ShaoWei Yan, Dongsheng Zhi |
+| 20 | 09:00 - 17:10 | 13 | Rule-Anchored Semantic Alignment: A Residual TSK Network for Unsupervised Domain Adaptation | Xiu Chen, Chengyu Liu, Can Ti, Yuanpeng Zhang, Sai-Kit Lam, Wang Shitong |
+| 21 | 09:00 - 17:10 | 275 | FedCDA: Class-Conditional Distribution Alignment for Federated Learning with Non-IID Data | Di Wu, Jielei Chu, Tianrui Li |
+| 22 | 09:00 - 17:10 | 145 | A Dependence-Aware Knowledge-Engineering Framework for Benchmarking and Uncertainty-Aware Forecasting of National AI Competitiveness | Qi Zhang, Tianqiang Huang |
+| 23 | 09:00 - 17:10 | 104 | FedPAD: Prototype-Guided Domain Association and Robust Prototype Learning for Heterogeneous Federated Learning | Leyuan Zhang, Yang Long, Fan Wan |
+| 24 | 09:00 - 17:10 | 78 | Federated Unlearning Model Recovery in Data with Skewed Label Distributions | Xinrui Yu, Wenbin Pei, Bing Xue, Qiang Zhang |
+| 25 | 09:00 - 17:10 | 66 | Semi-Supervised Hierarchical Drift Detection via Prediction Uncertainty Distributions | Di Wang, Shihui Liu, Kai Zhang, Botao Jiao, Piyang Liu |
+| 26 | 09:00 - 17:10 | 45 | Enhancing Adversarial Transferability by Attention Center Shuffle and Mask | Quan Liu, Feng Ye, Chenhao Lu, Shumin Zeng, Guangliang Huang, Runze Chen, Xudong Ke |
+| 27 | 09:00 - 17:10 | 26 | Entropy-based Graph Embedding for Credit Risk Evaluation Incorporating Sample Correlations | Mingyu Liu, Lixin Cui, Xin Jin, Zhipeng Cui, Lu Bai |
 
 ---
 
