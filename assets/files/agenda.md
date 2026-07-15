@@ -95,7 +95,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 13:30 - 15:10 | S35: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI) | CB08.02.002 · 5 papers · 13:30-15:10 |
 | 13:30 - 15:10 | S36: Paper Session | CB08.03.002 · 4 papers · 13:30-14:50 |
 | 15:10 - 15:30 | Break (Afternoon Tea) | Poster Session 3 |
-| 15:30 - 17:10 | S37: Paper Session | CB08.02.005 · 5 papers · 15:30-17:10 |
+| 15:30 - 17:10 | S37: Paper Session | CB08.02.005 · 4 papers · 15:30-16:50 |
 | 15:30 - 17:10 | S38: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI) | CB08.02.002 · 2 papers · 15:30-16:10 |
 | 15:30 - 17:10 | S39: Paper Session | CB08.03.002 · 5 papers · 15:30-17:10 |
 | 17:10 - 17:20 | Closing Remarks - Dist Prof Jie Lu (General Chair) | CB08.02.005 (Auditorium) |
@@ -334,15 +334,14 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 14:30 - 14:50 | 58 | HGCRE: Heterogeneous Graph Representation Learning via Contrastive Learning | Dongming Chen, Hongxun Wang, Jiaming Liu, Beilei Wang, Tao Ren |
 
 ### S37 - Paper Session
-*July 19 | Afternoon | 15:30-17:10 | CB08.02.005*
+*July 19 | Afternoon | 15:30-16:50 | CB08.02.005*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
 | 1 | 15:30 - 15:50 | 161 | A LLM-Driven Framework for Interactive Behavior Chain Analysis of AV Crashes Using Crash Narratives and Multi-Source Data | Minghao Gao, Qiong Bao, Tianyuan han, Huansong Zhang, Yongjun Shen |
 | 2 | 15:50 - 16:10 | 129 | Benchmarking Temporal Fusion Transformer for Multi-Store Walmart Weekly Sales Forecasting with SOTA and Seasonal Models | Henil Patel |
-| 3 | 16:10 - 16:30 | 128 | A Social Personality Guided Diffusion Model for Session-based Social Recommendation | Xiongtao Zhang, Yuxuan Cao |
-| 4 | 16:30 - 16:50 | 87 | Dual-level Expert Specialization Protection for MoE | Junwei Bai |
-| 5 | 16:50 - 17:10 | 69 | An Efficient Self-Exciting Framework for Modeling Exogenous Shocks in Retail Transaction Streams | Wai Hong Tan, Feng Chen |
+| 3 | 16:10 - 16:30 | 87 | Dual-level Expert Specialization Protection for MoE | Junwei Bai |
+| 4 | 16:30 - 16:50 | 69 | An Efficient Self-Exciting Framework for Modeling Exogenous Shocks in Retail Transaction Streams | Wai Hong Tan, Feng Chen |
 
 ### S38 - Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)
 *July 19 | Afternoon | 15:30-16:10 | CB08.02.002*
@@ -437,7 +436,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ---
 
 ## Poster Session 3
-*Day 3, July 19 | 09:00-17:10 | 29 poster papers*
+*Day 3, July 19 | 09:00-17:10 | 30 poster papers*
 
 | No. | Time | Paper ID | Title | Authors |
 |-----|------|----------|-------|---------|
@@ -470,3 +469,4 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 27 | 09:00 - 17:10 | 32 | Boosting Targeted Label Attacks in Graph Neural Networks with Iterative Edge Injection | Sihui Li, Qiyang Chen, Wenhui Guo, Hailiang Ye, Feilong Cao |
 | 28 | 09:00 - 17:10 | 3 | HMGTF: A Hierarchical Multi-relational Graph and Text Fusion model for Social Event Detection | ZhiHan Xu, Dongqi Wang, Di Wang, Dongming Chen |
 | 29 | 09:00 - 17:10 | 16 | Prediction of Lithium-ion Battery Defect Events Based on Event Evolution Weighted Graphs | Du Jin, Mei Yiming, Wangjun Wan, Yu Yang, Qian Fei, Jing Han, Cai YongHua |
+| 30 | 09:00 - 17:10 | 128 | A Social Personality Guided Diffusion Model for Session-based Social Recommendation | Xiongtao Zhang, Yuxuan Cao |
