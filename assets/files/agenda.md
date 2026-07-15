@@ -96,7 +96,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 13:30 - 15:10 | S36: Paper Session | CB08.03.002 · 4 papers · 13:30-14:50 |
 | 15:10 - 15:30 | Break (Afternoon Tea) | Poster Session 3 |
 | 15:30 - 17:10 | S37: Paper Session | CB08.02.005 · 5 papers · 15:30-17:10 |
-| 15:30 - 17:10 | S38: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI) | CB08.02.002 · 3 papers · 15:30-16:30 |
+| 15:30 - 17:10 | S38: Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI) | CB08.02.002 · 2 papers · 15:30-16:10 |
 | 15:30 - 17:10 | S39: Paper Session | CB08.03.002 · 5 papers · 15:30-17:10 |
 | 17:10 - 17:20 | Closing Remarks - Dist Prof Jie Lu (General Chair) | CB08.02.005 (Auditorium) |
 
@@ -345,13 +345,12 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 5 | 16:50 - 17:10 | 69 | An Efficient Self-Exciting Framework for Modeling Exogenous Shocks in Retail Transaction Streams | Wai Hong Tan, Feng Chen |
 
 ### S38 - Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)
-*July 19 | Afternoon | 15:30-16:30 | CB08.02.002*
+*July 19 | Afternoon | 15:30-16:10 | CB08.02.002*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
-| 1 | 15:30 - 15:50 | 16 | Prediction of Lithium-ion Battery Defect Events Based on Event Evolution Weighted Graphs | Du Jin, Mei Yiming, Wangjun Wan, Yu Yang, Qian Fei, Jing Han, Cai YongHua |
-| 2 | 15:50 - 16:10 | 279 | Responsibility-Oriented Evaluation of Vietnamese Speech Emotion Recognition under Class Imbalance and Silver Labels | Duc Dat Pham, Trung Quang Nguyen, Ngoc Tram Huynh Thi, Vo Ngoc Minh Anh, Le Anh Tien, Tan Duy Le, Kha Tu Huynh, Nguyen Tan Viet Tuyen |
-| 3 | 16:10 - 16:30 | 190 | Knowledge-Guided Evidential Reasoning for Trustworthy AI in Imbalanced Clinical Datasets | Muhammad Asim Ali, Jun Liu, Samuel J. Moore, Omar Nibouche |
+| 1 | 15:30 - 15:50 | 279 | Responsibility-Oriented Evaluation of Vietnamese Speech Emotion Recognition under Class Imbalance and Silver Labels | Duc Dat Pham, Trung Quang Nguyen, Ngoc Tram Huynh Thi, Vo Ngoc Minh Anh, Le Anh Tien, Tan Duy Le, Kha Tu Huynh, Nguyen Tan Viet Tuyen |
+| 2 | 15:50 - 16:10 | 190 | Knowledge-Guided Evidential Reasoning for Trustworthy AI in Imbalanced Clinical Datasets | Muhammad Asim Ali, Jun Liu, Samuel J. Moore, Omar Nibouche |
 
 ### S39 - Paper Session
 *July 19 | Afternoon | 15:30-17:10 | CB08.03.002*
@@ -438,7 +437,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ---
 
 ## Poster Session 3
-*Day 3, July 19 | 09:00-17:10 | 28 poster papers*
+*Day 3, July 19 | 09:00-17:10 | 29 poster papers*
 
 | No. | Time | Paper ID | Title | Authors |
 |-----|------|----------|-------|---------|
@@ -470,3 +469,4 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 26 | 09:00 - 17:10 | 40 | Interest-expansion-based Graph Convolutional Neural Networks for Recommendation | Wenhui Guo, Tiantian Zhou, Sihui Li, Hailiang Ye, Feilong Cao |
 | 27 | 09:00 - 17:10 | 32 | Boosting Targeted Label Attacks in Graph Neural Networks with Iterative Edge Injection | Sihui Li, Qiyang Chen, Wenhui Guo, Hailiang Ye, Feilong Cao |
 | 28 | 09:00 - 17:10 | 3 | HMGTF: A Hierarchical Multi-relational Graph and Text Fusion model for Social Event Detection | ZhiHan Xu, Dongqi Wang, Di Wang, Dongming Chen |
+| 29 | 09:00 - 17:10 | 16 | Prediction of Lithium-ion Battery Defect Events Based on Event Evolution Weighted Graphs | Du Jin, Mei Yiming, Wangjun Wan, Yu Yang, Qian Fei, Jing Han, Cai YongHua |
