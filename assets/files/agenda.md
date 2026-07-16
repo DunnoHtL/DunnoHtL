@@ -62,11 +62,11 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 08:00 - 16:00 | Registration | CB08 - Level 2 - Registration Desk |
 | 09:00 - 09:50 | Keynote - Prof Dongrui Wu · Chaired by Prof Javier Montero | CB08.02.005 |
 | 09:50 - 10:00 | Break | Poster Session 2 |
-| 10:00 - 10:50 | Keynote - Dist Prof CT Lin · Chaired by Prof Li Zhong | CB08.02.005 |
+| 10:00 - 10:50 | Keynote - Dist Prof CT Lin · Chaired by Prof Jun Liu | CB08.02.005 |
 | 10:50 - 11:10 | Break (Morning Tea) | Poster Session 2 |
 | 11:10 - 12:30 | S21: Special Session on AI for Agriculture - Innovations and Applications | CB08.02.005 · 3 papers · 11:10-12:10 |
 | 11:10 - 12:30 | S22: Special Session on Towards Responsible Intelligent Decision Support Systems | CB08.02.002 · 4 papers · 11:10-12:30 |
-| 11:10 - 12:30 | S23: Special Session on Spatio-Temporal Autonomous Learning in Uncertain Decision Situations | CB08.03.002 · 4 papers · 11:10-12:30 |
+| 11:10 - 12:30 | S23: Special Session on Spatio-Temporal Autonomous Learning in Uncertain Decision Situations | CB08.03.002 · 3 papers · 11:10-12:10 |
 | 12:30 - 13:30 | Lunch | Poster Session 2 |
 | 13:30 - 15:30 | S24: Special Session on AI for Health | CB08.02.005 · 6 papers · 13:30-15:30 |
 | 13:30 - 15:15 | S25: Special Session on Artificial Intelligence for Optimization and Decision Making | CB08.02.002 · 7 papers · 13:30-15:15 |
@@ -193,14 +193,13 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 12:10 - 12:30 | 228 | Immersive 3D Interface for Explainable Movie Recommendations | Oscar Ortega, Alvaro Labella, Raciel Yera, Luis Martinez |
 
 ### S23 - Special Session on Spatio-Temporal Autonomous Learning in Uncertain Decision Situations
-*July 18 | Morning | 11:10-12:30 | CB08.03.002 | Chair: Kun Wang*
+*July 18 | Morning | 11:10-12:10 | CB08.03.002 | Chair: Kun Wang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
 | 1 | 11:10 - 11:30 | 203 | Real-Time Trajectory Tracking with Conditional Random Field and Markov Chain | Mengyuan Lu, Li Xiong, Kun Wang |
-| 2 | 11:30 - 11:50 | 241 | CL-JL: Cross-Level Joint Learning for Hierarchical 3D CAD Model Generation | Yunwei Ji, Shijie Ding, Fenghua Xiang, Weimin Huang, Lin Qi, Mengxi Jiang |
-| 3 | 11:50 - 12:10 | 226 | Self-Attentive Sequential Recommendation with User Preference Clustering | Ho Dang Huu Trong, Thi Thanh Sang Nguyen |
-| 4 | 12:10 - 12:30 | 49 | Concept Drift Detection Based on Attribute Interaction Changes | Chenxia Jin, Zekang Han, Fachao Li, Fei Guan |
+| 2 | 11:30 - 11:50 | 226 | Self-Attentive Sequential Recommendation with User Preference Clustering | Ho Dang Huu Trong, Thi Thanh Sang Nguyen |
+| 3 | 11:50 - 12:10 | 49 | Concept Drift Detection Based on Attribute Interaction Changes | Chenxia Jin, Zekang Han, Fachao Li, Fei Guan |
 
 ### S24 - Special Session on AI for Health
 *July 18 | Afternoon | 13:30-15:30 | CB08.02.005 | Chair: Jie Lu*
@@ -400,7 +399,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 ---
 
 ## Poster Session 2
-*Day 2, July 18 | 09:00-17:10 | 28 poster papers*
+*Day 2, July 18 | 09:00-17:10 | 29 poster papers*
 
 | No. | Time | Paper ID | Title | Authors |
 |-----|------|----------|-------|---------|
@@ -432,11 +431,12 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 26 | 09:00 - 17:10 | 201 | TGNN: A Teacher-Guided Graph Neural Network Framework for Semi-Supervised Learning on Non-Stationary Streaming Data | Shukun Li, Hang Yu, Yimin Wen, Huafu Xu |
 | 27 | 09:00 - 17:10 | 82 | TGCRN: Time-Varying Graph Convolutional Recurrent Network for Traffic Flow Prediction | Yaxi Pan, Jingbo Hou, Wei Huang, Jihong Wan, Jie Wang, Xiaocao Ouyang, Xin Yang, Yajing Zhou, Yan Yang |
 | 28 | 09:00 - 17:10 | 46 | Re-KGR: Mitigating Factual Hallucinations via Hybrid Graph Reasoning and Semantic Refinement | Yuxuan Li, Xinzhi Wang, Ruishen Liu, Mingxuan Wang, Xiangfeng Luo |
+| 29 | 09:00 - 17:10 | 241 | CL-JL: Cross-Level Joint Learning for Hierarchical 3D CAD Model Generation | Yunwei Ji, Shijie Ding, Fenghua Xiang, Weimin Huang, Lin Qi, Mengxi Jiang |
 
 ---
 
 ## Poster Session 3
-*Day 3, July 19 | 09:00-17:10 | 30 poster papers*
+*Day 3, July 19 | 09:00-17:10 | 31 poster papers*
 
 | No. | Time | Paper ID | Title | Authors |
 |-----|------|----------|-------|---------|
@@ -470,3 +470,4 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 28 | 09:00 - 17:10 | 3 | HMGTF: A Hierarchical Multi-relational Graph and Text Fusion model for Social Event Detection | ZhiHan Xu, Dongqi Wang, Di Wang, Dongming Chen |
 | 29 | 09:00 - 17:10 | 16 | Prediction of Lithium-ion Battery Defect Events Based on Event Evolution Weighted Graphs | Du Jin, Mei Yiming, Wangjun Wan, Yu Yang, Qian Fei, Jing Han, Cai YongHua |
 | 30 | 09:00 - 17:10 | 128 | A Social Personality Guided Diffusion Model for Session-based Social Recommendation | Xiongtao Zhang, Yuxuan Cao |
+| 31 | 09:00 - 17:10 | 21 | Hybrid Feature Selection with Global Context and Focused Attention | Zeeshan Amir |
