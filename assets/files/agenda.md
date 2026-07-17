@@ -59,7 +59,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 
 | Time | Agenda | Note |
 |------|--------|------|
-| 08:00 - 16:00 | Registration | CB08 - Level 2 - Registration Desk |
+| 09:00 - 16:00 | Registration | CB08 - Level 2 - Registration Desk |
 | 09:00 - 09:50 | Keynote - Prof Dongrui Wu · Chaired by Prof Javier Montero | CB08.02.005 |
 | 09:50 - 10:00 | Break | Poster Session 2 |
 | 10:00 - 10:50 | Keynote - Dist Prof CT Lin · Chaired by Prof Jun Liu | CB08.02.005 |
@@ -83,7 +83,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 
 | Time | Agenda | Note |
 |------|--------|------|
-| 08:00 - 16:00 | Registration | CB08 - Level 2 - Registration Desk |
+| 09:00 - 16:00 | Registration | CB08 - Level 2 - Registration Desk |
 | 09:00 - 10:40 | S31: Paper Session | CB08.02.005 · 5 papers · 09:00-10:40 |
 | 09:00 - 10:40 | S32: Paper Session | CB08.02.002 · 5 papers · 09:00-10:40 |
 | 09:00 - 10:40 | S33: Paper Session | CB08.03.002 · 4 papers · 09:00-10:20 |
