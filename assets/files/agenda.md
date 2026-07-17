@@ -333,7 +333,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 14:30 - 14:50 | 58 | HGCRE: Heterogeneous Graph Representation Learning via Contrastive Learning | Dongming Chen, Hongxun Wang, Jiaming Liu, Beilei Wang, Tao Ren |
 
 ### S37 - Paper Session
-*July 19 | Afternoon | 15:30-16:50 | CB08.02.005*
+*July 19 | Afternoon | 15:30-16:50 | CB08.02.005 | Chair: Wei Duan*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -343,7 +343,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 4 | 16:30 - 16:50 | 69 | An Efficient Self-Exciting Framework for Modeling Exogenous Shocks in Retail Transaction Streams | Wai Hong Tan, Feng Chen |
 
 ### S38 - Special Session on Integrating Data and Knowledge for Trustworthy AI (DK-TAI)
-*July 19 | Afternoon | 15:30-16:10 | CB08.02.002*
+*July 19 | Afternoon | 15:30-16:10 | CB08.02.002 | Chair: Jun Liu*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
@@ -351,7 +351,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 2 | 15:50 - 16:10 | 190 | Knowledge-Guided Evidential Reasoning for Trustworthy AI in Imbalanced Clinical Datasets | Muhammad Asim Ali, Jun Liu, Samuel J. Moore, Omar Nibouche |
 
 ### S39 - Paper Session
-*July 19 | Afternoon | 15:30-17:10 | CB08.03.002*
+*July 19 | Afternoon | 15:30-17:10 | CB08.03.002 | Chair: En Yu*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|

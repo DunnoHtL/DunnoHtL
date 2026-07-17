@@ -47,7 +47,7 @@
   #agenda-preview p{font-size:15px;line-height:1.5;color:#1a1a1a;margin-bottom:6px}
   .agenda-nav__note{
     font-size:11px;font-style:italic;color:#999;
-    padding-top:6px;border-top:1px solid #fdf0ed;margin-top:2px;line-height:1.4;
+    margin:0 0 16px;line-height:1.4;
   }
   #agenda-preview strong{color:#c03820}
   #agenda-preview em{color:#666}
@@ -275,9 +275,9 @@
       nav.appendChild(rowPre);
       nav.appendChild(rowMain);
       nav.appendChild(rowDetails);
-      nav.appendChild(noteEl);
       const header = container.querySelector('.preview-header');
       if (header) header.after(nav); else container.prepend(nav);
+      nav.after(noteEl);
 
       // offset scrollIntoView so h2 clears both sticky topbar and sticky nav
       const topbarH = document.querySelector('.topbar')?.offsetHeight ?? 56;
