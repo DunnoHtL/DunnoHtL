@@ -91,6 +91,35 @@
   }
   .agenda-nav a:hover{background:#EF4A2D;color:#fff}
 
+  /* title search */
+  .agenda-search{
+    margin:0 -24px 14px;padding:10px 24px 12px;
+    background:#fff;position:sticky;z-index:8;
+    border-bottom:2px solid #fdf0ed;
+    box-shadow:0 4px 10px rgba(0,0,0,.06);
+  }
+  .agenda-search__box{
+    display:flex;align-items:center;gap:8px;
+    border:1.5px solid #e5cfc9;border-radius:8px;
+    padding:8px 12px;background:#fff;
+    transition:border-color .15s,box-shadow .15s;
+  }
+  .agenda-search__box:focus-within{border-color:#EF4A2D;box-shadow:0 0 0 3px rgba(239,74,45,.12)}
+  .agenda-search__icon{color:#c03820;flex-shrink:0}
+  .agenda-search__box input{
+    flex:1;border:none;outline:none;font-size:14px;
+    font-family:inherit;color:#1a1a1a;background:transparent;
+  }
+  .agenda-search__box input::placeholder{color:#999}
+  .agenda-search__clear{
+    border:none;background:#fdf0ed;color:#c03820;
+    width:20px;height:20px;border-radius:50%;font-size:14px;line-height:1;
+    cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  }
+  .agenda-search__clear:hover{background:#EF4A2D;color:#fff}
+  .agenda-search__count{font-size:12px;color:#888;margin-top:6px;padding-left:2px}
+  mark.search-hit{background:#ffe27a;color:#1a1a1a;padding:0 1px;border-radius:2px}
+
   /* scrollable table wrapper injected by JS */
   .agenda-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:12px}
   .agenda-table-scroll table{margin-bottom:0}
@@ -111,6 +140,11 @@
     .agenda-nav-row{flex-wrap:wrap}
     .agenda-nav-label{font-size:9px;min-width:56px;width:100%}
     .agenda-nav a{padding:6px 12px;font-size:12px}
+
+    /* Search */
+    .agenda-search{margin:0 -12px 12px;padding:8px 12px 10px}
+    .agenda-search__box{padding:7px 10px}
+    .agenda-search__box input{font-size:13px}
 
     /* Headings */
     #agenda-preview h2{font-size:14px;padding:7px 10px;margin:16px 0 10px}
@@ -211,6 +245,14 @@
       });
     }
 
+    function markTitleColumns(container) {
+      container.querySelectorAll('table').forEach(table => {
+        const headers = [...table.querySelectorAll('thead th')]
+          .map(th => th.textContent.trim().toLowerCase());
+        table.dataset.titleIdx = headers.indexOf('title');
+      });
+    }
+
     function wrapTables(container) {
       container.querySelectorAll('table').forEach(table => {
         const wrapper = document.createElement('div');
@@ -288,6 +330,168 @@
 
 
 
+    function buildSearch(container) {
+      const wrap = document.createElement('div');
+      wrap.className = 'agenda-search';
+      wrap.innerHTML =
+        '<div class="agenda-search__box">' +
+          '<svg class="agenda-search__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' +
+          '<input type="search" id="agenda-title-search" placeholder="Search paper titles…" autocomplete="off" aria-label="Search paper titles"/>' +
+          '<button type="button" class="agenda-search__clear" id="agenda-title-search-clear" aria-label="Clear search" hidden>&times;</button>' +
+        '</div>' +
+        '<div class="agenda-search__count" id="agenda-title-search-count"></div>';
+
+      const nav = container.querySelector('.agenda-nav');
+      if (nav) nav.after(wrap); else container.prepend(wrap);
+
+      const topbarH = document.querySelector('.topbar')?.offsetHeight ?? 56;
+      wrap.style.top = (topbarH + (nav ? nav.offsetHeight : 0)) + 'px';
+
+      const input     = wrap.querySelector('#agenda-title-search');
+      const clearBtn  = wrap.querySelector('#agenda-title-search-clear');
+      const countEl   = wrap.querySelector('#agenda-title-search-count');
+
+      const escapeRegExp = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+      function clearHighlights() {
+        container.querySelectorAll('mark.search-hit').forEach(m => {
+          const parent = m.parentNode;
+          parent.replaceChild(document.createTextNode(m.textContent), m);
+          parent.normalize();
+        });
+      }
+
+      function highlight(cell, q) {
+        const re = new RegExp('(' + escapeRegExp(q) + ')', 'ig');
+        const walker = document.createTreeWalker(cell, NodeFilter.SHOW_TEXT);
+        const textNodes = [];
+        while (walker.nextNode()) textNodes.push(walker.currentNode);
+        textNodes.forEach(node => {
+          const text = node.textContent;
+          re.lastIndex = 0;
+          if (!re.test(text)) return;
+          re.lastIndex = 0;
+          const frag = document.createDocumentFragment();
+          let lastIdx = 0, m;
+          while ((m = re.exec(text))) {
+            frag.appendChild(document.createTextNode(text.slice(lastIdx, m.index)));
+            const mark = document.createElement('mark');
+            mark.className = 'search-hit';
+            mark.textContent = m[0];
+            frag.appendChild(mark);
+            lastIdx = m.index + m[0].length;
+            if (m[0].length === 0) re.lastIndex++;
+          }
+          frag.appendChild(document.createTextNode(text.slice(lastIdx)));
+          node.parentNode.replaceChild(frag, node);
+        });
+      }
+
+      function showAll() {
+        container.querySelectorAll('h2, h3, hr, .notice-box, .agenda-table-scroll').forEach(el => { el.style.display = ''; });
+        container.querySelectorAll('h3 + em').forEach(el => { el.style.display = ''; });
+        container.querySelectorAll('tbody tr').forEach(tr => { tr.style.display = ''; });
+      }
+
+      function runSearch(rawQuery) {
+        clearHighlights();
+        const q = rawQuery.trim().toLowerCase();
+        clearBtn.hidden = !q;
+
+        if (!q) {
+          showAll();
+          countEl.textContent = '';
+          return;
+        }
+
+        // Only elements that come after the header/nav/search/note belong to the flowing content.
+        const children = [...container.children].filter(el =>
+          el.tagName !== 'NAV' &&
+          !el.classList.contains('preview-header') &&
+          !el.classList.contains('agenda-search') &&
+          !el.classList.contains('agenda-nav__note')
+        );
+
+        let totalMatches = 0;
+        let sectionEl = null, sectionExtras = [], sectionHasMatch = false;
+        let h3El = null, h3Em = null;
+
+        const flushSection = () => {
+          if (!sectionEl) return;
+          const show = sectionHasMatch;
+          sectionEl.style.display = show ? '' : 'none';
+          sectionExtras.forEach(el => { el.style.display = show ? '' : 'none'; });
+        };
+
+        for (const el of children) {
+          const tag = el.tagName.toLowerCase();
+
+          if (tag === 'h2') {
+            flushSection();
+            sectionEl = el; sectionExtras = []; sectionHasMatch = false;
+            h3El = null; h3Em = null;
+            continue;
+          }
+          if (!sectionEl) continue;
+
+          if (tag === 'h3') {
+            h3El = el; h3Em = null;
+            continue;
+          }
+          if (tag === 'em' && h3El && !h3Em) {
+            h3Em = el;
+            continue;
+          }
+          if (tag === 'div' && el.classList.contains('agenda-table-scroll')) {
+            const table = el.querySelector('table');
+            const titleIdx = table ? parseInt(table.dataset.titleIdx, 10) : -1;
+            let tableHasMatch = false;
+
+            if (table && titleIdx >= 0) {
+              table.querySelectorAll('tbody tr').forEach(tr => {
+                const cell = tr.children[titleIdx];
+                const text = cell ? cell.textContent : '';
+                const match = text.toLowerCase().includes(q);
+                tr.style.display = match ? '' : 'none';
+                if (match) {
+                  tableHasMatch = true;
+                  totalMatches++;
+                  highlight(cell, q);
+                }
+              });
+            }
+
+            el.style.display = tableHasMatch ? '' : 'none';
+            if (h3El) {
+              h3El.style.display = tableHasMatch ? '' : 'none';
+              if (h3Em) h3Em.style.display = tableHasMatch ? '' : 'none';
+              h3El = null; h3Em = null;
+            }
+            sectionHasMatch = sectionHasMatch || tableHasMatch;
+            continue;
+          }
+
+          // hr, notice-box, and anything else follow the overall section's match state
+          sectionExtras.push(el);
+        }
+        flushSection();
+
+        countEl.textContent = totalMatches === 0
+          ? 'No papers found.'
+          : totalMatches + ' paper' + (totalMatches === 1 ? '' : 's') + ' found.';
+      }
+
+      let debounceT;
+      input.addEventListener('input', () => {
+        clearTimeout(debounceT);
+        debounceT = setTimeout(() => runSearch(input.value), 120);
+      });
+      input.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && input.value) { input.value = ''; runSearch(''); }
+      });
+      clearBtn.addEventListener('click', () => { input.value = ''; runSearch(''); input.focus(); });
+    }
+
     function addPosterNotices(container) {
       container.querySelectorAll('h2').forEach(h2 => {
         if (/Poster Session \d+/i.test(h2.textContent)) {
@@ -309,9 +513,11 @@
       .then(md => {
         preview.innerHTML = buildHeader() + marked.parse(md);
         annotateTableColumns(preview);
+        markTitleColumns(preview);
         addPosterNotices(preview);
         buildNav(preview);
         wrapTables(preview);
+        buildSearch(preview);
       })
       .catch(() => {
         preview.innerHTML = '<p style="color:#c03820">Could not load program. Please try again later.</p>';
