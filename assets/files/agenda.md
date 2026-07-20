@@ -228,7 +228,7 @@ July 15-19, 2026 | UTS Building 8 (CB08), Sydney, Australia
 | 7 | 15:00 - 15:15 | 76 | Trusted Verification Methods for Public Data Products Based on Generative AI and Zero-Knowledge Proofs | Dequan Meng, Xiangpei Hu, Yonggang Li, Hui Yang |
 
 ### S26 - Special Session on Emerging Cross-Modal Data Science for Generative AI + Building Reliable Agents by Fusing LLMs with Knowledge Graphs
-*July 18 | Afternoon | 13:30-15:10 | CB08.03.002 | Chair: Jianxin Li*
+*July 18 | Afternoon | 13:30-15:10 | CB08.03.002 | Chair: Jianxin Li and Xinzhi Wang*
 
 | Slot | Time | Paper ID | Title | Authors |
 |------|------|----------|-------|---------|
